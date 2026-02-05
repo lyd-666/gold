@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
   "date": "2026-02-05",
-  "updated": "2026-02-05T11:01:34+00:00",
+  "updated": "2026-02-05T11:08:42+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4882.47；MA20 4849.56；MA50 4531.57。",
-    "RSI14 57.6；MACD Hist -25.630（动量参考）。",
+    "收盘价 4879.79；MA20 4849.42；MA50 4531.52。",
+    "RSI14 57.5；MACD Hist -25.801（动量参考）。",
     "ATR14 264.11（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4671.18 / R1≈5093.76（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4668.50 / R1≈5091.08（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -262,7 +262,7 @@
       "Open": "4969.50",
       "High": "5023.66",
       "Low": "4792.20",
-      "Close": "4882.47",
+      "Close": "4879.79",
       "Volume": "0"
     }
   ],
@@ -305,6 +305,13 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Silver prices plummet 16%, wipe out recent rebound",
+      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
+      "published": "2026-02-05 11:04:24",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Oil falls more than 1% on easing supply concerns after US, Iran agree to talks",
       "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
       "published": "2026-02-05 10:42:27",
@@ -329,13 +336,6 @@
       "title": "Russia will continue to supply oil to Cuba, RIA cites ambassador",
       "url": "https://www.investing.com/news/commodities-news/russia-will-continue-to-supply-oil-to-cuba-ria-cites-ambassador-4486487",
       "published": "2026-02-05 05:31:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Silver prices plummet 16%, wipe out recent rebound",
-      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
-      "published": "2026-02-05 03:18:11",
       "summary": ""
     },
     {
