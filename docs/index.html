@@ -25,27 +25,31 @@
     .mono { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
     .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .muted { color:#666; }
+    .error { color:#a00; font-weight:700; }
+    pre { white-space: pre-wrap; word-break: break-word; }
   </style>
 </head>
 
 <body>
-  <!-- 用于确认你替换的模板已生效：如果页面上能看到这一行，就说明 Actions 用到了新模板 -->
-  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames</div>
+  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames (client-render)</div>
 
   <h1>Gold Pre-market Plan</h1>
 
+  <div id="status" class="meta muted">正在加载数据…</div>
+
   <div class="meta">
-    <div>SYMBOL: <b class="mono"> symbol </b></div>
-    <div>DATE: <b class="mono"> date </b></div>
-    <div>UPDATED: <b class="mono"> updated </b></div>
+    <div>SYMBOL: <b id="symbol" class="mono"></b></div>
+    <div>DATE: <b id="date" class="mono"></b></div>
+    <div>UPDATED: <b id="updated" class="mono"></b></div>
   </div>
 
   <h2>总体状态（红绿灯）
-    <span class="tl  traffic_light "> traffic_light </span>
+    <span id="traffic_light" class="tl"></span>
   </h2>
 
   <div class="card">
-    <b>核心判断：</b> summary 
+    <b>核心判断：</b> <span id="summary"></span>
     <div class="small" style="margin-top:6px;">
       依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。
     </div>
@@ -53,58 +57,30 @@
 
   <h2>关键结论摘要</h2>
   <div class="card">
-    <ul>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
+    <ul id="bullets">
+      <!-- bullets 填充 -->
     </ul>
   </div>
 
   <div class="grid">
     <div>
       <h2>盘前计划 Base Case</h2>
-      <div class="card" style="white-space:pre-line;"> base_case </div>
+      <div id="base_case" class="card" style="white-space:pre-line;"></div>
     </div>
     <div>
       <h2>Alternate Case</h2>
-      <div class="card" style="white-space:pre-line;"> alt_case </div>
+      <div id="alt_case" class="card" style="white-space:pre-line;"></div>
     </div>
   </div>
 
   <h2>Watchlist</h2>
   <div class="card">
-    <ul>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-    </ul>
+    <ul id="watchlist"></ul>
   </div>
 
   <h2>Execution Rules</h2>
   <div class="card">
-    <ul>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-    </ul>
+    <ul id="rules"></ul>
   </div>
 
   <h2>最新行情（最近30天）</h2>
@@ -114,423 +90,26 @@
         <th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th>
       </tr>
     </thead>
-    <tbody>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
+    <tbody id="last30_body">
+      <!-- rows 填充 -->
     </tbody>
   </table>
 
   <h2>关键驱动因素</h2>
   <table>
     <thead><tr><th>Driver</th><th>Signal</th><th>Note</th></tr></thead>
-    <tbody>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-    </tbody>
+    <tbody id="drivers_body"></tbody>
   </table>
 
   <h2>风险与应对</h2>
   <table>
     <thead><tr><th>Risk</th><th>Mitigation / Hedge</th></tr></thead>
-    <tbody>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-    </tbody>
+    <tbody id="risks_body"></tbody>
   </table>
 
   <h2>新闻（近24–72小时）</h2>
   <div class="card">
-    
-      <ul>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-      </ul>
-    
+    <ul id="news_list"></ul>
   </div>
 
   <h2>数据来源与声明</h2>
@@ -542,11 +121,171 @@
   <h2>Debug</h2>
   <div class="card small">
     <div>gold_data.json: <code>gold_data.json</code></div>
-    
-      <div>price_source: <code> debug.get("price_source") </code></div>
-      <div>news_score: <code> debug.get("news_score") </code></div>
-      <div>rows: <code> debug.get("rows") </code></div>
-    
+    <div>price_source: <code id="debug_price_source"></code></div>
+    <div>news_score: <code id="debug_news_score"></code></div>
+    <div>rows: <code id="debug_rows"></code></div>
   </div>
+
+<script>
+(async function(){
+  const status = document.getElementById('status');
+  const jsonPath = './gold_data.json';
+
+  function esc(s){
+    if (s === null || s === undefined) return '';
+    return String(s);
+  }
+
+  function setStatus(text, isError){
+    status.textContent = text;
+    status.className = isError ? 'meta error' : 'meta muted';
+  }
+
+  try {
+    setStatus('正在加载 ' + jsonPath + ' …', false);
+    const resp = await fetch(jsonPath, {cache: 'no-store'});
+    if (!resp.ok) throw new Error('网络错误: ' + resp.status + ' ' + resp.statusText);
+    const data = await resp.json();
+
+    // Metadata
+    document.getElementById('symbol').textContent = esc(data.symbol || '');
+    document.getElementById('date').textContent = esc(data.date || '');
+    document.getElementById('updated').textContent = esc(data.updated || '');
+
+    // Traffic light
+    const tlEl = document.getElementById('traffic_light');
+    const tl = (data.traffic_light || '').toUpperCase();
+    tlEl.textContent = tl || '';
+    tlEl.className = 'tl ' + (tl === 'GREEN' ? 'GREEN' : (tl === 'RED' ? 'RED' : 'NEUTRAL'));
+
+    // Summary
+    document.getElementById('summary').textContent = esc(data.summary || '');
+
+    // Bullets
+    const bulletsEl = document.getElementById('bullets');
+    bulletsEl.innerHTML = '';
+    if (Array.isArray(data.bullets)) {
+      data.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.textContent = esc(b);
+        bulletsEl.appendChild(li);
+      });
+    }
+
+    // Base / Alt
+    document.getElementById('base_case').textContent = esc(data.base_case || '');
+    document.getElementById('alt_case').textContent = esc(data.alt_case || '');
+
+    // Watchlist
+    const watchEl = document.getElementById('watchlist');
+    watchEl.innerHTML = '';
+    if (Array.isArray(data.watchlist)) {
+      data.watchlist.forEach(w => {
+        const li = document.createElement('li'); li.textContent = esc(w); watchEl.appendChild(li);
+      });
+    }
+
+    // Rules
+    const rulesEl = document.getElementById('rules');
+    rulesEl.innerHTML = '';
+    if (Array.isArray(data.rules)) {
+      data.rules.forEach(r => {
+        const li = document.createElement('li'); li.textContent = esc(r); rulesEl.appendChild(li);
+      });
+    }
+
+    // Last30 table
+    const last30Body = document.getElementById('last30_body');
+    last30Body.innerHTML = '';
+    if (Array.isArray(data.last30)) {
+      data.last30.forEach(row => {
+        const tr = document.createElement('tr');
+        const cols = ['Date','Open','High','Low','Close','Volume'];
+        cols.forEach((c, i) => {
+          const td = document.createElement('td');
+          if (c === 'Date') td.className = 'mono';
+          const v = row[c] ?? '';
+          if (c === 'Close') td.innerHTML = '<b>' + esc(v) + '</b>';
+          else td.textContent = esc(v);
+          tr.appendChild(td);
+        });
+        last30Body.appendChild(tr);
+      });
+    }
+
+    // Drivers
+    const driversBody = document.getElementById('drivers_body');
+    driversBody.innerHTML = '';
+    if (Array.isArray(data.drivers)) {
+      data.drivers.forEach(d => {
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td'); td1.textContent = esc(d.driver || d['driver'] || '');
+        const td2 = document.createElement('td'); td2.innerHTML = '<b>' + esc(d.signal || '') + '</b>';
+        const td3 = document.createElement('td'); td3.textContent = esc(d.note || '');
+        tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+        driversBody.appendChild(tr);
+      });
+    }
+
+    // Risks
+    const risksBody = document.getElementById('risks_body');
+    risksBody.innerHTML = '';
+    if (Array.isArray(data.risks)) {
+      data.risks.forEach(x => {
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td'); td1.textContent = esc(x.risk || '');
+        const td2 = document.createElement('td'); td2.textContent = esc(x.hedge || x.mitigation || '');
+        tr.appendChild(td1); tr.appendChild(td2);
+        risksBody.appendChild(tr);
+      });
+    }
+
+    // News
+    const newsList = document.getElementById('news_list');
+    newsList.innerHTML = '';
+    if (Array.isArray(data.news) && data.news.length > 0) {
+      data.news.forEach(n => {
+        const li = document.createElement('li');
+        li.style.marginBottom = '10px';
+        const title = n.title || n[ 'title' ] || '';
+        const url = n.url || n['url'] || '';
+        const source = n.source || '';
+        const published = n.published || '';
+        if (url) {
+          const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noreferrer'; a.textContent = title || url;
+          li.appendChild(a);
+        } else {
+          li.appendChild(document.createTextNode(title));
+        }
+        const meta = document.createElement('div'); meta.className = 'small'; meta.style.marginTop = '4px';
+        meta.textContent = (source ? source : '') + (published ? (' · ' + published) : '');
+        li.appendChild(meta);
+        if (n.summary) {
+          const sdiv = document.createElement('div'); sdiv.className = 'small'; sdiv.style.marginTop = '4px'; sdiv.textContent = n.summary;
+          li.appendChild(sdiv);
+        }
+        newsList.appendChild(li);
+      });
+    } else {
+      const div = document.createElement('div'); div.className = 'small'; div.textContent = '暂无可用新闻源（RSS/NewsAPI 可能暂时不可用）。';
+      newsList.appendChild(div);
+    }
+
+    // Debug
+    document.getElementById('debug_price_source').textContent = esc((data.debug && data.debug.price_source) || '');
+    document.getElementById('debug_news_score').textContent = esc((data.debug && data.debug.news_score) || '');
+    document.getElementById('debug_rows').textContent = esc((data.debug && data.debug.rows) || '');
+
+    setStatus('已加载并渲染（来自 ' + jsonPath + '）', false);
+  } catch (err) {
+    console.error(err);
+    setStatus('加载失败：' + (err && err.message ? err.message : String(err)), true);
+    // 显示错误详情（可选）
+    const pre = document.createElement('pre');
+    pre.textContent = String(err && err.stack ? err.stack : err);
+    document.body.appendChild(pre);
+  }
+})();
+</script>
 </body>
 </html>
