@@ -30,22 +30,24 @@
 
 <body>
   <!-- 用于确认你替换的模板已生效：如果页面上能看到这一行，就说明 Actions 用到了新模板 -->
-  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames</div>
+  <div class="small mono">TEMPLATE_VERSION: v4-auto-json</div>
 
   <h1>Gold Pre-market Plan</h1>
 
   <div class="meta">
-    <div>SYMBOL: <b class="mono"> symbol </b></div>
-    <div>DATE: <b class="mono"> date </b></div>
-    <div>UPDATED: <b class="mono"> updated </b></div>
+    <div>SYMBOL: <b class="mono" id="symbol">--</b></div>
+    <div>DATE: <b class="mono" id="date">--</b></div>
+    <div>UPDATED: <b class="mono" id="updated">--</b></div>
   </div>
 
+  <div class="card small" id="load-error" style="display:none;"></div>
+
   <h2>总体状态（红绿灯）
-    <span class="tl  traffic_light "> traffic_light </span>
+    <span class="tl NEUTRAL" id="traffic-light">NEUTRAL</span>
   </h2>
 
   <div class="card">
-    <b>核心判断：</b> summary 
+    <b>核心判断：</b> <span id="summary">--</span>
     <div class="small" style="margin-top:6px;">
       依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。
     </div>
@@ -53,40 +55,28 @@
 
   <h2>关键结论摘要</h2>
   <div class="card">
-    <ul>
-      {% for b in bullets %}
-        <li> b </li>
-      {% endfor %}
-    </ul>
+    <ul id="bullets"></ul>
   </div>
 
   <div class="grid">
     <div>
       <h2>盘前计划 Base Case</h2>
-      <div class="card" style="white-space:pre-line;"> base_case </div>
+      <div class="card" style="white-space:pre-line;" id="base-case"></div>
     </div>
     <div>
       <h2>Alternate Case</h2>
-      <div class="card" style="white-space:pre-line;"> alt_case </div>
+      <div class="card" style="white-space:pre-line;" id="alt-case"></div>
     </div>
   </div>
 
   <h2>Watchlist</h2>
   <div class="card">
-    <ul>
-      {% for w in watchlist %}
-        <li> w </li>
-      {% endfor %}
-    </ul>
+    <ul id="watchlist"></ul>
   </div>
 
   <h2>Execution Rules</h2>
   <div class="card">
-    <ul>
-      {% for r in rules %}
-        <li> r </li>
-      {% endfor %}
-    </ul>
+    <ul id="rules"></ul>
   </div>
 
   <h2>最新行情（最近30天）</h2>
@@ -96,69 +86,23 @@
         <th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th>
       </tr>
     </thead>
-    <tbody>
-      {% for row in last30 %}
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      {% endfor %}
-    </tbody>
+    <tbody id="last30"></tbody>
   </table>
 
   <h2>关键驱动因素</h2>
   <table>
     <thead><tr><th>Driver</th><th>Signal</th><th>Note</th></tr></thead>
-    <tbody>
-      {% for d in drivers %}
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      {% endfor %}
-    </tbody>
+    <tbody id="drivers"></tbody>
   </table>
 
   <h2>风险与应对</h2>
   <table>
     <thead><tr><th>Risk</th><th>Mitigation / Hedge</th></tr></thead>
-    <tbody>
-      {% for x in risks %}
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      {% endfor %}
-    </tbody>
+    <tbody id="risks"></tbody>
   </table>
 
   <h2>新闻（近24–72小时）</h2>
-  <div class="card">
-    {% if news and (news|length) > 0 %}
-      <ul>
-        {% for n in news %}
-        <li style="margin-bottom:10px;">
-          {% if n.get("url") %}
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          {% else %}
-             n.get("title") 
-          {% endif %}
-          <span class="small">（ n.get("source") {% if n.get("published") %} ·  n.get("published") {% endif %}）</span>
-          {% if n.get("summary") %}
-            <div class="small" style="margin-top:4px;"> n.get("summary") </div>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <div class="small">暂无可用新闻源（RSS/NewsAPI 可能暂时不可用）。</div>
-    {% endif %}
-  </div>
+  <div class="card" id="news"></div>
 
   <h2>数据来源与声明</h2>
   <div class="card">
@@ -169,11 +113,158 @@
   <h2>Debug</h2>
   <div class="card small">
     <div>gold_data.json: <code>gold_data.json</code></div>
-    {% if debug %}
-      <div>price_source: <code> debug.get("price_source") </code></div>
-      <div>news_score: <code> debug.get("news_score") </code></div>
-      <div>rows: <code> debug.get("rows") </code></div>
-    {% endif %}
+    <div id="debug-fields"></div>
   </div>
+
+  <script>
+    (() => {
+      const DATA_URL = 'gold_data.json';
+
+      const escapeHtml = (value) => String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+      const setText = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.textContent = value == null ? '' : String(value);
+        }
+      };
+
+      const renderList = (id, items, emptyMessage) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (!Array.isArray(items) || items.length === 0) {
+          el.innerHTML = `<li class="small">${escapeHtml(emptyMessage)}</li>`;
+          return;
+        }
+        el.innerHTML = items.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
+      };
+
+      const renderTable = (id, rows, columns) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (!Array.isArray(rows) || rows.length === 0) {
+          el.innerHTML = `<tr><td colspan="${columns.length}" class="small">暂无数据</td></tr>`;
+          return;
+        }
+        el.innerHTML = rows.map((row) => {
+          const cells = columns.map((column) => {
+            const value = row && row[column.key] != null ? row[column.key] : '';
+            const content = column.bold ? `<b>${escapeHtml(value)}</b>` : escapeHtml(value);
+            const classAttr = column.className ? ` class="${column.className}"` : '';
+            return `<td${classAttr}>${content}</td>`;
+          }).join('');
+          return `<tr>${cells}</tr>`;
+        }).join('');
+      };
+
+      const renderNews = (news) => {
+        const el = document.getElementById('news');
+        if (!el) return;
+        if (!Array.isArray(news) || news.length === 0) {
+          el.innerHTML = '<div class="small">暂无可用新闻源（RSS/NewsAPI 可能暂时不可用）。</div>';
+          return;
+        }
+        el.innerHTML = `<ul>${news.map((item) => {
+          const title = escapeHtml(item?.title || '');
+          const url = item?.url ? escapeHtml(item.url) : '';
+          const source = escapeHtml(item?.source || '');
+          const published = escapeHtml(item?.published || '');
+          const summary = item?.summary ? `<div class="small" style="margin-top:4px;">${escapeHtml(item.summary)}</div>` : '';
+          const metaParts = [source, published].filter(Boolean);
+          const meta = metaParts.length ? ` <span class="small">（${metaParts.join(' · ')}）</span>` : '';
+          const titleHtml = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
+          return `<li style="margin-bottom:10px;">${titleHtml}${meta}${summary}</li>`;
+        }).join('')}</ul>`;
+      };
+
+      const renderDebug = (debug) => {
+        const el = document.getElementById('debug-fields');
+        if (!el) return;
+        if (!debug || typeof debug !== 'object') {
+          el.innerHTML = '<div class="small">暂无调试信息。</div>';
+          return;
+        }
+        const rows = [];
+        if (debug.price_source != null) {
+          rows.push(`<div>price_source: <code>${escapeHtml(debug.price_source)}</code></div>`);
+        }
+        if (debug.news_score != null) {
+          rows.push(`<div>news_score: <code>${escapeHtml(debug.news_score)}</code></div>`);
+        }
+        if (debug.rows != null) {
+          rows.push(`<div>rows: <code>${escapeHtml(debug.rows)}</code></div>`);
+        }
+        el.innerHTML = rows.join('') || '<div class="small">暂无调试信息。</div>';
+      };
+
+      const showError = (message) => {
+        const errorEl = document.getElementById('load-error');
+        if (!errorEl) return;
+        errorEl.textContent = message;
+        errorEl.style.display = 'block';
+      };
+
+      const loadData = async () => {
+        try {
+          const response = await fetch(DATA_URL, { cache: 'no-store' });
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          const data = await response.json();
+
+          setText('symbol', data.symbol || '--');
+          setText('date', data.date || '--');
+          setText('updated', data.updated || '--');
+          setText('summary', data.summary || '--');
+          setText('base-case', data.base_case || '');
+          setText('alt-case', data.alt_case || '');
+
+          const traffic = data.traffic_light || 'NEUTRAL';
+          const trafficEl = document.getElementById('traffic-light');
+          if (trafficEl) {
+            trafficEl.textContent = traffic;
+            trafficEl.className = `tl ${traffic}`;
+          }
+
+          renderList('bullets', data.bullets, '暂无摘要。');
+          renderList('watchlist', data.watchlist, '暂无关注项。');
+          renderList('rules', data.rules, '暂无执行规则。');
+
+          renderTable('last30', data.last30, [
+            { key: 'Date', className: 'mono' },
+            { key: 'Open' },
+            { key: 'High' },
+            { key: 'Low' },
+            { key: 'Close', bold: true },
+            { key: 'Volume' }
+          ]);
+
+          renderTable('drivers', data.drivers, [
+            { key: 'driver' },
+            { key: 'signal', bold: true },
+            { key: 'note' }
+          ]);
+
+          renderTable('risks', data.risks, [
+            { key: 'risk' },
+            { key: 'hedge' }
+          ]);
+
+          renderNews(data.news);
+          renderDebug(data.debug);
+        } catch (error) {
+          console.error('Failed to load gold_data.json', error);
+          showError('gold_data.json 加载失败，请稍后刷新重试。');
+        }
+      };
+
+      loadData();
+    })();
+  </script>
 </body>
 </html>
