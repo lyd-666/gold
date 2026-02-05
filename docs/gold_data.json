@@ -1,0 +1,382 @@
+{
+  "symbol": "GC=F",
+  "date": "2026-02-05",
+  "updated": "2026-02-05T09:53:04+00:00",
+  "traffic_light": "NEUTRAL",
+  "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
+  "bullets": [
+    "收盘价 4866.49；MA20 4848.76；MA50 4531.25。",
+    "RSI14 57.1；MACD Hist -26.650（动量参考）。",
+    "ATR14 264.11（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+  ],
+  "base_case": "关键区间：S1≈4655.20 / R1≈5077.78（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
+  "watchlist": [
+    "美元指数 DXY（强美元通常压制黄金）。",
+    "美债收益率（尤其是实际利率方向）。",
+    "美联储相关讲话与通胀数据发布窗口。",
+    "地缘政治与避险情绪突发事件。"
+  ],
+  "rules": [
+    "单笔风险上限：账户净值的 0.25%–1%，依据 ATR 调整仓位。",
+    "止损距离建议：≥ 1.0×ATR，并在结构失效时执行。",
+    "不在重大数据公布前后 5–15 分钟内追价开仓（视波动而定）。",
+    "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
+  ],
+  "last30": [
+    {
+      "Date": "2025-12-24",
+      "Open": "4486.73",
+      "High": "4525.07",
+      "Low": "4448.51",
+      "Close": "4479.32",
+      "Volume": "0"
+    },
+    {
+      "Date": "2025-12-26",
+      "Open": "4494.09",
+      "High": "4549.81",
+      "Low": "4474.50",
+      "Close": "4531.58",
+      "Volume": "0"
+    },
+    {
+      "Date": "2025-12-29",
+      "Open": "4543.99",
+      "High": "4549.31",
+      "Low": "4304.44",
+      "Close": "4332.01",
+      "Volume": "0"
+    },
+    {
+      "Date": "2025-12-30",
+      "Open": "4335.03",
+      "High": "4404.06",
+      "Low": "4323.88",
+      "Close": "4338.71",
+      "Volume": "0"
+    },
+    {
+      "Date": "2025-12-31",
+      "Open": "4343.03",
+      "High": "4373.14",
+      "Low": "4274.63",
+      "Close": "4318.59",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-02",
+      "Open": "4333.37",
+      "High": "4402.34",
+      "Low": "4310.74",
+      "Close": "4331.51",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-05",
+      "Open": "4353.42",
+      "High": "4455.64",
+      "Low": "4346.21",
+      "Close": "4449.12",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-06",
+      "Open": "4449.41",
+      "High": "4497.30",
+      "Low": "4429.26",
+      "Close": "4495.03",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-07",
+      "Open": "4497.14",
+      "High": "4500.39",
+      "Low": "4423.59",
+      "Close": "4456.41",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-08",
+      "Open": "4460.98",
+      "High": "4479.49",
+      "Low": "4407.94",
+      "Close": "4478.35",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-09",
+      "Open": "4480.14",
+      "High": "4516.74",
+      "Low": "4453.20",
+      "Close": "4508.02",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-12",
+      "Open": "4525.39",
+      "High": "4629.95",
+      "Low": "4508.02",
+      "Close": "4598.52",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-13",
+      "Open": "4605.02",
+      "High": "4634.12",
+      "Low": "4571.12",
+      "Close": "4586.07",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-14",
+      "Open": "4589.38",
+      "High": "4643.07",
+      "Low": "4589.05",
+      "Close": "4627.52",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-15",
+      "Open": "4630.73",
+      "High": "4632.72",
+      "Low": "4581.45",
+      "Close": "4616.18",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-16",
+      "Open": "4619.43",
+      "High": "4620.68",
+      "Low": "4537.87",
+      "Close": "4582.27",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-19",
+      "Open": "4634.70",
+      "High": "4691.03",
+      "Low": "4582.27",
+      "Close": "4671.02",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-20",
+      "Open": "4674.65",
+      "High": "4766.07",
+      "Low": "4659.84",
+      "Close": "4763.63",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-21",
+      "Open": "4765.03",
+      "High": "4887.78",
+      "Low": "4757.43",
+      "Close": "4832.66",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-22",
+      "Open": "4833.97",
+      "High": "4940.84",
+      "Low": "4774.16",
+      "Close": "4936.16",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-23",
+      "Open": "4941.97",
+      "High": "4989.89",
+      "Low": "4900.12",
+      "Close": "4981.83",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-26",
+      "Open": "5008.61",
+      "High": "5110.35",
+      "Low": "4981.83",
+      "Close": "5010.97",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-27",
+      "Open": "5014.03",
+      "High": "5190.31",
+      "Low": "5013.82",
+      "Close": "5178.53",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-28",
+      "Open": "5180.45",
+      "High": "5418.87",
+      "Low": "5157.49",
+      "Close": "5415.17",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-29",
+      "Open": "5425.04",
+      "High": "5595.44",
+      "Low": "5109.32",
+      "Close": "5378.77",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-01-30",
+      "Open": "5378.73",
+      "High": "5451.02",
+      "Low": "4689.94",
+      "Close": "4847.87",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-02",
+      "Open": "4786.18",
+      "High": "4884.59",
+      "Low": "4404.97",
+      "Close": "4661.28",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-03",
+      "Open": "4668.22",
+      "High": "4993.62",
+      "Low": "4667.96",
+      "Close": "4947.22",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-04",
+      "Open": "4946.66",
+      "High": "5091.82",
+      "Low": "4855.90",
+      "Close": "4965.00",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-05",
+      "Open": "4969.50",
+      "High": "5023.66",
+      "Low": "4792.20",
+      "Close": "4866.49",
+      "Volume": "0"
+    }
+  ],
+  "drivers": [
+    {
+      "driver": "Trend (MA20/MA50)",
+      "signal": "Bullish",
+      "note": "价格相对均线位置与多空排列。"
+    },
+    {
+      "driver": "Momentum (RSI/MACD)",
+      "signal": "Mixed",
+      "note": "RSI 与 MACD 柱体方向。"
+    },
+    {
+      "driver": "Volatility (ATR)",
+      "signal": "High",
+      "note": "ATR 越高，越需要降杠杆与扩大止损。"
+    },
+    {
+      "driver": "Macro/News (headline heuristic)",
+      "signal": "Supportive",
+      "note": "基于关键词的粗略文本规则。"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "宏观数据/央行讲话引发跳空或剧烈波动",
+      "hedge": "降低仓位；使用期权；避免事件窗口追单。"
+    },
+    {
+      "risk": "强美元与收益率上行压制黄金",
+      "hedge": "观察 DXY/美债；信号转弱则收缩多头敞口。"
+    },
+    {
+      "risk": "假突破导致来回扫损",
+      "hedge": "等待收盘确认；用 ATR 校准止损；减少频繁交易。"
+    }
+  ],
+  "news": [
+    {
+      "source": "Commodities & Futures News",
+      "title": "India to sign trade deal with United States in March, minister says",
+      "url": "https://www.investing.com/news/commodities-news/india-to-sign-trade-deal-with-united-states-in-march-minister-says-4486736",
+      "published": "2026-02-05 08:55:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil falls over $1 on easing supply concerns after US, Iran agree to talks",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
+      "published": "2026-02-05 08:24:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "China faces higher prices for further U.S. soybean buys to please Trump",
+      "url": "https://www.investing.com/news/commodities-news/china-faces-higher-prices-for-further-us-soybean-buys-to-please-trump-4486638",
+      "published": "2026-02-05 07:36:33",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Russia will continue to supply oil to Cuba, RIA cites ambassador",
+      "url": "https://www.investing.com/news/commodities-news/russia-will-continue-to-supply-oil-to-cuba-ria-cites-ambassador-4486487",
+      "published": "2026-02-05 05:31:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Silver prices plummet 16%, wipe out recent rebound",
+      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
+      "published": "2026-02-05 03:18:11",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices slide over 1% with US-Iran talks in focus",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-over-1-with-usiran-talks-in-focus-4486423",
+      "published": "2026-02-05 02:07:19",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices fall, silver plummets 16% as dollar firms ahead of c.bank meetings",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rebound-1-rise-above-5000oz-after-whipsaw-session-4486348",
+      "published": "2026-02-05 00:03:35",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Traders rush to lock in oil prices amid Iran geopolitical risk, more Venezuelan supply",
+      "url": "https://www.investing.com/news/commodities-news/traders-rush-to-lock-in-oil-prices-amid-iran-geopolitical-risk-more-venezuelan-supply-4486259",
+      "published": "2026-02-04 22:42:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump, Xi discuss Taiwan and soybeans in call aimed at easing China, US relations",
+      "url": "https://www.investing.com/news/commodities-news/trump-xi-discuss-taiwan-and-soybeans-in-call-aimed-at-easing-china-us-relations-4485919",
+      "published": "2026-02-04 22:30:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Argentina signs critical minerals deal with US, foreign ministry says",
+      "url": "https://www.investing.com/news/commodities-news/argentina-signs-critical-minerals-deal-with-us-foreign-ministry-says-4486231",
+      "published": "2026-02-04 22:25:31",
+      "summary": ""
+    }
+  ],
+  "debug": {
+    "price_source": "stooq(xauusd)",
+    "news_score": 1,
+    "rows": 15175
+  }
+}
