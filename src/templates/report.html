@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gold Pre-market Plan</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; color:#111; }
+    .meta { color:#555; font-size:14px; }
+    h1 { margin: 0 0 8px; }
+    h2 { margin-top: 22px; border-bottom:1px solid #eee; padding-bottom:8px; }
+    .tl { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:700; }
+    .GREEN { background:#e8f7ee; color:#137333; }
+    .RED { background:#fce8e6; color:#a50e0e; }
+    .NEUTRAL { background:#f1f3f4; color:#3c4043; }
+    .card { border:1px solid #eee; border-radius:12px; padding:14px; margin:10px 0; }
+    table { border-collapse: collapse; width:100%; }
+    th,td { border-bottom:1px solid #eee; text-align:left; padding:8px; font-size:14px; vertical-align:top; }
+    th { background:#fafafa; }
+    .small { font-size:12px; color:#666; }
+    ul { margin: 8px 0 0 18px; }
+    code { background:#f6f8fa; padding:2px 6px; border-radius:6px; }
+    a { color:#0969da; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <h1>Gold Pre-market Plan</h1>
+  <div class="meta">
+    <div>SYMBOL: <b> symbol </b></div>
+    <div>DATE: <b> date </b></div>
+    <div>UPDATED: <b> updated </b></div>
+  </div>
+
+  <h2>总体状态（红绿灯） <span class="tl  traffic_light "> traffic_light </span></h2>
+  <div class="card">
+    <b>核心判断：</b> summary 
+    <div class="small">依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。</div>
+  </div>
+
+  <h2>关键结论摘要</h2>
+  <div class="card">
+    <ul>
+      {% for b in bullets %}
+      <li> b </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2>盘前计划 Base Case</h2>
+  <div class="card"> base_case </div>
+
+  <h2>Alternate Case</h2>
+  <div class="card"> alt_case </div>
+
+  <h2>Watchlist</h2>
+  <div class="card">
+    <ul>
+      {% for w in watchlist %}
+      <li> w </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2>Execution Rules</h2>
+  <div class="card">
+    <ul>
+      {% for r in rules %}
+      <li> r </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2>最新行情（最近30天）</h2>
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th></tr>
+    </thead>
+    <tbody>
+      {% for row in last30 %}
+      <tr>
+        <td> row.Date </td>
+        <td> row.Open </td>
+        <td> row.High </td>
+        <td> row.Low </td>
+        <td> row.Close </td>
+        <td> row.Volume </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>关键驱动因素</h2>
+  <table>
+    <thead><tr><th>Driver</th><th>Signal</th><th>Note</th></tr></thead>
+    <tbody>
+      {% for d in drivers %}
+      <tr><td> d.driver </td><td> d.signal </td><td> d.note </td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>风险与应对</h2>
+  <table>
+    <thead><tr><th>Risk</th><th>Mitigation / Hedge</th></tr></thead>
+    <tbody>
+      {% for x in risks %}
+      <tr><td> x.risk </td><td> x.hedge </td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>新闻（近24–72小时）</h2>
+  <div class="card">
+    <ul>
+      {% for n in news %}
+      <li>
+        <a href=" n.url " target="_blank" rel="noreferrer"> n.title </a>
+        <span class="small">（ n.source  ·  n.published ）</span>
+        {% if n.summary %}<div class="small"> n.summary </div>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2>数据来源与声明</h2>
+  <div class="card">
+    行情数据：<code>yfinance</code>（Yahoo Finance）。新闻：RSS 或 NewsAPI。<br/>
+    本页面为研究用途，不构成投资建议。请自行评估风险。
+  </div>
+
+  <h2>Debug</h2>
+  <div class="card small">
+    <div>gold_data.json: <code>docs/gold_data.json</code></div>
+  </div>
+</body>
+</html>
