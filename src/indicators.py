@@ -7,7 +7,7 @@ def rsi(close: pd.Series, period: int = 14) -> pd.Series:
     loss = (-delta.where(delta < 0, 0.0)).rolling(period).mean()
     rs = gain / (loss.replace(0, np.nan))
     out = 100 - (100 / (1 + rs))
-    return out.fillna(method="bfill")
+    return out.bfill()
 
 def ema(series: pd.Series, span: int) -> pd.Series:
     return series.ewm(span=span, adjust=False).mean()
@@ -30,7 +30,7 @@ def atr(df: pd.DataFrame, period: int = 14) -> pd.Series:
         (low - prev_close).abs()
     ], axis=1).max(axis=1)
 
-    return tr.rolling(period).mean().fillna(method="bfill")
+    return tr.rolling(period).mean().bfill()
 
 def enrich_indicators(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
