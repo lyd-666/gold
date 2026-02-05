@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 import math
 import os
@@ -11,44 +12,93 @@ from jinja2 import Environment, FileSystemLoader
 from indicators import enrich_indicators
 from news import fetch_news, now_iso_local
 
-DEFAULT_SYMBOL = os.getenv("SYMBOL", "GC=F")  # COMEX Gold Futures
+DEFAULT_SYMBOL = os.getenv("SYMBOL", "GC=F")     # Yahoo Finance symbol (may fail on GitHub Actions IP)
 OUT_DIR = os.getenv("OUT_DIR", "docs")
 NEWS_LIMIT = int(os.getenv("NEWS_LIMIT", "10"))
 
+# -----------------------------
+# Helpers
+# -----------------------------
 def _fmt(x):
-    if x is None or (isinstance(x, float) and (math.isnan(x))):
+    if x is None:
+        return ""
+    if isinstance(x, float) and math.isnan(x):
         return ""
     if isinstance(x, (int, np.integer)):
         return str(int(x))
     if isinstance(x, (float, np.floating)):
-        return f"{x:.2f}"
+        return f"{float(x):.2f}"
     return str(x)
 
-def traffic_light_logic(df: pd.DataFrame, news_items: list[dict]) -> tuple[str, str, list[str], dict]:
-    """
-    输出：
-    - traffic_light: GREEN/RED/NEUTRAL
-    - summary: 一句话
-    - bullets: 要点列表
-    - drivers: 结构化驱动因子
-    """
-    last = df.iloc[-1]
-    prev = df.iloc[-2] if len(df) > 1 else last
+def _download_yfinance(symbol: str, period="6mo", interval="1d") -> pd.DataFrame:
+    # yfinance occasionally fails in GitHub Actions due to Yahoo anti-bot measures.
+    return yf.download(
+        symbol,
+        period=period,
+        interval=interval,
+        auto_adjust=False,
+        progress=False,
+        threads=False,
+    )
 
+def _download_stooq(stooq_symbol: str = "xauusd") -> pd.DataFrame:
+    """
+    Stooq fallback (free, no key). Provides daily OHLCV via CSV.
+    For gold spot, use xauusd.
+    """
+    url = f"https://stooq.com/q/d/l/?s={stooq_symbol}&i=d"
+    df = pd.read_csv(url)
+    if df.empty:
+        return df
+    df["Date"] = pd.to_datetime(df["Date"])
+    df = df.sort_values("Date").set_index("Date")
+    # Ensure required columns exist
+    needed = ["Open", "High", "Low", "Close"]
+    for c in needed:
+        if c not in df.columns:
+            df[c] = np.nan
+    if "Volume" not in df.columns:
+        df["Volume"] = 0
+    return df
+
+def download_prices(symbol: str) -> tuple[pd.DataFrame, str]:
+    """
+    Returns (df, source_name)
+    """
+    # 1) Try yfinance first
+    try:
+        df = _download_yfinance(symbol)
+        if df is not None and not df.empty:
+            return df, "yfinance"
+    except Exception:
+        pass
+
+    # 2) Fallback to Stooq (xauusd)
+    df2 = _download_stooq("xauusd")
+    if df2 is not None and not df2.empty:
+        return df2, "stooq(xauusd)"
+
+    return pd.DataFrame(), "none"
+
+# -----------------------------
+# Analysis logic
+# -----------------------------
+def traffic_light_logic(df: pd.DataFrame, news_items: list[dict]) -> tuple[str, str, list[str], list[dict], int]:
+    last = df.iloc[-1]
     close = float(last["Close"])
-    ma20 = float(last["MA20"]) if not pd.isna(last["MA20"]) else close
-    ma50 = float(last["MA50"]) if not pd.isna(last["MA50"]) else close
-    rsi14 = float(last["RSI14"]) if not pd.isna(last["RSI14"]) else 50.0
-    macd_hist = float(last["MACDHist"]) if not pd.isna(last["MACDHist"]) else 0.0
-    atr14 = float(last["ATR14"]) if not pd.isna(last["ATR14"]) else 0.0
+
+    ma20 = float(last.get("MA20", np.nan)) if not pd.isna(last.get("MA20", np.nan)) else close
+    ma50 = float(last.get("MA50", np.nan)) if not pd.isna(last.get("MA50", np.nan)) else close
+    rsi14 = float(last.get("RSI14", np.nan)) if not pd.isna(last.get("RSI14", np.nan)) else 50.0
+    macd_hist = float(last.get("MACDHist", np.nan)) if not pd.isna(last.get("MACDHist", np.nan)) else 0.0
+    atr14 = float(last.get("ATR14", np.nan)) if not pd.isna(last.get("ATR14", np.nan)) else 0.0
 
     trend_up = close > ma20 > ma50
     trend_down = close < ma20 < ma50
     momentum_up = (rsi14 >= 55) and (macd_hist > 0)
     momentum_down = (rsi14 <= 45) and (macd_hist < 0)
 
-    # 新闻“粗略情绪”：标题里出现 hawkish / rate hike / strong dollar 等偏空黄金词就 -1
-    # 出现 dovish / rate cut / recession / geopolitical 等偏多词就 +1
+    # Simple headline heuristic
     neg_kw = ["hawkish", "rate hike", "higher yields", "strong dollar", "usd rises", "risk-on"]
     pos_kw = ["dovish", "rate cut", "recession", "geopolitical", "safe haven", "inflation", "war", "conflict"]
 
@@ -62,7 +112,6 @@ def traffic_light_logic(df: pd.DataFrame, news_items: list[dict]) -> tuple[str, 
             if k in t:
                 score -= 1
 
-    # 最终红绿灯
     if trend_up and momentum_up and score >= 0:
         tl = "GREEN"
         summary = "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。"
@@ -85,27 +134,27 @@ def traffic_light_logic(df: pd.DataFrame, news_items: list[dict]) -> tuple[str, 
          "note": "价格相对均线位置与多空排列。"},
         {"driver": "Momentum (RSI/MACD)", "signal": "Bullish" if momentum_up else ("Bearish" if momentum_down else "Mixed"),
          "note": "RSI 与 MACD 柱体方向。"},
-        {"driver": "Volatility (ATR)", "signal": "High" if atr14 > df["ATR14"].rolling(50).mean().iloc[-1] else "Normal",
+        {"driver": "Volatility (ATR)", "signal": "High" if atr14 > float(df["ATR14"].rolling(50).mean().iloc[-1]) else "Normal",
          "note": "ATR 越高，越需要降杠杆与扩大止损。"},
         {"driver": "Macro/News (headline heuristic)", "signal": "Supportive" if score > 0 else ("Headwind" if score < 0 else "Neutral"),
          "note": "基于关键词的粗略文本规则。"},
     ]
-    extra = {"news_score": score}
-    return tl, summary, bullets, {"drivers": drivers, **extra}
 
-def build_plan_text(tl: str, df: pd.DataFrame) -> tuple[str, str, list[str], list[str], list[dict]]:
+    return tl, summary, bullets, drivers, score
+
+def build_plan_text(df: pd.DataFrame) -> tuple[str, str, list[str], list[str], list[dict]]:
     last = df.iloc[-1]
     close = float(last["Close"])
-    atr = float(last["ATR14"]) if not pd.isna(last["ATR14"]) else 0.0
+    atr = float(last.get("ATR14", 0.0)) if not pd.isna(last.get("ATR14", np.nan)) else 0.0
 
-    # 用 ATR 给出大致区间
+    # ATR-based rough levels
     r1 = close + 0.8 * atr
     s1 = close - 0.8 * atr
 
     base_case = (
         f"关键区间：S1≈{s1:.2f} / R1≈{r1:.2f}（基于 ATR14）。\n"
         "若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n"
-        "入场前确认：1）结构；2）成交量/波动配合；3）不在新闻高波动时段盲目追单。"
+        "入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。"
     )
 
     alt_case = (
@@ -122,7 +171,7 @@ def build_plan_text(tl: str, df: pd.DataFrame) -> tuple[str, str, list[str], lis
 
     rules = [
         "单笔风险上限：账户净值的 0.25%–1%，依据 ATR 调整仓位。",
-        "止损距离建议：≥ 1.0×ATR（避免被噪声扫损），并在结构失效时执行。",
+        "止损距离建议：≥ 1.0×ATR，并在结构失效时执行。",
         "不在重大数据公布前后 5–15 分钟内追价开仓（视波动而定）。",
         "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。",
     ]
@@ -135,42 +184,52 @@ def build_plan_text(tl: str, df: pd.DataFrame) -> tuple[str, str, list[str], lis
 
     return base_case, alt_case, watchlist, rules, risks
 
+# -----------------------------
+# Main
+# -----------------------------
 def main():
     symbol = DEFAULT_SYMBOL
     os.makedirs(OUT_DIR, exist_ok=True)
 
-    # 拉取 6 个月日线，报告展示最近 30 天
-    df = yf.download(symbol, period="6mo", interval="1d", auto_adjust=False, progress=False)
+    # Download prices with fallback
+    df, price_source = download_prices(symbol)
     if df.empty:
-        raise RuntimeError(f"No data returned for symbol={symbol}")
+        raise RuntimeError(f"No data returned for symbol={symbol} (all sources failed)")
 
+    # Keep only required columns and clean
     df = df.dropna(subset=["Open", "High", "Low", "Close"])
+    if df.empty:
+        raise RuntimeError("Price dataframe became empty after cleaning")
+
+    # Enrich indicators
     df = enrich_indicators(df)
 
+    # News
     news_items = fetch_news(limit=NEWS_LIMIT)
 
-    tl, summary, bullets, driver_pack = traffic_light_logic(df, news_items)
-    base_case, alt_case, watchlist, rules, risks = build_plan_text(tl, df)
+    # Analysis
+    tl, summary, bullets, drivers, news_score = traffic_light_logic(df, news_items)
+    base_case, alt_case, watchlist, rules, risks = build_plan_text(df)
 
-    # 最近 30 天行情表
+    # Last 30 rows table
     last30_df = df.tail(30).copy()
-    last30_df.reset_index(inplace=True)
-    last30_df.rename(columns={"Date": "Date"}, inplace=True)
+    last30_df = last30_df.reset_index().rename(columns={"index": "Date"})
     last30_rows = []
     for _, r in last30_df.iterrows():
+        dt = r["Date"]
+        date_str = str(dt.date()) if hasattr(dt, "date") else str(dt)
         last30_rows.append({
-            "Date": str(r["Date"].date()) if hasattr(r["Date"], "date") else str(r["Date"]),
-            "Open": _fmt(r["Open"]),
-            "High": _fmt(r["High"]),
-            "Low": _fmt(r["Low"]),
-            "Close": _fmt(r["Close"]),
-            "Volume": _fmt(r.get("Volume", "")),
+            "Date": date_str,
+            "Open": _fmt(r.get("Open")),
+            "High": _fmt(r.get("High")),
+            "Low": _fmt(r.get("Low")),
+            "Close": _fmt(r.get("Close")),
+            "Volume": _fmt(r.get("Volume")),
         })
 
     updated = now_iso_local()
     today = datetime.now(timezone.utc).astimezone().date().isoformat()
 
-    # 生成 gold_data.json（给页面/调试用）
     payload = {
         "symbol": symbol,
         "date": today,
@@ -183,21 +242,26 @@ def main():
         "watchlist": watchlist,
         "rules": rules,
         "last30": last30_rows,
-        "drivers": driver_pack["drivers"],
+        "drivers": drivers,
         "risks": risks,
         "news": news_items,
         "debug": {
-            "news_score": driver_pack.get("news_score", 0),
-            "rows": len(df),
-        }
+            "price_source": price_source,
+            "news_score": news_score,
+            "rows": int(len(df)),
+        },
     }
 
+    # Write JSON
     json_path = os.path.join(OUT_DIR, "gold_data.json")
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    # 生成 HTML
-    env = Environment(loader=FileSystemLoader(os.path.join("src", "templates")), autoescape=True)
+    # Render HTML
+    env = Environment(
+        loader=FileSystemLoader(os.path.join("src", "templates")),
+        autoescape=True
+    )
     tpl = env.get_template("report.html")
     html = tpl.render(**payload)
 
@@ -205,7 +269,7 @@ def main():
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
 
-    print(f"OK: wrote {html_path} and {json_path}")
+    print(f"OK: wrote {html_path} and {json_path} (price_source={price_source})")
 
 if __name__ == "__main__":
     main()
