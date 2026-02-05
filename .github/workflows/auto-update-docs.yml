@@ -1,0 +1,38 @@
+name: Auto update docs (gold_data -> index.html)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 3 * * *' # 可选：每天 03:00（UTC）运行，按需修改或删除
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install deps (no deps required - step kept for extensibility)
+        run: |
+          # 如果需要 npm 包可在这里安装，例如：npm ci
+          echo "No install step required"
+
+      - name: Generate docs/index.html from docs/gold_data.json
+        run: |
+          node scripts/render_docs.js
+
+      - name: Create Pull Request with changes
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(docs): update docs/index.html from docs/gold_data.json"
+          branch: "auto/update-docs-${{ github.run_id }}"
+          title: "自动: 更新 docs/index.html（来自 gold_data.json）"
+          body: "此 PR 由自动化 workflow 生成：将 docs/gold_data.json 渲染并更新 docs/index.html。"
