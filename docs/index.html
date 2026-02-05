@@ -181,7 +181,9 @@
     watchEl.innerHTML = '';
     if (Array.isArray(data.watchlist)) {
       data.watchlist.forEach(w => {
-        const li = document.createElement('li'); li.textContent = esc(w); watchEl.appendChild(li);
+        const li = document.createElement('li');
+        li.textContent = esc(w);
+        watchEl.appendChild(li);
       });
     }
 
@@ -190,7 +192,9 @@
     rulesEl.innerHTML = '';
     if (Array.isArray(data.rules)) {
       data.rules.forEach(r => {
-        const li = document.createElement('li'); li.textContent = esc(r); rulesEl.appendChild(li);
+        const li = document.createElement('li');
+        li.textContent = esc(r);
+        rulesEl.appendChild(li);
       });
     }
 
@@ -219,10 +223,15 @@
     if (Array.isArray(data.drivers)) {
       data.drivers.forEach(d => {
         const tr = document.createElement('tr');
-        const td1 = document.createElement('td'); td1.textContent = esc(d.driver || d['driver'] || '');
-        const td2 = document.createElement('td'); td2.innerHTML = '<b>' + esc(d.signal || '') + '</b>';
-        const td3 = document.createElement('td'); td3.textContent = esc(d.note || '');
-        tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+        const td1 = document.createElement('td');
+        td1.textContent = esc(d.driver || '');
+        const td2 = document.createElement('td');
+        td2.innerHTML = '<b>' + esc(d.signal || '') + '</b>';
+        const td3 = document.createElement('td');
+        td3.textContent = esc(d.note || '');
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
         driversBody.appendChild(tr);
       });
     }
@@ -247,21 +256,30 @@
       data.news.forEach(n => {
         const li = document.createElement('li');
         li.style.marginBottom = '10px';
-        const title = n.title || n[ 'title' ] || '';
-        const url = n.url || n['url'] || '';
+        const title = n.title || '';
+        const url = n.url || '';
         const source = n.source || '';
         const published = n.published || '';
         if (url) {
-          const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noreferrer'; a.textContent = title || url;
+          const a = document.createElement('a');
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noreferrer';
+          a.textContent = title || url;
           li.appendChild(a);
         } else {
           li.appendChild(document.createTextNode(title));
         }
-        const meta = document.createElement('div'); meta.className = 'small'; meta.style.marginTop = '4px';
+        const meta = document.createElement('span');
+        meta.className = 'small';
+        meta.style.marginLeft = '8px';
         meta.textContent = (source ? source : '') + (published ? (' · ' + published) : '');
         li.appendChild(meta);
         if (n.summary) {
-          const sdiv = document.createElement('div'); sdiv.className = 'small'; sdiv.style.marginTop = '4px'; sdiv.textContent = n.summary;
+          const sdiv = document.createElement('div');
+          sdiv.className = 'small';
+          sdiv.style.marginTop = '4px';
+          sdiv.textContent = n.summary;
           li.appendChild(sdiv);
         }
         newsList.appendChild(li);
