@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
   "date": "2026-02-05",
-  "updated": "2026-02-05T11:35:30+00:00",
+  "updated": "2026-02-05T13:51:41+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4886.82；MA20 4849.77；MA50 4531.66。",
-    "RSI14 57.7；MACD Hist -25.352（动量参考）。",
+    "收盘价 4838.70；MA20 4847.37；MA50 4530.70。",
+    "RSI14 56.4；MACD Hist -28.423（动量参考）。",
     "ATR14 264.11（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4675.53 / R1≈5098.11（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4627.41 / R1≈5049.99（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -262,14 +262,14 @@
       "Open": "4969.50",
       "High": "5023.66",
       "Low": "4792.20",
-      "Close": "4886.82",
+      "Close": "4838.70",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,23 +305,37 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Oil falls more than 2% on easing supply concerns after US, Iran agree to talks",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
+      "published": "2026-02-05 13:12:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Turkey is doing its best to prevent US-Iran conflict, Erdogan says",
+      "url": "https://www.investing.com/news/commodities-news/turkey-is-doing-its-best-to-prevent-usiran-conflict-erdogan-says-4487479",
+      "published": "2026-02-05 12:49:49",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Morning Bid: Selling begets selling",
+      "url": "https://www.investing.com/news/commodities-news/morning-bid-selling-begets-selling-4487236",
+      "published": "2026-02-05 11:44:25",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Silver prices slump, reversing short-lived rebound",
+      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
+      "published": "2026-02-05 11:34:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Trump, Xi discuss Taiwan and soybeans in call aimed at easing China, US relations",
       "url": "https://www.investing.com/news/commodities-news/trump-xi-discuss-taiwan-and-soybeans-in-call-aimed-at-easing-china-us-relations-4485919",
       "published": "2026-02-05 11:25:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Silver prices plummet 16%, wipe out recent rebound",
-      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
-      "published": "2026-02-05 11:04:24",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil falls more than 1% on easing supply concerns after US, Iran agree to talks",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
-      "published": "2026-02-05 10:42:27",
       "summary": ""
     },
     {
@@ -347,13 +361,6 @@
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices slide over 1% with US-Iran talks in focus",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-over-1-with-usiran-talks-in-focus-4486423",
-      "published": "2026-02-05 02:07:19",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
       "title": "Gold prices fall, silver plummets 16% as dollar firms ahead of c.bank meetings",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-rebound-1-rise-above-5000oz-after-whipsaw-session-4486348",
       "published": "2026-02-05 00:03:35",
@@ -365,18 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/traders-rush-to-lock-in-oil-prices-amid-iran-geopolitical-risk-more-venezuelan-supply-4486259",
       "published": "2026-02-04 22:42:48",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Argentina signs critical minerals deal with US, foreign ministry says",
-      "url": "https://www.investing.com/news/commodities-news/argentina-signs-critical-minerals-deal-with-us-foreign-ministry-says-4486231",
-      "published": "2026-02-04 22:25:31",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
+    "news_score": 2,
     "rows": 15175
   }
 }

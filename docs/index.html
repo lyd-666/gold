@@ -25,31 +25,27 @@
     .mono { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
     .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
-    .muted { color:#666; }
-    .error { color:#a00; font-weight:700; }
-    pre { white-space: pre-wrap; word-break: break-word; }
   </style>
 </head>
 
 <body>
-  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames (static-snapshot)</div>
+  <!-- 用于确认你替换的模板已生效：如果页面上能看到这一行，就说明 Actions 用到了新模板 -->
+  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames</div>
 
   <h1>Gold Pre-market Plan</h1>
 
-  <div id="status" class="meta muted">静态快照（来自 docs/gold_data.json 的生成版本）</div>
-
   <div class="meta">
-    <div>SYMBOL: <b class="mono">GC=F</b></div>
-    <div>DATE: <b class="mono">2026-02-05</b></div>
-    <div>UPDATED: <b class="mono">2026-02-05T11:35:30+00:00</b></div>
+    <div>SYMBOL: <b class="mono"> symbol </b></div>
+    <div>DATE: <b class="mono"> date </b></div>
+    <div>UPDATED: <b class="mono"> updated </b></div>
   </div>
 
   <h2>总体状态（红绿灯）
-    <span class="tl NEUTRAL">NEUTRAL</span>
+    <span class="tl  traffic_light "> traffic_light </span>
   </h2>
 
   <div class="card">
-    <b>核心判断：</b> 多空信号分歧，优先等待关键位确认，控制仓位与回撤。
+    <b>核心判断：</b> summary 
     <div class="small" style="margin-top:6px;">
       依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。
     </div>
@@ -58,48 +54,56 @@
   <h2>关键结论摘要</h2>
   <div class="card">
     <ul>
-      <li>收盘价 4886.82；MA20 4849.77；MA50 4531.66。</li>
-      <li>RSI14 57.7；MACD Hist -25.352（动量参考）。</li>
-      <li>ATR14 264.11（波动参考，用于止损距离与仓位）。</li>
-      <li>新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。</li>
+      
+        <li> b </li>
+      
+        <li> b </li>
+      
+        <li> b </li>
+      
+        <li> b </li>
+      
     </ul>
   </div>
 
   <div class="grid">
     <div>
       <h2>盘前计划 Base Case</h2>
-      <div class="card" style="white-space:pre-line;">
-关键区间：S1≈4675.53 / R1≈5098.11（基于 ATR14）。
-若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。
-入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。
-      </div>
+      <div class="card" style="white-space:pre-line;"> base_case </div>
     </div>
     <div>
       <h2>Alternate Case</h2>
-      <div class="card" style="white-space:pre-line;">
-若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。
-等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。
-      </div>
+      <div class="card" style="white-space:pre-line;"> alt_case </div>
     </div>
   </div>
 
   <h2>Watchlist</h2>
   <div class="card">
     <ul>
-      <li>美元指数 DXY（强美元通常压制黄金）。</li>
-      <li>美债收益率（尤其是实际利率方向）。</li>
-      <li>美联储相关讲话与通胀数据发布窗口。</li>
-      <li>地缘政治与避险情绪突发事件。</li>
+      
+        <li> w </li>
+      
+        <li> w </li>
+      
+        <li> w </li>
+      
+        <li> w </li>
+      
     </ul>
   </div>
 
   <h2>Execution Rules</h2>
   <div class="card">
     <ul>
-      <li>单笔风险上限：账户净值的 0.25%–1%，依据 ATR 调整仓位。</li>
-      <li>止损距离建议：≥ 1.0×ATR，并在结构失效时执行。</li>
-      <li>不在重大数据公布前后 5–15 分钟内追价开仓（视波动而定）。</li>
-      <li>达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。</li>
+      
+        <li> r </li>
+      
+        <li> r </li>
+      
+        <li> r </li>
+      
+        <li> r </li>
+      
     </ul>
   </div>
 
@@ -111,36 +115,277 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td class="mono">2025-12-24</td><td>4486.73</td><td>4525.07</td><td>4448.51</td><td><b>4479.32</b></td><td>0</td></tr>
-      <tr><td class="mono">2025-12-26</td><td>4494.09</td><td>4549.81</td><td>4474.50</td><td><b>4531.58</b></td><td>0</td></tr>
-      <tr><td class="mono">2025-12-29</td><td>4543.99</td><td>4549.31</td><td>4304.44</td><td><b>4332.01</b></td><td>0</td></tr>
-      <tr><td class="mono">2025-12-30</td><td>4335.03</td><td>4404.06</td><td>4323.88</td><td><b>4338.71</b></td><td>0</td></tr>
-      <tr><td class="mono">2025-12-31</td><td>4343.03</td><td>4373.14</td><td>4274.63</td><td><b>4318.59</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-02</td><td>4333.37</td><td>4402.34</td><td>4310.74</td><td><b>4331.51</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-05</td><td>4353.42</td><td>4455.64</td><td>4346.21</td><td><b>4449.12</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-06</td><td>4449.41</td><td>4497.30</td><td>4429.26</td><td><b>4495.03</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-07</td><td>4497.14</td><td>4500.39</td><td>4423.59</td><td><b>4456.41</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-08</td><td>4460.98</td><td>4479.49</td><td>4407.94</td><td><b>4478.35</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-09</td><td>4480.14</td><td>4516.74</td><td>4453.20</td><td><b>4508.02</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-12</td><td>4525.39</td><td>4629.95</td><td>4508.02</td><td><b>4598.52</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-13</td><td>4605.02</td><td>4634.12</td><td>4571.12</td><td><b>4586.07</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-14</td><td>4589.38</td><td>4643.07</td><td>4589.05</td><td><b>4627.52</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-15</td><td>4630.73</td><td>4632.72</td><td>4581.45</td><td><b>4616.18</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-16</td><td>4619.43</td><td>4620.68</td><td>4537.87</td><td><b>4582.27</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-19</td><td>4634.70</td><td>4691.03</td><td>4582.27</td><td><b>4671.02</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-20</td><td>4674.65</td><td>4766.07</td><td>4659.84</td><td><b>4763.63</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-21</td><td>4765.03</td><td>4887.78</td><td>4757.43</td><td><b>4832.66</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-22</td><td>4833.97</td><td>4940.84</td><td>4774.16</td><td><b>4936.16</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-23</td><td>4941.97</td><td>4989.89</td><td>4900.12</td><td><b>4981.83</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-26</td><td>5008.61</td><td>5110.35</td><td>4981.83</td><td><b>5010.97</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-27</td><td>5014.03</td><td>5190.31</td><td>5013.82</td><td><b>5178.53</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-28</td><td>5180.45</td><td>5418.87</td><td>5157.49</td><td><b>5415.17</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-29</td><td>5425.04</td><td>5595.44</td><td>5109.32</td><td><b>5378.77</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-01-30</td><td>5378.73</td><td>5451.02</td><td>4689.94</td><td><b>4847.87</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-02-02</td><td>4786.18</td><td>4884.59</td><td>4404.97</td><td><b>4661.28</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-02-03</td><td>4668.22</td><td>4993.62</td><td>4667.96</td><td><b>4947.22</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-02-04</td><td>4946.66</td><td>5091.82</td><td>4855.90</td><td><b>4965.00</b></td><td>0</td></tr>
-      <tr><td class="mono">2026-02-05</td><td>4969.50</td><td>5023.66</td><td>4792.20</td><td><b>4886.82</b></td><td>0</td></tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
+      <tr>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
+      </tr>
+      
     </tbody>
   </table>
 
@@ -148,10 +393,31 @@
   <table>
     <thead><tr><th>Driver</th><th>Signal</th><th>Note</th></tr></thead>
     <tbody>
-      <tr><td>Trend (MA20/MA50)</td><td><b>Bullish</b></td><td>价格相对均线位置与多空排列。</td></tr>
-      <tr><td>Momentum (RSI/MACD)</td><td><b>Mixed</b></td><td>RSI 与 MACD 柱体方向。</td></tr>
-      <tr><td>Volatility (ATR)</td><td><b>High</b></td><td>ATR 越高，越需要降杠杆与扩大止损。</td></tr>
-      <tr><td>Macro/News (headline heuristic)</td><td><b>Supportive</b></td><td>基于关键词的粗略文本规则。</td></tr>
+      
+      <tr>
+        <td> d["driver"] </td>
+        <td><b> d["signal"] </b></td>
+        <td> d["note"] </td>
+      </tr>
+      
+      <tr>
+        <td> d["driver"] </td>
+        <td><b> d["signal"] </b></td>
+        <td> d["note"] </td>
+      </tr>
+      
+      <tr>
+        <td> d["driver"] </td>
+        <td><b> d["signal"] </b></td>
+        <td> d["note"] </td>
+      </tr>
+      
+      <tr>
+        <td> d["driver"] </td>
+        <td><b> d["signal"] </b></td>
+        <td> d["note"] </td>
+      </tr>
+      
     </tbody>
   </table>
 
@@ -159,56 +425,112 @@
   <table>
     <thead><tr><th>Risk</th><th>Mitigation / Hedge</th></tr></thead>
     <tbody>
-      <tr><td>宏观数据/央行讲话引发跳空或剧烈波动</td><td>降低仓位；使用期权；避免事件窗口追单。</td></tr>
-      <tr><td>强美元与收益率上行压制黄金</td><td>观察 DXY/美债；信号转弱则收缩多头敞口。</td></tr>
-      <tr><td>假突破导致来回扫损</td><td>等待收盘确认；用 ATR 校准止损；减少频繁交易。</td></tr>
+      
+      <tr>
+        <td> x["risk"] </td>
+        <td> x["hedge"] </td>
+      </tr>
+      
+      <tr>
+        <td> x["risk"] </td>
+        <td> x["hedge"] </td>
+      </tr>
+      
+      <tr>
+        <td> x["risk"] </td>
+        <td> x["hedge"] </td>
+      </tr>
+      
     </tbody>
   </table>
 
   <h2>新闻（近24–72小时）</h2>
   <div class="card">
-    <ul>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/trump-xi-discuss-taiwan-and-soybeans-in-call-aimed-at-easing-china-us-relations-4485919" target="_blank" rel="noreferrer">Trump, Xi discuss Taiwan and soybeans in call aimed at easing China, US relations</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 11:25:26）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448" target="_blank" rel="noreferrer">Silver prices plummet 16%, wipe out recent rebound</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 11:04:24）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364" target="_blank" rel="noreferrer">Oil falls more than 1% on easing supply concerns after US, Iran agree to talks</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 10:42:27）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/india-to-sign-trade-deal-with-united-states-in-march-minister-says-4486736" target="_blank" rel="noreferrer">India to sign trade deal with United States in March, minister says</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 08:55:22）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/china-faces-higher-prices-for-further-us-soybean-buys-to-please-trump-4486638" target="_blank" rel="noreferrer">China faces higher prices for further U.S. soybean buys to please Trump</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 07:36:33）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/russia-will-continue-to-supply-oil-to-cuba-ria-cites-ambassador-4486487" target="_blank" rel="noreferrer">Russia will continue to supply oil to Cuba, RIA cites ambassador</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 05:31:22）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/oil-prices-slide-over-1-with-usiran-talks-in-focus-4486423" target="_blank" rel="noreferrer">Oil prices slide over 1% with US-Iran talks in focus</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 02:07:19）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/gold-prices-rebound-1-rise-above-5000oz-after-whipsaw-session-4486348" target="_blank" rel="noreferrer">Gold prices fall, silver plummets 16% as dollar firms ahead of c.bank meetings</a>
-        <div class="small">（Commodities & Futures News · 2026-02-05 00:03:35）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/traders-rush-to-lock-in-oil-prices-amid-iran-geopolitical-risk-more-venezuelan-supply-4486259" target="_blank" rel="noreferrer">Traders rush to lock in oil prices amid Iran geopolitical risk, more Venezuelan supply</a>
-        <div class="small">（Commodities & Futures News · 2026-02-04 22:42:48）</div>
-      </li>
-      <li style="margin-bottom:10px;">
-        <a href="https://www.investing.com/news/commodities-news/argentina-signs-critical-minerals-deal-with-us-foreign-ministry-says-4486231" target="_blank" rel="noreferrer">Argentina signs critical minerals deal with US, foreign ministry says</a>
-        <div class="small">（Commodities & Futures News · 2026-02-04 22:25:31）</div>
-      </li>
-    </ul>
+    
+      <ul>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+        <li style="margin-bottom:10px;">
+          
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+          
+          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
+          
+        </li>
+        
+      </ul>
+    
   </div>
 
   <h2>数据来源与声明</h2>
@@ -220,9 +542,11 @@
   <h2>Debug</h2>
   <div class="card small">
     <div>gold_data.json: <code>gold_data.json</code></div>
-    <div>price_source: <code>stooq(xauusd)</code></div>
-    <div>news_score: <code>1</code></div>
-    <div>rows: <code>15175</code></div>
+    
+      <div>price_source: <code> debug.get("price_source") </code></div>
+      <div>news_score: <code> debug.get("news_score") </code></div>
+      <div>rows: <code> debug.get("rows") </code></div>
+    
   </div>
 </body>
 </html>
