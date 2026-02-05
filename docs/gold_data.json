@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
   "date": "2026-02-05",
-  "updated": "2026-02-05T10:21:04+00:00",
+  "updated": "2026-02-05T10:43:36+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4861.04；MA20 4848.49；MA50 4531.14。",
-    "RSI14 57.0；MACD Hist -26.997（动量参考）。",
+    "收盘价 4875.92；MA20 4849.23；MA50 4531.44。",
+    "RSI14 57.4；MACD Hist -26.048（动量参考）。",
     "ATR14 264.11（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4649.75 / R1≈5072.33（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4664.63 / R1≈5087.21（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -262,7 +262,7 @@
       "Open": "4969.50",
       "High": "5023.66",
       "Low": "4792.20",
-      "Close": "4861.04",
+      "Close": "4875.92",
       "Volume": "0"
     }
   ],
@@ -305,16 +305,16 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "India to sign trade deal with United States in March, minister says",
-      "url": "https://www.investing.com/news/commodities-news/india-to-sign-trade-deal-with-united-states-in-march-minister-says-4486736",
-      "published": "2026-02-05 08:55:22",
+      "title": "Oil falls more than 1% on easing supply concerns after US, Iran agree to talks",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
+      "published": "2026-02-05 10:42:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil falls over $1 on easing supply concerns after US, Iran agree to talks",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
-      "published": "2026-02-05 08:24:29",
+      "title": "India to sign trade deal with United States in March, minister says",
+      "url": "https://www.investing.com/news/commodities-news/india-to-sign-trade-deal-with-united-states-in-march-minister-says-4486736",
+      "published": "2026-02-05 08:55:22",
       "summary": ""
     },
     {
