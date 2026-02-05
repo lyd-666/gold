@@ -96,12 +96,12 @@
     <tbody>
       {% for row in last30 %}
       <tr>
-        <td class="mono"> row.Date </td>
-        <td> row.Open </td>
-        <td> row.High </td>
-        <td> row.Low </td>
-        <td><b> row.Close </b></td>
-        <td> row.Volume </td>
+        <td class="mono"> row["Date"] </td>
+        <td> row["Open"] </td>
+        <td> row["High"] </td>
+        <td> row["Low"] </td>
+        <td><b> row["Close"] </b></td>
+        <td> row["Volume"] </td>
       </tr>
       {% endfor %}
     </tbody>
@@ -113,9 +113,9 @@
     <tbody>
       {% for d in drivers %}
       <tr>
-        <td> d.driver </td>
-        <td><b> d.signal </b></td>
-        <td> d.note </td>
+        <td> d["driver"] </td>
+        <td><b> d["signal"] </b></td>
+        <td> d["note"] </td>
       </tr>
       {% endfor %}
     </tbody>
@@ -127,8 +127,8 @@
     <tbody>
       {% for x in risks %}
       <tr>
-        <td> x.risk </td>
-        <td> x.hedge </td>
+        <td> x["risk"] </td>
+        <td> x["hedge"] </td>
       </tr>
       {% endfor %}
     </tbody>
@@ -140,14 +140,14 @@
       <ul>
         {% for n in news %}
         <li style="margin-bottom:10px;">
-          {% if n.url %}
-            <a href=" n.url " target="_blank" rel="noreferrer"> n.title </a>
+          {% if n.get("url") %}
+            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
           {% else %}
-             n.title 
+             n.get("title") 
           {% endif %}
-          <span class="small">（ n.source {% if n.published %} ·  n.published {% endif %}）</span>
-          {% if n.summary %}
-            <div class="small" style="margin-top:4px;"> n.summary </div>
+          <span class="small">（ n.get("source") {% if n.get("published") %} ·  n.get("published") {% endif %}）</span>
+          {% if n.get("summary") %}
+            <div class="small" style="margin-top:4px;"> n.get("summary") </div>
           {% endif %}
         </li>
         {% endfor %}
@@ -167,9 +167,9 @@
   <div class="card small">
     <div>gold_data.json: <code>gold_data.json</code></div>
     {% if debug %}
-      <div>price_source: <code> debug.price_source </code></div>
-      <div>news_score: <code> debug.news_score </code></div>
-      <div>rows: <code> debug.rows </code></div>
+      <div>price_source: <code> debug.get("price_source") </code></div>
+      <div>news_score: <code> debug.get("news_score") </code></div>
+      <div>rows: <code> debug.get("rows") </code></div>
     {% endif %}
   </div>
 </body>
