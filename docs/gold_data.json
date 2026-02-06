@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-05",
-  "updated": "2026-02-05T13:51:41+00:00",
+  "date": "2026-02-06",
+  "updated": "2026-02-06T05:34:31+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4838.70；MA20 4847.37；MA50 4530.70。",
-    "RSI14 56.4；MACD Hist -28.423（动量参考）。",
-    "ATR14 264.11（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4852.19；MA20 4861.62；MA50 4543.29。",
+    "RSI14 54.4；MACD Hist -36.774（动量参考）。",
+    "ATR14 272.78（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4627.41 / R1≈5049.99（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4633.97 / R1≈5070.41（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2025-12-24",
-      "Open": "4486.73",
-      "High": "4525.07",
-      "Low": "4448.51",
-      "Close": "4479.32",
-      "Volume": "0"
-    },
     {
       "Date": "2025-12-26",
       "Open": "4494.09",
@@ -261,8 +253,16 @@
       "Date": "2026-02-05",
       "Open": "4969.50",
       "High": "5023.66",
-      "Low": "4792.20",
-      "Close": "4838.70",
+      "Low": "4760.68",
+      "Close": "4779.63",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-06",
+      "Open": "4793.99",
+      "High": "4854.84",
+      "Low": "4656.28",
+      "Close": "4852.19",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil falls more than 2% on easing supply concerns after US, Iran agree to talks",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
-      "published": "2026-02-05 13:12:32",
+      "title": "Oil extends decline ahead of US-Iran talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-extends-decline-ahead-of-usiran-talks-4489324",
+      "published": "2026-02-06 01:36:23",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Turkey is doing its best to prevent US-Iran conflict, Erdogan says",
+      "title": "Gold, silver prices fall further as dollar strength pressures metals",
+      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-as-dollar-strength-pressures-metals-4489338",
+      "published": "2026-02-06 01:29:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Exclusive-Mexico seeking way to send fuel to Cuba without being hit by US tariffs, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusivemexico-seeking-wayto-sendfuel-to-cuba-without-being-hit-by-us-tariffs-sources-say-4488922",
+      "published": "2026-02-06 00:36:37",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US says Trump prefers diplomacy with Iran but warns he has military options",
       "url": "https://www.investing.com/news/commodities-news/turkey-is-doing-its-best-to-prevent-usiran-conflict-erdogan-says-4487479",
-      "published": "2026-02-05 12:49:49",
+      "published": "2026-02-05 21:37:26",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Morning Bid: Selling begets selling",
-      "url": "https://www.investing.com/news/commodities-news/morning-bid-selling-begets-selling-4487236",
-      "published": "2026-02-05 11:44:25",
+      "title": "Oil settles almost 3% down on easing supply concerns ahead of US, Iran talks",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
+      "published": "2026-02-05 20:12:56",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Silver prices slump, reversing short-lived rebound",
-      "url": "https://www.investing.com/news/commodities-news/silver-prices-plummet-16-wipe-out-recent-rebound-4486448",
-      "published": "2026-02-05 11:34:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump, Xi discuss Taiwan and soybeans in call aimed at easing China, US relations",
-      "url": "https://www.investing.com/news/commodities-news/trump-xi-discuss-taiwan-and-soybeans-in-call-aimed-at-easing-china-us-relations-4485919",
-      "published": "2026-02-05 11:25:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "India to sign trade deal with United States in March, minister says",
-      "url": "https://www.investing.com/news/commodities-news/india-to-sign-trade-deal-with-united-states-in-march-minister-says-4486736",
-      "published": "2026-02-05 08:55:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "China faces higher prices for further U.S. soybean buys to please Trump",
-      "url": "https://www.investing.com/news/commodities-news/china-faces-higher-prices-for-further-us-soybean-buys-to-please-trump-4486638",
-      "published": "2026-02-05 07:36:33",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Russia will continue to supply oil to Cuba, RIA cites ambassador",
-      "url": "https://www.investing.com/news/commodities-news/russia-will-continue-to-supply-oil-to-cuba-ria-cites-ambassador-4486487",
-      "published": "2026-02-05 05:31:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices fall, silver plummets 16% as dollar firms ahead of c.bank meetings",
+      "title": "Recovery in precious metals is short lived as gold falls, silver plummets 15%",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-rebound-1-rise-above-5000oz-after-whipsaw-session-4486348",
-      "published": "2026-02-05 00:03:35",
+      "published": "2026-02-05 19:44:20",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Traders rush to lock in oil prices amid Iran geopolitical risk, more Venezuelan supply",
-      "url": "https://www.investing.com/news/commodities-news/traders-rush-to-lock-in-oil-prices-amid-iran-geopolitical-risk-more-venezuelan-supply-4486259",
-      "published": "2026-02-04 22:42:48",
+      "title": "Iran’s foreign minister heads to Muscat for nuclear talks with US",
+      "url": "https://www.investing.com/news/commodities-news/irans-foreign-minister-heads-to-muscat-for-nuclear-talks-with-us-4488663",
+      "published": "2026-02-05 19:00:36",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices fall as U.S.-Iran talks confirmed for Friday, reducing supply concerns",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-over-1-with-usiran-talks-in-focus-4486423",
+      "published": "2026-02-05 17:54:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Billionaire Chinese trader bets on silver collapse with $300 million wager",
+      "url": "https://www.investing.com/news/commodities-news/billionaire-chinese-trader-bets-on-silver-collapse-with-300-million-wager-4488292",
+      "published": "2026-02-05 15:16:43",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Texas anti-ESG law declared unconstitutional by US judge",
+      "url": "https://www.investing.com/news/commodities-news/texas-antiesg-law-declared-unconstitutional-by-us-judge-4488189",
+      "published": "2026-02-05 14:55:44",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15175
+    "news_score": 1,
+    "rows": 15176
   }
 }
