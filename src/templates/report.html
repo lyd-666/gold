@@ -35,17 +35,17 @@
   <h1>Gold Pre-market Plan</h1>
 
   <div class="meta">
-    <div>SYMBOL: <b class="mono"> symbol </b></div>
-    <div>DATE: <b class="mono"> date </b></div>
-    <div>UPDATED: <b class="mono"> updated </b></div>
+    <div>SYMBOL: <b class="mono">{{ symbol }}</b></div>
+    <div>DATE: <b class="mono">{{ date }}</b></div>
+    <div>UPDATED: <b class="mono">{{ updated }}</b></div>
   </div>
 
   <h2>总体状态（红绿灯）
-    <span class="tl  traffic_light "> traffic_light </span>
+    <span class="tl {{ traffic_light }}">{{ traffic_light }}</span>
   </h2>
 
   <div class="card">
-    <b>核心判断：</b> summary 
+    <b>核心判断：</b> {{ summary }}
     <div class="small" style="margin-top:6px;">
       依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。
     </div>
@@ -55,7 +55,7 @@
   <div class="card">
     <ul>
       {% for b in bullets %}
-        <li> b </li>
+        <li>{{ b }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -63,11 +63,11 @@
   <div class="grid">
     <div>
       <h2>盘前计划 Base Case</h2>
-      <div class="card" style="white-space:pre-line;"> base_case </div>
+      <div class="card" style="white-space:pre-line;">{{ base_case }}</div>
     </div>
     <div>
       <h2>Alternate Case</h2>
-      <div class="card" style="white-space:pre-line;"> alt_case </div>
+      <div class="card" style="white-space:pre-line;">{{ alt_case }}</div>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
   <div class="card">
     <ul>
       {% for w in watchlist %}
-        <li> w </li>
+        <li>{{ w }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -84,7 +84,7 @@
   <div class="card">
     <ul>
       {% for r in rules %}
-        <li> r </li>
+        <li>{{ r }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -99,12 +99,12 @@
     <tbody>
       {% for row in last30 %}
       <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
+        <td class="mono">{{ row["Date"] }}</td>
+        <td>{{ row["Open"] }}</td>
+        <td>{{ row["High"] }}</td>
+        <td>{{ row["Low"] }}</td>
+        <td><b>{{ row["Close"] }}</b></td>
+        <td>{{ row["Volume"] }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -116,9 +116,9 @@
     <tbody>
       {% for d in drivers %}
       <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
+        <td>{{ d["driver"] }}</td>
+        <td><b>{{ d["signal"] }}</b></td>
+        <td>{{ d["note"] }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -130,8 +130,8 @@
     <tbody>
       {% for x in risks %}
       <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
+        <td>{{ x["risk"] }}</td>
+        <td>{{ x["hedge"] }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -144,13 +144,13 @@
         {% for n in news %}
         <li style="margin-bottom:10px;">
           {% if n.get("url") %}
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
+            <a href="{{ n.get('url') }}" target="_blank" rel="noreferrer">{{ n.get("title") }}</a>
           {% else %}
-             n.get("title") 
+            {{ n.get("title") }}
           {% endif %}
-          <span class="small">（ n.get("source") {% if n.get("published") %} ·  n.get("published") {% endif %}）</span>
+          <span class="small">（{{ n.get("source") }}{% if n.get("published") %} · {{ n.get("published") }}{% endif %}）</span>
           {% if n.get("summary") %}
-            <div class="small" style="margin-top:4px;"> n.get("summary") </div>
+            <div class="small" style="margin-top:4px;">{{ n.get("summary") }}</div>
           {% endif %}
         </li>
         {% endfor %}
@@ -170,9 +170,9 @@
   <div class="card small">
     <div>gold_data.json: <code>gold_data.json</code></div>
     {% if debug %}
-      <div>price_source: <code> debug.get("price_source") </code></div>
-      <div>news_score: <code> debug.get("news_score") </code></div>
-      <div>rows: <code> debug.get("rows") </code></div>
+      <div>price_source: <code>{{ debug.get("price_source") }}</code></div>
+      <div>news_score: <code>{{ debug.get("news_score") }}</code></div>
+      <div>rows: <code>{{ debug.get("rows") }}</code></div>
     {% endif %}
   </div>
 </body>
