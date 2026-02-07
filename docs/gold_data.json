@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-06",
-  "updated": "2026-02-06T05:34:31+00:00",
+  "date": "2026-02-07",
+  "updated": "2026-02-07T05:10:33+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4852.19；MA20 4861.62；MA50 4543.29。",
-    "RSI14 54.4；MACD Hist -36.774（动量参考）。",
-    "ATR14 272.78（波动参考，用于止损距离与仓位）。",
+    "收盘价 4952.97；MA20 4866.66；MA50 4545.31。",
+    "RSI14 56.5；MACD Hist -30.343（动量参考）。",
+    "ATR14 281.10（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4633.97 / R1≈5070.41（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4728.09 / R1≈5177.85（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,16 +260,16 @@
     {
       "Date": "2026-02-06",
       "Open": "4793.99",
-      "High": "4854.84",
+      "High": "4971.36",
       "Low": "4656.28",
-      "Close": "4852.19",
+      "Close": "4952.97",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Mixed",
+      "signal": "Bullish",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,72 +305,72 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil extends decline ahead of US-Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-decline-ahead-of-usiran-talks-4489324",
-      "published": "2026-02-06 01:36:23",
+      "title": "Union agrees to US refineries contract, averting nationwide strike",
+      "url": "https://www.investing.com/news/commodities-news/union-approves-national-agreement-negotiated-with-marathon-for-30000-oil-industry-workers-4491772",
+      "published": "2026-02-07 01:25:23",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold, silver prices fall further as dollar strength pressures metals",
+      "title": "Gold, silver prices set to end wild week on a positive note",
       "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-as-dollar-strength-pressures-metals-4489338",
-      "published": "2026-02-06 01:29:48",
+      "published": "2026-02-06 21:36:04",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices climb on worries of possible Iran-US conflict",
+      "url": "https://www.investing.com/news/commodities-news/oil-extends-decline-ahead-of-usiran-talks-4489324",
+      "published": "2026-02-06 20:42:55",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Argentina trade deals with US do not box out China, minister says",
+      "url": "https://www.investing.com/news/commodities-news/argentinas-minerals-deal-with-us-does-not-rule-out-chinese-investment-minister-says-4491548",
+      "published": "2026-02-06 19:18:24",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Brazil’s Inpasa ramps up exports of dried distillers grains to China",
+      "url": "https://www.investing.com/news/commodities-news/brazils-inpasa-ramps-up-exports-of-dried-distillers-grains-to-china-4491602",
+      "published": "2026-02-06 18:36:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
       "title": "Exclusive-Mexico seeking way to send fuel to Cuba without being hit by US tariffs, sources say",
       "url": "https://www.investing.com/news/commodities-news/exclusivemexico-seeking-wayto-sendfuel-to-cuba-without-being-hit-by-us-tariffs-sources-say-4488922",
-      "published": "2026-02-06 00:36:37",
+      "published": "2026-02-06 16:18:58",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US says Trump prefers diplomacy with Iran but warns he has military options",
-      "url": "https://www.investing.com/news/commodities-news/turkey-is-doing-its-best-to-prevent-usiran-conflict-erdogan-says-4487479",
-      "published": "2026-02-05 21:37:26",
+      "title": "Oil prices up after U.S.-Iran talks; set for first weekly losses since December",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-head-for-weekly-losses-with-usiran-talks-in-focus-4489343",
+      "published": "2026-02-06 16:10:38",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil settles almost 3% down on easing supply concerns ahead of US, Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-ahead-of-usiran-talks-4486364",
-      "published": "2026-02-05 20:12:56",
+      "title": "Mexico’s Sheinbaum aims to send humanitarian aid to Cuba by Monday",
+      "url": "https://www.investing.com/news/commodities-news/mexicos-sheinbaum-aims-to-send-humanitarian-aid-to-cuba-by-monday-4491260",
+      "published": "2026-02-06 15:48:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Recovery in precious metals is short lived as gold falls, silver plummets 15%",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rebound-1-rise-above-5000oz-after-whipsaw-session-4486348",
-      "published": "2026-02-05 19:44:20",
+      "title": "EU extends tariff suspension on $109.8 billion of US imports for six months",
+      "url": "https://www.investing.com/news/commodities-news/eu-extends-tariff-suspension-on-1098-billion-of-us-imports-for-six-months-4491112",
+      "published": "2026-02-06 14:55:12",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran’s foreign minister heads to Muscat for nuclear talks with US",
-      "url": "https://www.investing.com/news/commodities-news/irans-foreign-minister-heads-to-muscat-for-nuclear-talks-with-us-4488663",
-      "published": "2026-02-05 19:00:36",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices fall as U.S.-Iran talks confirmed for Friday, reducing supply concerns",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-over-1-with-usiran-talks-in-focus-4486423",
-      "published": "2026-02-05 17:54:54",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Billionaire Chinese trader bets on silver collapse with $300 million wager",
-      "url": "https://www.investing.com/news/commodities-news/billionaire-chinese-trader-bets-on-silver-collapse-with-300-million-wager-4488292",
-      "published": "2026-02-05 15:16:43",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Texas anti-ESG law declared unconstitutional by US judge",
-      "url": "https://www.investing.com/news/commodities-news/texas-antiesg-law-declared-unconstitutional-by-us-judge-4488189",
-      "published": "2026-02-05 14:55:44",
+      "title": "Morning Bid: Rise of the job-killer robots?",
+      "url": "https://www.investing.com/news/commodities-news/morning-bid-rise-of-the-jobkiller-robots-4490127",
+      "published": "2026-02-06 11:54:25",
       "summary": ""
     }
   ],
