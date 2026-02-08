@@ -1,14 +1,14 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-07",
-  "updated": "2026-02-07T05:10:33+00:00",
+  "date": "2026-02-08",
+  "updated": "2026-02-08T05:48:31+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
     "收盘价 4952.97；MA20 4866.66；MA50 4545.31。",
     "RSI14 56.5；MACD Hist -30.343（动量参考）。",
     "ATR14 281.10（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
   "base_case": "关键区间：S1≈4728.09 / R1≈5177.85（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
@@ -305,6 +305,55 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Police fire water cannon at protesters hurling smoke bombs in Olympic host Milan",
+      "url": "https://www.investing.com/news/commodities-news/olympicsprotesters-to-rally-in-milan-denouncing-impact-of-winter-games-4492336",
+      "published": "2026-02-08 01:43:38",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US pushes Russia and Ukraine to end war by summer, Zelenskiy says",
+      "url": "https://www.investing.com/news/commodities-news/us-wants-russia-ukraine-to-end-war-by-summer-zelenskiy-says-4492319",
+      "published": "2026-02-07 18:48:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Russia launches massive attack on Ukraine’s energy system, Zelenskiy says",
+      "url": "https://www.investing.com/news/commodities-news/russia-launches-massive-attack-on-ukraines-energy-system-zelenskiy-says-4492343",
+      "published": "2026-02-07 14:06:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "If US attacks, Iran says it will strike US bases in the region",
+      "url": "https://www.investing.com/news/commodities-news/if-us-attacks-iran-says-it-will-strike-us-bases-in-the-region-4492337",
+      "published": "2026-02-07 12:18:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Macquarie updates 2026 outlook for gold and silver. Here are the new targets",
+      "url": "https://www.investing.com/news/commodities-news/macquarie-updates-2026-outlook-for-gold-and-silver-here-are-the-new-targets-4491588",
+      "published": "2026-02-07 10:04:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Can iron ore hold its floor amid new supply and cooling China engine?",
+      "url": "https://www.investing.com/news/commodities-news/can-iron-ore-hold-its-floor-amid-new-supply-and-cooling-china-engine-4480064",
+      "published": "2026-02-07 09:00:03",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Russia launched 400 drones, 40 missiles to hit Ukraine’s energy sector, Zelenskiy says",
+      "url": "https://www.investing.com/news/commodities-news/russia-launched-400-drones-40-missiles-to-hit-ukraines-energy-sector-zelenskiy-says-4492316",
+      "published": "2026-02-07 08:36:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Union agrees to US refineries contract, averting nationwide strike",
       "url": "https://www.investing.com/news/commodities-news/union-approves-national-agreement-negotiated-with-marathon-for-30000-oil-industry-workers-4491772",
       "published": "2026-02-07 01:25:23",
@@ -323,60 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/oil-extends-decline-ahead-of-usiran-talks-4489324",
       "published": "2026-02-06 20:42:55",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Argentina trade deals with US do not box out China, minister says",
-      "url": "https://www.investing.com/news/commodities-news/argentinas-minerals-deal-with-us-does-not-rule-out-chinese-investment-minister-says-4491548",
-      "published": "2026-02-06 19:18:24",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Brazil’s Inpasa ramps up exports of dried distillers grains to China",
-      "url": "https://www.investing.com/news/commodities-news/brazils-inpasa-ramps-up-exports-of-dried-distillers-grains-to-china-4491602",
-      "published": "2026-02-06 18:36:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Mexico seeking way to send fuel to Cuba without being hit by US tariffs, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusivemexico-seeking-wayto-sendfuel-to-cuba-without-being-hit-by-us-tariffs-sources-say-4488922",
-      "published": "2026-02-06 16:18:58",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices up after U.S.-Iran talks; set for first weekly losses since December",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-head-for-weekly-losses-with-usiran-talks-in-focus-4489343",
-      "published": "2026-02-06 16:10:38",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Mexico’s Sheinbaum aims to send humanitarian aid to Cuba by Monday",
-      "url": "https://www.investing.com/news/commodities-news/mexicos-sheinbaum-aims-to-send-humanitarian-aid-to-cuba-by-monday-4491260",
-      "published": "2026-02-06 15:48:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "EU extends tariff suspension on $109.8 billion of US imports for six months",
-      "url": "https://www.investing.com/news/commodities-news/eu-extends-tariff-suspension-on-1098-billion-of-us-imports-for-six-months-4491112",
-      "published": "2026-02-06 14:55:12",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Morning Bid: Rise of the job-killer robots?",
-      "url": "https://www.investing.com/news/commodities-news/morning-bid-rise-of-the-jobkiller-robots-4490127",
-      "published": "2026-02-06 11:54:25",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
+    "news_score": 2,
     "rows": 15176
   }
 }
