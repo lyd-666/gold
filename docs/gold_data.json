@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-08",
-  "updated": "2026-02-08T05:48:31+00:00",
+  "date": "2026-02-09",
+  "updated": "2026-02-09T05:56:53+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4952.97；MA20 4866.66；MA50 4545.31。",
-    "RSI14 56.5；MACD Hist -30.343（动量参考）。",
-    "ATR14 281.10（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5037.73；MA20 4888.62；MA50 4562.92。",
+    "RSI14 56.4；MACD Hist -23.566（动量参考）。",
+    "ATR14 280.21（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4728.09 / R1≈5177.85（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4813.57 / R1≈5261.89（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2025-12-26",
-      "Open": "4494.09",
-      "High": "4549.81",
-      "Low": "4474.50",
-      "Close": "4531.58",
-      "Volume": "0"
-    },
     {
       "Date": "2025-12-29",
       "Open": "4543.99",
@@ -264,6 +256,14 @@
       "Low": "4656.28",
       "Close": "4952.97",
       "Volume": "0"
+    },
+    {
+      "Date": "2026-02-09",
+      "Open": "4989.84",
+      "High": "5046.69",
+      "Low": "4952.97",
+      "Close": "5037.73",
+      "Volume": "0"
     }
   ],
   "drivers": [
@@ -305,6 +305,41 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Oil drops 1% as US, Iran pledge to continue talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-drops-more-than-1-as-concerns-about-possible-usiran-conflict-ease-4492522",
+      "published": "2026-02-09 05:00:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices dip as US, Iran flag progress in talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-as-us-iran-flag-progress-in-talks-4492556",
+      "published": "2026-02-09 02:47:11",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Farmers report ’catastrophic damage to crops as Storm Marta hits Spain and Portugal",
+      "url": "https://www.investing.com/news/commodities-news/farmers-report-catastrophic-damage-to-crops-as-storm-marta-hits-spain-and-portugal-4492555",
+      "published": "2026-02-09 02:42:43",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices rise to $5k, silver surges after whipsaw week",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-to-5k-silver-surges-after-whipsaw-week-4492549",
+      "published": "2026-02-09 02:09:42",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Indian refiners avoid Russian oil in push for US trade deal",
+      "url": "https://www.investing.com/news/commodities-news/indian-refiners-avoid-russian-oil-in-push-for-us-trade-deal-4492404",
+      "published": "2026-02-08 23:00:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Police fire water cannon at protesters hurling smoke bombs in Olympic host Milan",
       "url": "https://www.investing.com/news/commodities-news/olympicsprotesters-to-rally-in-milan-denouncing-impact-of-winter-games-4492336",
       "published": "2026-02-08 01:43:38",
@@ -337,46 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/macquarie-updates-2026-outlook-for-gold-and-silver-here-are-the-new-targets-4491588",
       "published": "2026-02-07 10:04:31",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Can iron ore hold its floor amid new supply and cooling China engine?",
-      "url": "https://www.investing.com/news/commodities-news/can-iron-ore-hold-its-floor-amid-new-supply-and-cooling-china-engine-4480064",
-      "published": "2026-02-07 09:00:03",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Russia launched 400 drones, 40 missiles to hit Ukraine’s energy sector, Zelenskiy says",
-      "url": "https://www.investing.com/news/commodities-news/russia-launched-400-drones-40-missiles-to-hit-ukraines-energy-sector-zelenskiy-says-4492316",
-      "published": "2026-02-07 08:36:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Union agrees to US refineries contract, averting nationwide strike",
-      "url": "https://www.investing.com/news/commodities-news/union-approves-national-agreement-negotiated-with-marathon-for-30000-oil-industry-workers-4491772",
-      "published": "2026-02-07 01:25:23",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold, silver prices set to end wild week on a positive note",
-      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-as-dollar-strength-pressures-metals-4489338",
-      "published": "2026-02-06 21:36:04",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices climb on worries of possible Iran-US conflict",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-decline-ahead-of-usiran-talks-4489324",
-      "published": "2026-02-06 20:42:55",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15176
+    "news_score": 1,
+    "rows": 15177
   }
 }
