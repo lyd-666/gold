@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-09",
-  "updated": "2026-02-09T05:56:53+00:00",
+  "date": "2026-02-10",
+  "updated": "2026-02-10T06:03:00+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5037.73；MA20 4888.62；MA50 4562.92。",
-    "RSI14 56.4；MACD Hist -23.566（动量参考）。",
-    "ATR14 280.21（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5039.74；MA20 4912.35；MA50 4579.09。",
+    "RSI14 54.9；MACD Hist -18.525（动量参考）。",
+    "ATR14 279.74（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4813.57 / R1≈5261.89（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4815.95 / R1≈5263.53（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2025-12-29",
-      "Open": "4543.99",
-      "High": "4549.31",
-      "Low": "4304.44",
-      "Close": "4332.01",
-      "Volume": "0"
-    },
     {
       "Date": "2025-12-30",
       "Open": "4335.03",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-02-09",
       "Open": "4989.84",
-      "High": "5046.69",
+      "High": "5085.73",
       "Low": "4952.97",
-      "Close": "5037.73",
+      "Close": "5058.52",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-10",
+      "Open": "5059.99",
+      "High": "5075.07",
+      "Low": "4990.33",
+      "Close": "5039.74",
       "Volume": "0"
     }
   ],
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Supportive",
+      "signal": "Neutral",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil drops 1% as US, Iran pledge to continue talks",
+      "title": "Oil drifts lower as traders weigh supply risks amid US–Iran tensions",
+      "url": "https://www.investing.com/news/commodities-news/oil-drifts-lower-as-traders-weigh-supply-risks-amid-usiran-tensions-4495416",
+      "published": "2026-02-10 04:06:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Canadian airlines suspend Cuba flights as island set to run out of jet fuel",
+      "url": "https://www.investing.com/news/commodities-news/cuba-warns-airlines-it-will-run-out-of-jet-fuel-4494401",
+      "published": "2026-02-10 03:36:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices edge lower with US-Iran tensions in focus",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-with-usiran-tensions-in-focus-4495428",
+      "published": "2026-02-10 02:22:03",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US issues fresh guidance to vessels transiting Strait of Hormuz as Iran tensions simmer",
+      "url": "https://www.investing.com/news/commodities-news/us-issues-fresh-guidance-to-vessels-transiting-strait-of-hormuz-as-iran-tensions-simmer-4494608",
+      "published": "2026-02-10 02:06:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices fall but remain above $5k/oz, silver retreats",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-but-remain-above-5koz-silver-retreats-4495406",
+      "published": "2026-02-10 01:33:44",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Russia says the fuel situation in Cuba is critical, accuses US of ’suffocating’ the island",
+      "url": "https://www.investing.com/news/commodities-news/kremlin-says-fuel-situation-in-cuba-is-critical-accuses-us-of-suffocating-the-island-4492953",
+      "published": "2026-02-10 00:08:15",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US wants firms to commit to new AI data center compact, Politico reports",
+      "url": "https://www.investing.com/news/commodities-news/us-wants-firms-to-commit-to-new-ai-data-center-compact-politico-reports-4495329",
+      "published": "2026-02-09 23:30:51",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil settles up more than 1% after US urges caution for vessels near Iran",
       "url": "https://www.investing.com/news/commodities-news/oil-drops-more-than-1-as-concerns-about-possible-usiran-conflict-ease-4492522",
-      "published": "2026-02-09 05:00:31",
+      "published": "2026-02-09 20:54:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices dip as US, Iran flag progress in talks",
+      "title": "Oil prices rise after first weekly loss since December amid U.S.-Iran progress",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-as-us-iran-flag-progress-in-talks-4492556",
-      "published": "2026-02-09 02:47:11",
+      "published": "2026-02-09 20:45:02",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Farmers report ’catastrophic damage to crops as Storm Marta hits Spain and Portugal",
-      "url": "https://www.investing.com/news/commodities-news/farmers-report-catastrophic-damage-to-crops-as-storm-marta-hits-spain-and-portugal-4492555",
-      "published": "2026-02-09 02:42:43",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices rise to $5k, silver surges after whipsaw week",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-to-5k-silver-surges-after-whipsaw-week-4492549",
-      "published": "2026-02-09 02:09:42",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Indian refiners avoid Russian oil in push for US trade deal",
-      "url": "https://www.investing.com/news/commodities-news/indian-refiners-avoid-russian-oil-in-push-for-us-trade-deal-4492404",
-      "published": "2026-02-08 23:00:52",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Police fire water cannon at protesters hurling smoke bombs in Olympic host Milan",
-      "url": "https://www.investing.com/news/commodities-news/olympicsprotesters-to-rally-in-milan-denouncing-impact-of-winter-games-4492336",
-      "published": "2026-02-08 01:43:38",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US pushes Russia and Ukraine to end war by summer, Zelenskiy says",
-      "url": "https://www.investing.com/news/commodities-news/us-wants-russia-ukraine-to-end-war-by-summer-zelenskiy-says-4492319",
-      "published": "2026-02-07 18:48:54",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Russia launches massive attack on Ukraine’s energy system, Zelenskiy says",
-      "url": "https://www.investing.com/news/commodities-news/russia-launches-massive-attack-on-ukraines-energy-system-zelenskiy-says-4492343",
-      "published": "2026-02-07 14:06:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "If US attacks, Iran says it will strike US bases in the region",
-      "url": "https://www.investing.com/news/commodities-news/if-us-attacks-iran-says-it-will-strike-us-bases-in-the-region-4492337",
-      "published": "2026-02-07 12:18:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Macquarie updates 2026 outlook for gold and silver. Here are the new targets",
-      "url": "https://www.investing.com/news/commodities-news/macquarie-updates-2026-outlook-for-gold-and-silver-here-are-the-new-targets-4491588",
-      "published": "2026-02-07 10:04:31",
+      "title": "USDA says fly production plant to open by end of 2027 to fight screwworm",
+      "url": "https://www.investing.com/news/commodities-news/usda-says-fly-production-plant-to-open-by-end-of-2027-to-fight-screwworm-4494867",
+      "published": "2026-02-09 20:18:28",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
-    "rows": 15177
+    "news_score": 0,
+    "rows": 15178
   }
 }
