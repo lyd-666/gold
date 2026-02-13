@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-12",
-  "updated": "2026-02-12T05:49:55+00:00",
+  "date": "2026-02-13",
+  "updated": "2026-02-13T05:46:10+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5071.57；MA20 4957.26；MA50 4613.17。",
-    "RSI14 52.2；MACD Hist -12.217（动量参考）。",
-    "ATR14 272.35（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4959.46；MA20 4968.64；MA50 4625.31。",
+    "RSI14 48.8；MACD Hist -24.197（动量参考）。",
+    "ATR14 282.86（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4853.69 / R1≈5289.45（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4733.17 / R1≈5185.75（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-02",
-      "Open": "4333.37",
-      "High": "4402.34",
-      "Low": "4310.74",
-      "Close": "4331.51",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-05",
       "Open": "4353.42",
@@ -261,15 +253,23 @@
       "Date": "2026-02-12",
       "Open": "5089.14",
       "High": "5099.83",
-      "Low": "5045.95",
-      "Close": "5071.57",
+      "Low": "4878.83",
+      "Close": "4921.96",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-13",
+      "Open": "4929.11",
+      "High": "4996.79",
+      "Low": "4888.30",
+      "Close": "4959.46",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices rise on concerns about US-Iran tensions",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-on-concerns-about-usiran-tensions-4501602",
-      "published": "2026-02-12 04:18:50",
+      "title": "Oil set for second straight weekly drop as Iran risks recede",
+      "url": "https://www.investing.com/news/commodities-news/oil-set-for-weekly-drop-as-iran-risks-recede-oversupply-concerns-4504301",
+      "published": "2026-02-13 05:24:44",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump plans to roll back tariffs on metal and aluminium goods, FT reports",
+      "url": "https://www.investing.com/news/commodities-news/trump-plans-to-roll-back-tariffs-on-metal-and-aluminiumgoods-ft-reports-4504332",
+      "published": "2026-02-13 05:19:43",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Indonesia to go ahead with free meals programme despite ’extraordinary’ campaign against it, president says",
+      "url": "https://www.investing.com/news/commodities-news/indonesia-to-go-ahead-with-free-meals-programme-despite-extraordinary-campaign-against-it-president-says-4504324",
+      "published": "2026-02-13 04:24:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices hold losses over supply glut forecasts; US CPI awaited",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-losses-over-supply-glut-forecasts-us-cpi-awaited-4504305",
+      "published": "2026-02-13 02:22:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump revokes basis of US climate regulation, ends vehicle emission standards",
+      "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-revoke-basis-of-us-climate-regulation-4502883",
+      "published": "2026-02-13 00:14:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold rebounds after sliding below $5k/oz on rate uncertainty; CPI data awaited",
+      "url": "https://www.investing.com/news/commodities-news/gold-steadies-after-sliding-below-5koz-on-rate-uncertainty-cpi-data-awaited-4504253",
+      "published": "2026-02-12 23:55:09",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "PJM to extend capacity auction price cap for two years, Pennsylvania governor says",
+      "url": "https://www.investing.com/news/commodities-news/pjm-to-extend-capacity-auction-price-cap-for-two-years-pennsylvania-governor-says-4504248",
+      "published": "2026-02-12 23:48:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US publishes interim tax credit rules meant to restrict China clean energy influence",
+      "url": "https://www.investing.com/news/commodities-news/us-publishes-interim-tax-credit-rules-meant-to-restrict-china-clean-energy-influence-4504184",
+      "published": "2026-02-12 23:42:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US-led oil sales from Venezuela to bring in $5 billion in months, energy chief Wright tells NBC News",
+      "url": "https://www.investing.com/news/commodities-news/usled-oil-sales-from-venezuela-to-bring-in-5-billion-in-months-energy-chief-wright-tells-nbc-news-4504113",
+      "published": "2026-02-12 23:37:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
       "title": "US pushes for Venezuela investment, energy secretary warns about legitimacy of Chinese deals",
       "url": "https://www.investing.com/news/commodities-news/us-energy-secretary-set-to-arrive-in-venezuela-with-herculean-task-of-oil-recovery-4499010",
-      "published": "2026-02-12 02:54:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices rise with US-Iran tensions, econ. data in focus",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-with-usiran-tensions-econ-data-in-focus-4501624",
-      "published": "2026-02-12 02:45:46",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold, silver prices dip after strong payrolls dent rate cut bets",
-      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-dip-after-strong-payrolls-dent-rate-cut-bets-4501607",
-      "published": "2026-02-12 01:47:34",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump directs Energy Department to issue funds to keep coal plants online",
-      "url": "https://www.investing.com/news/commodities-news/trump-directs-energy-department-to-issue-funds-to-keep-coal-plants-online-4501386",
-      "published": "2026-02-11 23:37:14",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Colombia’s ’outsider’ candidate De La Espriella vows military crackdown to boost economy",
-      "url": "https://www.investing.com/news/commodities-news/colombias-outsider-candidate-de-la-espriella-vows-military-crackdown-to-boost-economy-4501539",
-      "published": "2026-02-11 23:36:53",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil up 1% as Middle East tension offsets large US crude stocks build",
-      "url": "https://www.investing.com/news/commodities-news/oil-holds-steady-as-usiran-tensions-provide-support-4498579",
-      "published": "2026-02-11 20:24:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil rises after U.S. said to prepare second aircraft carrier for the Middle East",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-with-usiran-tensions-china-demand-in-focus-4498612",
-      "published": "2026-02-11 20:12:59",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold, silver prices rise amid U.S.-Iran tensions, blowout January payrolls data",
-      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-rise-after-soft-us-data-payrolls-in-focus-4498588",
-      "published": "2026-02-11 19:54:08",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "White House says Trump plans to rescind climate change finding key to auto rules",
-      "url": "https://www.investing.com/news/commodities-news/white-house-says-trump-plans-to-formalize-regulatory-rollback-on-greenhouse-gases-4497738",
-      "published": "2026-02-11 17:20:09",
+      "published": "2026-02-12 23:18:52",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15180
+    "news_score": 1,
+    "rows": 15181
   }
 }
