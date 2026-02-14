@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-13",
-  "updated": "2026-02-13T05:46:10+00:00",
+  "date": "2026-02-14",
+  "updated": "2026-02-14T05:14:36+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4959.46；MA20 4968.64；MA50 4625.31。",
-    "RSI14 48.8；MACD Hist -24.197（动量参考）。",
-    "ATR14 282.86（波动参考，用于止损距离与仓位）。",
+    "收盘价 5032.91；MA20 4972.31；MA50 4626.78。",
+    "RSI14 50.5；MACD Hist -19.510（动量参考）。",
+    "ATR14 286.36（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4733.17 / R1≈5185.75（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4803.83 / R1≈5262.00（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,16 +260,16 @@
     {
       "Date": "2026-02-13",
       "Open": "4929.11",
-      "High": "4996.79",
+      "High": "5045.84",
       "Low": "4888.30",
-      "Close": "4959.46",
+      "Close": "5032.91",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Mixed",
+      "signal": "Bullish",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,72 +305,72 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil set for second straight weekly drop as Iran risks recede",
+      "title": "Exclusive-US refiner Valero to import up to 6.5 million barrels of Venezuelan crude in March, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusiveus-refiner-valero-to-import-up-to-65-million-barrels-of-venezuelan-crudein-march-sources-say-4507004",
+      "published": "2026-02-13 23:42:45",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump tells troops ’fear’ is powerful motivator in difficult Iran talks",
+      "url": "https://www.investing.com/news/commodities-news/trump-tells-troops-fear-is-powerful-motivator-in-difficult-iran-talks-4506524",
+      "published": "2026-02-13 23:00:35",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices settle slightly higher as optimism around US inflation data outweighs OPEC supply concerns",
       "url": "https://www.investing.com/news/commodities-news/oil-set-for-weekly-drop-as-iran-risks-recede-oversupply-concerns-4504301",
-      "published": "2026-02-13 05:24:44",
+      "published": "2026-02-13 20:50:47",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump plans to roll back tariffs on metal and aluminium goods, FT reports",
-      "url": "https://www.investing.com/news/commodities-news/trump-plans-to-roll-back-tariffs-on-metal-and-aluminiumgoods-ft-reports-4504332",
-      "published": "2026-02-13 05:19:43",
+      "title": "White House: no changes to Trump metals tariffs unless president announces them",
+      "url": "https://www.investing.com/news/commodities-news/bessent-says-any-narrowing-of-us-metals-tariffs-up-to-trump-4506238",
+      "published": "2026-02-13 20:36:53",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Indonesia to go ahead with free meals programme despite ’extraordinary’ campaign against it, president says",
-      "url": "https://www.investing.com/news/commodities-news/indonesia-to-go-ahead-with-free-meals-programme-despite-extraordinary-campaign-against-it-president-says-4504324",
-      "published": "2026-02-13 04:24:31",
+      "title": "Trump says he will visit Venezuela after ’very good’ relationship with interim president",
+      "url": "https://www.investing.com/news/commodities-news/trump-says-he-will-visit-venezuela-after-very-good-relationship-with-interim-president-4506427",
+      "published": "2026-02-13 20:24:51",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices hold losses over supply glut forecasts; US CPI awaited",
+      "title": "Oil prices set for second straight weekly loss over supply glut forecasts",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-losses-over-supply-glut-forecasts-us-cpi-awaited-4504305",
-      "published": "2026-02-13 02:22:29",
+      "published": "2026-02-13 19:56:11",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump revokes basis of US climate regulation, ends vehicle emission standards",
-      "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-revoke-basis-of-us-climate-regulation-4502883",
-      "published": "2026-02-13 00:14:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold rebounds after sliding below $5k/oz on rate uncertainty; CPI data awaited",
+      "title": "Gold holds above $5,000, set for weekly gain, while silver on track for loss",
       "url": "https://www.investing.com/news/commodities-news/gold-steadies-after-sliding-below-5koz-on-rate-uncertainty-cpi-data-awaited-4504253",
-      "published": "2026-02-12 23:55:09",
+      "published": "2026-02-13 19:01:44",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "PJM to extend capacity auction price cap for two years, Pennsylvania governor says",
-      "url": "https://www.investing.com/news/commodities-news/pjm-to-extend-capacity-auction-price-cap-for-two-years-pennsylvania-governor-says-4504248",
-      "published": "2026-02-12 23:48:32",
+      "title": "Analysis-Trump EPA ends emissions limits for US automakers; state rules, lawsuits could follow",
+      "url": "https://www.investing.com/news/commodities-news/analysistrump-epa-ends-emissions-limits-for-us-automakers-state-rules-lawsuits-could-follow-4506236",
+      "published": "2026-02-13 17:19:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US publishes interim tax credit rules meant to restrict China clean energy influence",
-      "url": "https://www.investing.com/news/commodities-news/us-publishes-interim-tax-credit-rules-meant-to-restrict-china-clean-energy-influence-4504184",
-      "published": "2026-02-12 23:42:31",
+      "title": "Exclusive-Venezuela’s PDVSA selling oil only to individually licensed companies, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusivevenezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say-4506239",
+      "published": "2026-02-13 17:14:02",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US-led oil sales from Venezuela to bring in $5 billion in months, energy chief Wright tells NBC News",
-      "url": "https://www.investing.com/news/commodities-news/usled-oil-sales-from-venezuela-to-bring-in-5-billion-in-months-energy-chief-wright-tells-nbc-news-4504113",
-      "published": "2026-02-12 23:37:45",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US pushes for Venezuela investment, energy secretary warns about legitimacy of Chinese deals",
-      "url": "https://www.investing.com/news/commodities-news/us-energy-secretary-set-to-arrive-in-venezuela-with-herculean-task-of-oil-recovery-4499010",
-      "published": "2026-02-12 23:18:52",
+      "title": "Argentina Senate passes Milei labor reform, advancing pro‑market overhaul",
+      "url": "https://www.investing.com/news/commodities-news/argentina-senate-passes-milei-labor-reform-advancing-promarket-overhaul-4502893",
+      "published": "2026-02-13 17:02:21",
       "summary": ""
     }
   ],
