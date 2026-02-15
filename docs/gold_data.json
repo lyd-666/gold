@@ -1,7 +1,7 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-14",
-  "updated": "2026-02-14T05:14:36+00:00",
+  "date": "2026-02-15",
+  "updated": "2026-02-15T05:40:15+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
@@ -305,6 +305,13 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports",
+      "url": "https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265",
+      "published": "2026-02-15 04:12:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Exclusive-US refiner Valero to import up to 6.5 million barrels of Venezuelan crude in March, sources say",
       "url": "https://www.investing.com/news/commodities-news/exclusiveus-refiner-valero-to-import-up-to-65-million-barrels-of-venezuelan-crudein-march-sources-say-4507004",
       "published": "2026-02-13 23:42:45",
@@ -364,13 +371,6 @@
       "title": "Exclusive-Venezuela’s PDVSA selling oil only to individually licensed companies, sources say",
       "url": "https://www.investing.com/news/commodities-news/exclusivevenezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say-4506239",
       "published": "2026-02-13 17:14:02",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Argentina Senate passes Milei labor reform, advancing pro‑market overhaul",
-      "url": "https://www.investing.com/news/commodities-news/argentina-senate-passes-milei-labor-reform-advancing-promarket-overhaul-4502893",
-      "published": "2026-02-13 17:02:21",
       "summary": ""
     }
   ],
