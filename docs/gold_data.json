@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-15",
-  "updated": "2026-02-15T05:40:15+00:00",
+  "date": "2026-02-16",
+  "updated": "2026-02-16T05:54:07+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5032.91；MA20 4972.31；MA50 4626.78。",
-    "RSI14 50.5；MACD Hist -19.510（动量参考）。",
-    "ATR14 286.36（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4988.77；MA20 4988.20；MA50 4642.40。",
+    "RSI14 45.6；MACD Hist -21.052（动量参考）。",
+    "ATR14 278.46（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4803.83 / R1≈5262.00（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4766.00 / R1≈5211.53（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-05",
-      "Open": "4353.42",
-      "High": "4455.64",
-      "Low": "4346.21",
-      "Close": "4449.12",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-06",
       "Open": "4449.41",
@@ -264,6 +256,14 @@
       "Low": "4888.30",
       "Close": "5032.91",
       "Volume": "0"
+    },
+    {
+      "Date": "2026-02-16",
+      "Open": "5035.36",
+      "High": "5035.36",
+      "Low": "4966.64",
+      "Close": "4988.77",
+      "Volume": "0"
     }
   ],
   "drivers": [
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Supportive",
+      "signal": "Neutral",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,9 +305,65 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "US conducts first air transport of nuclear microreactor in bid to show technology’s viability",
+      "url": "https://www.investing.com/news/commodities-news/us-conducts-first-air-transport-of-nuclear-microreactor-in-bid-to-show-technologys-viability-4507365",
+      "published": "2026-02-16 05:12:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil steady as traders brace for U.S.–Iran nuclear talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-drifts-ahead-of-usiran-nuclear-talks-4507335",
+      "published": "2026-02-16 05:07:14",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices steady with US-Iran tensions in focus",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-with-usiran-tensions-in-focus-4507338",
+      "published": "2026-02-16 02:39:38",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices dip below $5k/oz, silver slides as markets gauge rate outlook",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-above-5koz-more-rate-cues-awaited-4507333",
+      "published": "2026-02-16 01:55:21",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Netanyahu says US deal with Iran must dismantle nuclear infrastructure",
+      "url": "https://www.investing.com/news/commodities-news/netanyahu-deal-with-iran-must-dismantle-nuclear-infrastructure-not-just-stop-enrichment-process-4507303",
+      "published": "2026-02-15 22:54:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Druzhba oil supplies subject to political blackmail by Kyiv, Slovak PM says",
+      "url": "https://www.investing.com/news/commodities-news/druzhba-oil-supplies-subject-to-political-blackmail-by-kyiv-slovak-pm-says-4507295",
+      "published": "2026-02-15 14:00:55",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Russia’s Taman port damaged by Ukrainian drone strike",
+      "url": "https://www.investing.com/news/commodities-news/russias-taman-port-damaged-by-ukrainian-drone-strike-4507282",
+      "published": "2026-02-15 11:54:07",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "What are the hurdles in Brazil’s rare earth ambition?",
+      "url": "https://www.investing.com/news/commodities-news/what-are-the-hurdles-in-brazils-rare-earth-ambition-4503941",
+      "published": "2026-02-15 11:05:02",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports",
       "url": "https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265",
-      "published": "2026-02-15 04:12:26",
+      "published": "2026-02-15 09:30:31",
       "summary": ""
     },
     {
@@ -316,67 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/exclusiveus-refiner-valero-to-import-up-to-65-million-barrels-of-venezuelan-crudein-march-sources-say-4507004",
       "published": "2026-02-13 23:42:45",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump tells troops ’fear’ is powerful motivator in difficult Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/trump-tells-troops-fear-is-powerful-motivator-in-difficult-iran-talks-4506524",
-      "published": "2026-02-13 23:00:35",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices settle slightly higher as optimism around US inflation data outweighs OPEC supply concerns",
-      "url": "https://www.investing.com/news/commodities-news/oil-set-for-weekly-drop-as-iran-risks-recede-oversupply-concerns-4504301",
-      "published": "2026-02-13 20:50:47",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "White House: no changes to Trump metals tariffs unless president announces them",
-      "url": "https://www.investing.com/news/commodities-news/bessent-says-any-narrowing-of-us-metals-tariffs-up-to-trump-4506238",
-      "published": "2026-02-13 20:36:53",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump says he will visit Venezuela after ’very good’ relationship with interim president",
-      "url": "https://www.investing.com/news/commodities-news/trump-says-he-will-visit-venezuela-after-very-good-relationship-with-interim-president-4506427",
-      "published": "2026-02-13 20:24:51",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices set for second straight weekly loss over supply glut forecasts",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-losses-over-supply-glut-forecasts-us-cpi-awaited-4504305",
-      "published": "2026-02-13 19:56:11",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold holds above $5,000, set for weekly gain, while silver on track for loss",
-      "url": "https://www.investing.com/news/commodities-news/gold-steadies-after-sliding-below-5koz-on-rate-uncertainty-cpi-data-awaited-4504253",
-      "published": "2026-02-13 19:01:44",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Analysis-Trump EPA ends emissions limits for US automakers; state rules, lawsuits could follow",
-      "url": "https://www.investing.com/news/commodities-news/analysistrump-epa-ends-emissions-limits-for-us-automakers-state-rules-lawsuits-could-follow-4506236",
-      "published": "2026-02-13 17:19:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Venezuela’s PDVSA selling oil only to individually licensed companies, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusivevenezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say-4506239",
-      "published": "2026-02-13 17:14:02",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
-    "rows": 15181
+    "news_score": 0,
+    "rows": 15182
   }
 }
