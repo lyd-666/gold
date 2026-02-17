@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-16",
-  "updated": "2026-02-16T05:54:07+00:00",
+  "date": "2026-02-17",
+  "updated": "2026-02-17T05:44:14+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4988.77；MA20 4988.20；MA50 4642.40。",
-    "RSI14 45.6；MACD Hist -21.052（动量参考）。",
-    "ATR14 278.46（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4883.20；MA20 4994.36；MA50 4656.09。",
+    "RSI14 36.9；MACD Hist -28.630（动量参考）。",
+    "ATR14 269.22（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4766.00 / R1≈5211.53（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4667.83 / R1≈5098.58（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-06",
-      "Open": "4449.41",
-      "High": "4497.30",
-      "Low": "4429.26",
-      "Close": "4495.03",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-07",
       "Open": "4497.14",
@@ -262,19 +254,27 @@
       "Open": "5035.36",
       "High": "5035.36",
       "Low": "4966.64",
-      "Close": "4988.77",
+      "Close": "4992.47",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-17",
+      "Open": "4992.41",
+      "High": "4999.94",
+      "Low": "4867.90",
+      "Close": "4883.20",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "价格相对均线位置与多空排列。"
     },
     {
       "driver": "Momentum (RSI/MACD)",
-      "signal": "Mixed",
+      "signal": "Bearish",
       "note": "RSI 与 MACD 柱体方向。"
     },
     {
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Neutral",
+      "signal": "Supportive",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "US conducts first air transport of nuclear microreactor in bid to show technology’s viability",
-      "url": "https://www.investing.com/news/commodities-news/us-conducts-first-air-transport-of-nuclear-microreactor-in-bid-to-show-technologys-viability-4507365",
-      "published": "2026-02-16 05:12:28",
+      "title": "US and Iran set for high-stakes nuclear talks in Geneva as threat of war looms",
+      "url": "https://www.investing.com/news/commodities-news/us-and-iran-set-for-highstakes-nuclear-talks-in-geneva-as-threat-of-war-looms-4507859",
+      "published": "2026-02-17 05:06:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil steady as traders brace for U.S.–Iran nuclear talks",
+      "title": "Oil prices edge lower with US-Iran talks in focus",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-with-usiran-talks-in-focus-4507849",
+      "published": "2026-02-17 02:47:16",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil steady as traders weigh supply risks heading into key US-Iran talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-steady-as-traders-weigh-supply-risks-heading-into-key-usiran-talks-4507840",
+      "published": "2026-02-17 02:06:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold, silver prices fall further with econ. data, Fed cues in focus",
+      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-with-econ-data-fed-cues-in-focus-4507813",
+      "published": "2026-02-17 00:23:20",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Citi says geopolitics to support oil near term; peace deals seen lowering prices",
+      "url": "https://www.investing.com/news/commodities-news/citi-says-geopolitics-to-support-oil-near-term-peace-deals-seen-lowering-prices-4507776",
+      "published": "2026-02-16 21:06:27",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices rise 1% ahead of US-Iran nuclear talks",
       "url": "https://www.investing.com/news/commodities-news/oil-drifts-ahead-of-usiran-nuclear-talks-4507335",
-      "published": "2026-02-16 05:07:14",
+      "published": "2026-02-16 19:48:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices steady with US-Iran tensions in focus",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-with-usiran-tensions-in-focus-4507338",
-      "published": "2026-02-16 02:39:38",
+      "title": "Climate Challenge: A Decade After Paris Agreement",
+      "url": "https://www.investing.com/news/commodities-news/climate-challenge-a-decade-after-paris-agreement-4507755",
+      "published": "2026-02-16 18:12:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices dip below $5k/oz, silver slides as markets gauge rate outlook",
+      "title": "Trump slams energy deal between California and Britain, Politico reports",
+      "url": "https://www.investing.com/news/commodities-news/trump-slams-energy-deal-between-californiaand-britain-politico-reports-4507749",
+      "published": "2026-02-16 17:36:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold, silver prices slip; key economic data due this week",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-above-5koz-more-rate-cues-awaited-4507333",
-      "published": "2026-02-16 01:55:21",
+      "published": "2026-02-16 15:15:06",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Netanyahu says US deal with Iran must dismantle nuclear infrastructure",
-      "url": "https://www.investing.com/news/commodities-news/netanyahu-deal-with-iran-must-dismantle-nuclear-infrastructure-not-just-stop-enrichment-process-4507303",
-      "published": "2026-02-15 22:54:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Druzhba oil supplies subject to political blackmail by Kyiv, Slovak PM says",
-      "url": "https://www.investing.com/news/commodities-news/druzhba-oil-supplies-subject-to-political-blackmail-by-kyiv-slovak-pm-says-4507295",
-      "published": "2026-02-15 14:00:55",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Russia’s Taman port damaged by Ukrainian drone strike",
-      "url": "https://www.investing.com/news/commodities-news/russias-taman-port-damaged-by-ukrainian-drone-strike-4507282",
-      "published": "2026-02-15 11:54:07",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "What are the hurdles in Brazil’s rare earth ambition?",
-      "url": "https://www.investing.com/news/commodities-news/what-are-the-hurdles-in-brazils-rare-earth-ambition-4503941",
-      "published": "2026-02-15 11:05:02",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports",
-      "url": "https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265",
-      "published": "2026-02-15 09:30:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-US refiner Valero to import up to 6.5 million barrels of Venezuelan crude in March, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusiveus-refiner-valero-to-import-up-to-65-million-barrels-of-venezuelan-crudein-march-sources-say-4507004",
-      "published": "2026-02-13 23:42:45",
+      "title": "Oil prices slip lower ahead of U.S.-Iran negotiations",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-with-usiran-tensions-in-focus-4507338",
+      "published": "2026-02-16 09:56:24",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 0,
-    "rows": 15182
+    "news_score": 1,
+    "rows": 15183
   }
 }
