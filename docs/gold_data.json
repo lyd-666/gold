@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-17",
-  "updated": "2026-02-17T05:44:14+00:00",
+  "date": "2026-02-18",
+  "updated": "2026-02-18T05:46:24+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4883.20；MA20 4994.36；MA50 4656.09。",
-    "RSI14 36.9；MACD Hist -28.630（动量参考）。",
-    "ATR14 269.22（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4934.48；MA20 4999.17；MA50 4670.86。",
+    "RSI14 39.2；MACD Hist -30.010（动量参考）。",
+    "ATR14 242.01（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4667.83 / R1≈5098.58（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4740.88 / R1≈5128.09（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-07",
-      "Open": "4497.14",
-      "High": "4500.39",
-      "Low": "4423.59",
-      "Close": "4456.41",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-08",
       "Open": "4460.98",
@@ -261,8 +253,16 @@
       "Date": "2026-02-17",
       "Open": "4992.41",
       "High": "4999.94",
-      "Low": "4867.90",
-      "Close": "4883.20",
+      "Low": "4847.86",
+      "Close": "4877.52",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-18",
+      "Open": "4876.64",
+      "High": "4939.88",
+      "Low": "4854.78",
+      "Close": "4934.48",
       "Volume": "0"
     }
   ],
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Supportive",
+      "signal": "Neutral",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "US and Iran set for high-stakes nuclear talks in Geneva as threat of war looms",
-      "url": "https://www.investing.com/news/commodities-news/us-and-iran-set-for-highstakes-nuclear-talks-in-geneva-as-threat-of-war-looms-4507859",
-      "published": "2026-02-17 05:06:32",
+      "title": "Oil trims losses as traders weigh progress in US–Iran talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-lose-ground-on-hopes-of-deescalation-in-usiran-tensions-4509974",
+      "published": "2026-02-18 04:42:51",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices edge lower with US-Iran talks in focus",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-with-usiran-talks-in-focus-4507849",
-      "published": "2026-02-17 02:47:16",
+      "title": "Oil prices hold losses as US-Iran deal hopes ease supply risks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-losses-as-usiran-deal-hopes-ease-supply-risks-4510001",
+      "published": "2026-02-18 03:05:59",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil steady as traders weigh supply risks heading into key US-Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-steady-as-traders-weigh-supply-risks-heading-into-key-usiran-talks-4507840",
-      "published": "2026-02-17 02:06:28",
+      "title": "Gold steadies after 2% drop as US-Iran talks progress; traders mull Fed outlook",
+      "url": "https://www.investing.com/news/commodities-news/gold-steadies-after-2-drop-as-usiran-talks-progress-traders-mull-fed-outlook-4509968",
+      "published": "2026-02-18 01:38:37",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold, silver prices fall further with econ. data, Fed cues in focus",
+      "title": "California, Connecticut preparing ’attack’ against Trump’s repeal of basis of US climate regulation",
+      "url": "https://www.investing.com/news/commodities-news/california-connecticut-preparing-attack-against-trumps-repeal-of-basis-of-us-climate-regulation-4509935",
+      "published": "2026-02-18 00:25:44",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices fall amid firmer dollar ahead of key economic data this week",
       "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-with-econ-data-fed-cues-in-focus-4507813",
-      "published": "2026-02-17 00:23:20",
+      "published": "2026-02-17 22:30:24",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Citi says geopolitics to support oil near term; peace deals seen lowering prices",
-      "url": "https://www.investing.com/news/commodities-news/citi-says-geopolitics-to-support-oil-near-term-peace-deals-seen-lowering-prices-4507776",
-      "published": "2026-02-16 21:06:27",
+      "title": "Oil prices fall after U.S.-Iran progress, Russia-Ukraine talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-with-usiran-talks-in-focus-4507849",
+      "published": "2026-02-17 20:56:08",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices rise 1% ahead of US-Iran nuclear talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-drifts-ahead-of-usiran-nuclear-talks-4507335",
-      "published": "2026-02-16 19:48:29",
+      "title": "’Exports to China look dismal,’ leader of busiest US seaport says",
+      "url": "https://www.investing.com/news/commodities-news/exports-to-china-look-dismal-leader-of-busiest-us-seaport-says-4509640",
+      "published": "2026-02-17 20:54:58",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Climate Challenge: A Decade After Paris Agreement",
-      "url": "https://www.investing.com/news/commodities-news/climate-challenge-a-decade-after-paris-agreement-4507755",
-      "published": "2026-02-16 18:12:33",
+      "title": "Why natural gas prices are falling",
+      "url": "https://www.investing.com/news/commodities-news/why-natural-gas-prices-are-falling-4509065",
+      "published": "2026-02-17 14:32:36",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump slams energy deal between California and Britain, Politico reports",
-      "url": "https://www.investing.com/news/commodities-news/trump-slams-energy-deal-between-californiaand-britain-politico-reports-4507749",
-      "published": "2026-02-16 17:36:30",
+      "title": "Trump’s push for peace deals could lead to lower oil prices - Citi",
+      "url": "https://www.investing.com/news/commodities-news/trumps-push-for-peace-deals-could-lead-to-lower-oil-prices--citi-4508338",
+      "published": "2026-02-17 12:53:20",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold, silver prices slip; key economic data due this week",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-above-5koz-more-rate-cues-awaited-4507333",
-      "published": "2026-02-16 15:15:06",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices slip lower ahead of U.S.-Iran negotiations",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-with-usiran-tensions-in-focus-4507338",
-      "published": "2026-02-16 09:56:24",
+      "title": "Morning Bid: Sleepy ’uber-bulls’",
+      "url": "https://www.investing.com/news/commodities-news/morning-bid-sleepy-uberbulls-4508341",
+      "published": "2026-02-17 12:00:31",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
-    "rows": 15183
+    "news_score": 0,
+    "rows": 15184
   }
 }
