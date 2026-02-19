@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-18",
-  "updated": "2026-02-18T05:46:24+00:00",
+  "date": "2026-02-19",
+  "updated": "2026-02-19T05:44:15+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4934.48；MA20 4999.17；MA50 4670.86。",
-    "RSI14 39.2；MACD Hist -30.010（动量参考）。",
-    "ATR14 242.01（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4995.60；MA20 5004.29；MA50 4687.47。",
+    "RSI14 54.6；MACD Hist -24.585（动量参考）。",
+    "ATR14 195.20（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4740.88 / R1≈5128.09（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4839.45 / R1≈5151.76（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-08",
-      "Open": "4460.98",
-      "High": "4479.49",
-      "Low": "4407.94",
-      "Close": "4478.35",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-09",
       "Open": "4480.14",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-02-18",
       "Open": "4876.64",
-      "High": "4939.88",
+      "High": "5010.85",
       "Low": "4854.78",
-      "Close": "4934.48",
+      "Close": "4977.44",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-19",
+      "Open": "4977.77",
+      "High": "4995.68",
+      "Low": "4960.90",
+      "Close": "4995.60",
       "Volume": "0"
     }
   ],
@@ -274,7 +274,7 @@
     },
     {
       "driver": "Momentum (RSI/MACD)",
-      "signal": "Bearish",
+      "signal": "Mixed",
       "note": "RSI 与 MACD 柱体方向。"
     },
     {
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Neutral",
+      "signal": "Supportive",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil trims losses as traders weigh progress in US–Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-lose-ground-on-hopes-of-deescalation-in-usiran-tensions-4509974",
-      "published": "2026-02-18 04:42:51",
+      "title": "Oil prices extend gains on concerns of potential US-Iran conflict",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-as-investors-assess-trajectory-of-usiran-tensions-4512489",
+      "published": "2026-02-19 04:54:25",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices hold losses as US-Iran deal hopes ease supply risks",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-losses-as-usiran-deal-hopes-ease-supply-risks-4510001",
-      "published": "2026-02-18 03:05:59",
+      "title": "Oil inches up after 4% spike on US-Iran tensions, surprise inventory draw",
+      "url": "https://www.investing.com/news/commodities-news/oil-inches-up-after-4-spike-on-usiran-tensions-surprise-inventory-draw-4512540",
+      "published": "2026-02-19 03:50:07",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold steadies after 2% drop as US-Iran talks progress; traders mull Fed outlook",
+      "title": "Gold prices hold near $5,000/oz on geopolitical risks; Fed mins curb upside",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-hold-near-5000oz-on-geopolitical-risks-fed-mins-curb-upside-4512498",
+      "published": "2026-02-19 02:02:20",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US states sue Trump administration to unlock funding for clean energy projects",
+      "url": "https://www.investing.com/news/commodities-news/california-colorado-and-washington-sue-trump-administration-to-unlock-funding-for-clean-energy-projects-4511941",
+      "published": "2026-02-19 00:36:27",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US EPA plans to loosen mercury rules for coal plants this week, NYT reports",
+      "url": "https://www.investing.com/news/commodities-news/us-epa-plans-to-loosen-mercury-rules-for-coal-plants-this-week-nyt-reports-4511926",
+      "published": "2026-02-18 23:13:57",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump signs order on domestic herbicide supply for defense purposes, White House says",
+      "url": "https://www.investing.com/news/commodities-news/trump-signs-order-on-domestic-herbicide-supply-for-defense-purposes-white-house-says-4512377",
+      "published": "2026-02-18 23:13:12",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices rise on geopolitical jitters despite Fed minutes flagging rate hikes",
       "url": "https://www.investing.com/news/commodities-news/gold-steadies-after-2-drop-as-usiran-talks-progress-traders-mull-fed-outlook-4509968",
-      "published": "2026-02-18 01:38:37",
+      "published": "2026-02-18 22:25:04",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "California, Connecticut preparing ’attack’ against Trump’s repeal of basis of US climate regulation",
-      "url": "https://www.investing.com/news/commodities-news/california-connecticut-preparing-attack-against-trumps-repeal-of-basis-of-us-climate-regulation-4509935",
-      "published": "2026-02-18 00:25:44",
+      "title": "Oil settles up 4% on Iran-US tensions, Russia-Ukraine talks end without breakthrough",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-lose-ground-on-hopes-of-deescalation-in-usiran-tensions-4509974",
+      "published": "2026-02-18 22:18:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices fall amid firmer dollar ahead of key economic data this week",
-      "url": "https://www.investing.com/news/commodities-news/gold-silver-prices-fall-further-with-econ-data-fed-cues-in-focus-4507813",
-      "published": "2026-02-17 22:30:24",
+      "title": "US and Uzbekistan sign critical minerals pact",
+      "url": "https://www.investing.com/news/commodities-news/us-and-uzbekistan-sign-critical-minerals-pact-4512255",
+      "published": "2026-02-18 22:01:25",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall after U.S.-Iran progress, Russia-Ukraine talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-with-usiran-talks-in-focus-4507849",
-      "published": "2026-02-17 20:56:08",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "’Exports to China look dismal,’ leader of busiest US seaport says",
-      "url": "https://www.investing.com/news/commodities-news/exports-to-china-look-dismal-leader-of-busiest-us-seaport-says-4509640",
-      "published": "2026-02-17 20:54:58",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Why natural gas prices are falling",
-      "url": "https://www.investing.com/news/commodities-news/why-natural-gas-prices-are-falling-4509065",
-      "published": "2026-02-17 14:32:36",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump’s push for peace deals could lead to lower oil prices - Citi",
-      "url": "https://www.investing.com/news/commodities-news/trumps-push-for-peace-deals-could-lead-to-lower-oil-prices--citi-4508338",
-      "published": "2026-02-17 12:53:20",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Morning Bid: Sleepy ’uber-bulls’",
-      "url": "https://www.investing.com/news/commodities-news/morning-bid-sleepy-uberbulls-4508341",
-      "published": "2026-02-17 12:00:31",
+      "title": "White House says it’s in ’best interest’ of Cuba to make big changes soon",
+      "url": "https://www.investing.com/news/commodities-news/white-house-says-its-in-best-interest-of-cuba-to-make-big-changes-soon-4511874",
+      "published": "2026-02-18 19:12:53",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 0,
-    "rows": 15184
+    "news_score": 2,
+    "rows": 15185
   }
 }
