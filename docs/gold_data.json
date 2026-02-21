@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-20",
-  "updated": "2026-02-20T05:34:47+00:00",
+  "date": "2026-02-21",
+  "updated": "2026-02-21T05:10:43+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5002.38；MA20 5005.35；MA50 4702.97。",
-    "RSI14 62.1；MACD Hist -22.086（动量参考）。",
-    "ATR14 165.18（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=3（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5097.44；MA20 5010.11；MA50 4704.87。",
+    "RSI14 64.5；MACD Hist -16.020（动量参考）。",
+    "ATR14 171.11（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4870.23 / R1≈5134.52（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4960.55 / R1≈5234.32（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,16 +260,16 @@
     {
       "Date": "2026-02-20",
       "Open": "4998.74",
-      "High": "5014.82",
+      "High": "5097.80",
       "Low": "4981.97",
-      "Close": "5002.38",
+      "Close": "5097.44",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Mixed",
+      "signal": "Bullish",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil heads for first weekly gain in three as US-Iran tensions brew",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-trump-puts-time-limit-on-iran-standoff-4515081",
-      "published": "2026-02-20 04:49:03",
+      "title": "Berkshire-owned PacifiCorp pays $575 million to settle US government’s wildfire claims",
+      "url": "https://www.investing.com/news/commodities-news/berkshireowned-pacificorp-pays-575-million-to-settle-us-governments-wildfire-claims-4517084",
+      "published": "2026-02-20 23:30:36",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil near 6-mth high amid US-Iran conflict fears; set for weekly surge",
+      "title": "Trump tariff reversal could cut costs for US energy firms but will likely leave broader flows unchanged",
+      "url": "https://www.investing.com/news/commodities-news/trump-tariff-reversal-could-cut-costs-for-us-energy-firms-but-will-likely-leave-broader-flows-unchanged-4517359",
+      "published": "2026-02-20 23:12:49",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices slip slightly, but set for solid weekly gain on U.S.-Iran jitters",
       "url": "https://www.investing.com/news/commodities-news/oil-near-6mth-high-amid-usiran-conflict-fears-set-for-weekly-surge-4515122",
-      "published": "2026-02-20 03:49:08",
+      "published": "2026-02-20 22:39:16",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices muted amid US-Iran tensions, Fed caution; set for weekly loss",
+      "title": "Analysis-US and Iran slide towards conflict as military buildup eclipses talks",
+      "url": "https://www.investing.com/news/commodities-news/analysisus-and-iran-slide-towards-conflict-as-military-buildup-eclipses-talks-4517323",
+      "published": "2026-02-20 22:30:07",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "USDA defends $12 billion subsidy amid farm economy challenges",
+      "url": "https://www.investing.com/news/commodities-news/usda-defends-12-billion-subsidy-amid-farm-economy-challenges-4517086",
+      "published": "2026-02-20 21:07:13",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Brent rises late, settles higher and with weekly gain on Iran-US jitters",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-trump-puts-time-limit-on-iran-standoff-4515081",
+      "published": "2026-02-20 20:54:27",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold rises, silver jumps after disappointing economic data, SCOTUS tariff ruling",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-muted-amid-usiran-tensions-fed-caution-set-for-weekly-loss-4515095",
-      "published": "2026-02-20 02:26:25",
+      "published": "2026-02-20 20:29:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump warns Iran of ’bad things’ if no deal made, sets deadline of 10-15 days",
-      "url": "https://www.investing.com/news/commodities-news/russia-warns-of-escalating-iran-tensions-amid-us-military-build-up-4513617",
-      "published": "2026-02-19 23:07:18",
+      "title": "Analysts say China less likely to buy US soy after Supreme Court decision",
+      "url": "https://www.investing.com/news/commodities-news/analysts-say-china-less-likely-to-buy-us-soy-after-supreme-court-decision-4516984",
+      "published": "2026-02-20 19:30:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "With discovery of secret tunnel, Mexican authorities strike blow against black-market fuel trade",
-      "url": "https://www.investing.com/news/commodities-news/with-discovery-of-secret-tunnel-mexican-authorities-strike-blow-against-blackmarket-fuel-trade-4514709",
-      "published": "2026-02-19 20:42:52",
+      "title": "Morning Bid: Oil engulfed",
+      "url": "https://www.investing.com/news/commodities-news/morning-bid-oil-engulfed-4515680",
+      "published": "2026-02-20 18:25:18",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil closes at six-month high on US-Iran conflict worries",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-as-investors-assess-trajectory-of-usiran-tensions-4512489",
-      "published": "2026-02-19 20:18:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices hit over six-month high on mounting U.S.-Iran tensions, inventory draw",
-      "url": "https://www.investing.com/news/commodities-news/oil-inches-up-after-4-spike-on-usiran-tensions-surprise-inventory-draw-4512540",
-      "published": "2026-02-19 18:56:36",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold largely flat as investors weigh geopolitical tensions, hawkish Fed minutes",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-hold-near-5000oz-on-geopolitical-risks-fed-mins-curb-upside-4512498",
-      "published": "2026-02-19 18:30:35",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US to West’s energy watchdog: scrap net zero focus or we’ll quit",
-      "url": "https://www.investing.com/news/commodities-news/us-energy-secretary-wright-pressures-iea-to-quit-net-zero-agenda-4513356",
-      "published": "2026-02-19 17:25:36",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Solar industry accelerates shift from silver as costs soar",
-      "url": "https://www.investing.com/news/commodities-news/solar-industry-accelerates-shift-from-silver-as-costs-soar-4514306",
-      "published": "2026-02-19 15:42:36",
+      "title": "Trump EPA to weaken rule limiting harmful mercury, air toxins from coal plants",
+      "url": "https://www.investing.com/news/commodities-news/trump-epa-to-weaken-rule-limiting-harmful-mercury-air-toxics-from-coal-plants-4515574",
+      "published": "2026-02-20 18:06:31",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 3,
+    "news_score": 2,
     "rows": 15186
   }
 }
