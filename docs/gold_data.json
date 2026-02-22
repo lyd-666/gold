@@ -1,14 +1,14 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-21",
-  "updated": "2026-02-21T05:10:43+00:00",
+  "date": "2026-02-22",
+  "updated": "2026-02-22T05:32:59+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
     "收盘价 5097.44；MA20 5010.11；MA50 4704.87。",
     "RSI14 64.5；MACD Hist -16.020（动量参考）。",
     "ATR14 171.11（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=3（仅用于辅助，不作为单独交易依据）。"
   ],
   "base_case": "关键区间：S1≈4960.55 / R1≈5234.32（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
@@ -305,6 +305,34 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Blizzard warnings issued for New York area as storm heads to East Coast",
+      "url": "https://www.investing.com/news/commodities-news/blizzard-warnings-issued-for-new-york-area-as-storm-heads-to-east-coast-4517524",
+      "published": "2026-02-21 23:24:47",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "India, Brazil sign mining pact as Modi targets $20 billion trade in five years",
+      "url": "https://www.investing.com/news/commodities-news/india-brazil-sign-mining-pact-as-modi-targets-20-billion-trade-in-five-years-4517505",
+      "published": "2026-02-21 12:31:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "UBS sets bold $6,200 gold target as Middle East tensions rise",
+      "url": "https://www.investing.com/news/commodities-news/ubs-sets-bold-6200-gold-target-as-middle-east-tensions-rise-4517486",
+      "published": "2026-02-21 10:25:01",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Macron says US Supreme Court tariff ruling shows it is good to have counterweights to power in democracies",
+      "url": "https://www.investing.com/news/commodities-news/macron-says-us-supreme-court-tariff-ruling-shows-it-is-good-to-have-counterweights-to-power-in-democracies-4517492",
+      "published": "2026-02-21 09:00:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Berkshire-owned PacifiCorp pays $575 million to settle US government’s wildfire claims",
       "url": "https://www.investing.com/news/commodities-news/berkshireowned-pacificorp-pays-575-million-to-settle-us-governments-wildfire-claims-4517084",
       "published": "2026-02-20 23:30:36",
@@ -344,39 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-trump-puts-time-limit-on-iran-standoff-4515081",
       "published": "2026-02-20 20:54:27",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold rises, silver jumps after disappointing economic data, SCOTUS tariff ruling",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-muted-amid-usiran-tensions-fed-caution-set-for-weekly-loss-4515095",
-      "published": "2026-02-20 20:29:45",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Analysts say China less likely to buy US soy after Supreme Court decision",
-      "url": "https://www.investing.com/news/commodities-news/analysts-say-china-less-likely-to-buy-us-soy-after-supreme-court-decision-4516984",
-      "published": "2026-02-20 19:30:29",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Morning Bid: Oil engulfed",
-      "url": "https://www.investing.com/news/commodities-news/morning-bid-oil-engulfed-4515680",
-      "published": "2026-02-20 18:25:18",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump EPA to weaken rule limiting harmful mercury, air toxins from coal plants",
-      "url": "https://www.investing.com/news/commodities-news/trump-epa-to-weaken-rule-limiting-harmful-mercury-air-toxics-from-coal-plants-4515574",
-      "published": "2026-02-20 18:06:31",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
+    "news_score": 3,
     "rows": 15186
   }
 }
