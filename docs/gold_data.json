@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-23",
-  "updated": "2026-02-23T05:51:40+00:00",
-  "traffic_light": "NEUTRAL",
-  "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
+  "date": "2026-02-24",
+  "updated": "2026-02-24T05:43:25+00:00",
+  "traffic_light": "GREEN",
+  "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
-    "收盘价 5156.65；MA20 5017.39；MA50 4722.39。",
-    "RSI14 58.2；MACD Hist -6.954（动量参考）。",
-    "ATR14 153.02（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5173.97；MA20 5020.71；MA50 4741.29。",
+    "RSI14 57.5；MACD Hist 1.911（动量参考）。",
+    "ATR14 147.83（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5034.24 / R1≈5279.07（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5055.70 / R1≈5292.23（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-13",
-      "Open": "4605.02",
-      "High": "4634.12",
-      "Low": "4571.12",
-      "Close": "4586.07",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-14",
       "Open": "4589.38",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-02-23",
       "Open": "5109.80",
-      "High": "5176.61",
+      "High": "5237.31",
       "Low": "5097.44",
-      "Close": "5156.65",
+      "Close": "5227.60",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-24",
+      "Open": "5227.07",
+      "High": "5249.49",
+      "Low": "5147.01",
+      "Close": "5173.97",
       "Volume": "0"
     }
   ],
@@ -274,7 +274,7 @@
     },
     {
       "driver": "Momentum (RSI/MACD)",
-      "signal": "Mixed",
+      "signal": "Bullish",
       "note": "RSI 与 MACD 柱体方向。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil drops amid Iran nuclear talks, US tariff uncertainty",
+      "title": "Oil rises to near seven-month high on US–Iran tensions, trade policy",
+      "url": "https://www.investing.com/news/commodities-news/oil-hovers-below-sevenmonth-high-as-traders-eye-usiran-talks-trade-policy-4520389",
+      "published": "2026-02-24 04:36:21",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Canada plans to assist Cuba while Washington squeezes the island",
+      "url": "https://www.investing.com/news/commodities-news/canada-plans-to-assist-cuba-while-washington-squeezes-the-island-4520444",
+      "published": "2026-02-24 03:48:25",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil holds near 7-mth highs as US-Iran talks loom, tariffs cloud outlook",
+      "url": "https://www.investing.com/news/commodities-news/oil-holds-near-7mth-highs-as-usiran-talks-loom-tariffs-cloud-outlook-4520441",
+      "published": "2026-02-24 03:38:35",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold snaps 4-day winning streak amid profit-taking; tariff tensions linger",
+      "url": "https://www.investing.com/news/commodities-news/gold-snaps-4day-winning-streak-amid-profittaking-tariff-tensions-linger-4520419",
+      "published": "2026-02-24 02:28:23",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US Chemical Safety Board faults Pemex in 2024 fatal accident",
+      "url": "https://www.investing.com/news/commodities-news/us-chemical-safety-board-faults-pemex-in-2024-fatal-accident-4520395",
+      "published": "2026-02-24 02:18:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Maryland sues Trump administration to halt construction of ICE facility",
+      "url": "https://www.investing.com/news/commodities-news/maryland-sues-trump-administration-to-halt-construction-of-ice-facility-4519912",
+      "published": "2026-02-24 00:42:34",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil at six-month high with nuclear talks and US tariffs in focus",
       "url": "https://www.investing.com/news/commodities-news/oil-slides-as-us-tariff-hike-raise-jitters-over-global-economy-4517638",
-      "published": "2026-02-23 04:18:27",
+      "published": "2026-02-23 21:01:42",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices slip on US-Iran nuclear talks, Trump tariff uncertainty",
+      "title": "Oil slips as traders keep an eye on U.S.-Iran developments, parse tariff turmoil",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-slip-on-usiran-nuclear-talks-trump-tariff-uncertainty-4517696",
-      "published": "2026-02-23 02:08:07",
+      "published": "2026-02-23 20:41:50",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices extend gains on fresh Trump tariff jitters",
+      "title": "Gold prices rise as Trump tariff turmoil boosts safe haven demand",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-extend-gains-on-fresh-trump-tariff-jitters-4517679",
-      "published": "2026-02-23 01:05:05",
+      "published": "2026-02-23 18:49:18",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "India, Brazil sign mining pact as Modi targets $20 billion trade in five years",
-      "url": "https://www.investing.com/news/commodities-news/india-brazil-sign-mining-pact-as-modi-targets-20-billion-trade-in-five-years-4517675",
-      "published": "2026-02-23 01:01:16",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "New York, other states under state of emergency as snow falls amid blizzard warning",
-      "url": "https://www.investing.com/news/commodities-news/new-york-other-states-under-state-of-emergency-as-snow-falls-amid-blizzard-warning-4517620",
-      "published": "2026-02-23 00:42:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Tehran is ready for nuclear concessions if US meets demands, Iranian official says",
-      "url": "https://www.investing.com/news/commodities-news/iran-and-us-diverge-in-views-on-sanctions-relief-senior-iranian-official-to-reuters-4517560",
-      "published": "2026-02-22 18:06:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Can gold rise to new highs above $5,600 in 2026?",
-      "url": "https://www.investing.com/news/commodities-news/can-gold-rise-to-new-highs-above-5600-in-2026-4511861",
-      "published": "2026-02-22 09:00:02",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump says Indo-Pacific energy meeting to be held in Tokyo in March",
-      "url": "https://www.investing.com/news/commodities-news/trump-says-indopacific-energy-meeting-to-be-held-in-tokyo-in-march-4517554",
-      "published": "2026-02-22 05:18:25",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Blizzard warnings issued for New York area as storm heads to East Coast",
-      "url": "https://www.investing.com/news/commodities-news/blizzard-warnings-issued-for-new-york-area-as-storm-heads-to-east-coast-4517524",
-      "published": "2026-02-21 23:24:47",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "India, Brazil sign mining pact as Modi targets $20 billion trade in five years",
-      "url": "https://www.investing.com/news/commodities-news/india-brazil-sign-mining-pact-as-modi-targets-20-billion-trade-in-five-years-4517505",
-      "published": "2026-02-21 12:31:48",
+      "title": "US to make tariff decision on solar panels from India, Indonesia and Laos",
+      "url": "https://www.investing.com/news/commodities-news/us-to-make-tariff-decision-on-solar-panels-from-india-indonesia-and-laos-4518392",
+      "published": "2026-02-23 17:55:17",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15187
+    "news_score": 1,
+    "rows": 15188
   }
 }
