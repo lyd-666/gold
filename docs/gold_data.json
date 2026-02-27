@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-26",
-  "updated": "2026-02-26T03:44:16+00:00",
+  "date": "2026-02-27",
+  "updated": "2026-02-27T03:40:25+00:00",
   "traffic_light": "GREEN",
   "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
-    "收盘价 5186.20；MA20 4997.07；MA50 4775.56。",
-    "RSI14 60.6；MACD Hist 3.564（动量参考）。",
-    "ATR14 120.07（波动参考，用于止损距离与仓位）。",
+    "收盘价 5186.40；MA20 5013.95；MA50 4792.49。",
+    "RSI14 56.4；MACD Hist 3.454（动量参考）。",
+    "ATR14 115.15（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5090.15 / R1≈5282.26（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5094.27 / R1≈5278.52（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-16",
-      "Open": "4619.43",
-      "High": "4620.68",
-      "Low": "4537.87",
-      "Close": "4582.27",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-19",
       "Open": "4634.70",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-02-26",
       "Open": "5160.06",
-      "High": "5197.85",
-      "Low": "5155.81",
-      "Close": "5186.20",
+      "High": "5205.38",
+      "Low": "5131.43",
+      "Close": "5185.26",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-02-27",
+      "Open": "5185.39",
+      "High": "5199.56",
+      "Low": "5167.45",
+      "Close": "5186.40",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold ticks up on softer dollar, markets eye US-Iran nuclear talks",
-      "url": "https://www.investing.com/news/commodities-news/gold-ticks-up-on-softer-dollar-markets-eye-usiran-nuclear-talks-4526429",
-      "published": "2026-02-26 02:28:57",
+      "title": "Gold prices steady near $5,200/oz; set for strong February",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-near-5200oz-set-for-strong-february-4530381",
+      "published": "2026-02-27 02:29:23",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil climbs as US-Iran tensions keep supply risks in focus",
-      "url": "https://www.investing.com/news/commodities-news/oil-climbs-as-usiran-tensions-keep-supply-risks-in-focus-4526411",
-      "published": "2026-02-26 02:00:31",
+      "title": "Oil prices fall as US, Iran agree to more talks; Venezuela sales eyed",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-us-iran-agree-to-more-talks-venezuela-sales-eyed-4530368",
+      "published": "2026-02-27 02:12:19",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices edge lower after US, Iran extend talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-after-us-iran-extend-talks-4530364",
+      "published": "2026-02-27 02:00:56",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil sales under US-Venezuela deal expected to reach $2 billion by end of February, US says",
+      "url": "https://www.investing.com/news/commodities-news/oil-sales-under-usvenezuela-deal-expected-to-reach-2-billion-by-end-of-february-us-says-4530289",
+      "published": "2026-02-27 00:42:23",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Exclusive-Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusivevenezuela-suspends-19-oil-gas-productionsharing-contracts-signed-under-maduro-government-sources-say-4530261",
+      "published": "2026-02-26 23:49:19",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
       "title": "US regulator says it has power to police prediction market misconduct",
       "url": "https://www.investing.com/news/commodities-news/us-regulator-says-it-has-power-to-police-prediction-market-misconduct-4525587",
-      "published": "2026-02-25 23:07:48",
+      "published": "2026-02-26 21:07:37",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil settles little changed, supply worries persist despite large US crude stock build",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-hover-near-sevenmonth-highs-ahead-of-usiran-talks-4523146",
-      "published": "2026-02-25 20:55:15",
+      "title": "Gold prices mixed as U.S.-Iran nuclear talks end after ’significant progress’",
+      "url": "https://www.investing.com/news/commodities-news/gold-ticks-up-on-softer-dollar-markets-eye-usiran-nuclear-talks-4526429",
+      "published": "2026-02-26 20:19:42",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "USDA selling its flagship South Building in Washington, relocating staff",
-      "url": "https://www.investing.com/news/commodities-news/usda-selling-its-flagship-south-building-in-washington-relocating-staff-4525551",
-      "published": "2026-02-25 20:37:16",
+      "title": "Canada says it could have bilateral critical sector deals with US",
+      "url": "https://www.investing.com/news/commodities-news/canada-says-it-could-have-bilateral-critical-sector-deals-with-us-4529400",
+      "published": "2026-02-26 20:18:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices head for fifth day of gains in six; JPMorgan sees more upside",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-as-tariff-jitters-aid-haven-demand-usiran-talks-loom-4523152",
-      "published": "2026-02-25 19:41:13",
+      "title": "Oil prices edge up after ’significant progress’ in U.S.-Iran nuclear talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-ahead-of-usiran-nuclear-talks-eia-data-shows-hefty-stock-build-4526463",
+      "published": "2026-02-26 19:12:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "CME Group pauses metals and natural gas trading due to technical issues",
-      "url": "https://www.investing.com/news/commodities-news/cme-group-pauses-metals-and-natural-gas-trading-due-to-technical-issues-93CH-4525474",
-      "published": "2026-02-25 19:30:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Repairs to Druzhba pipeline ’not that fast,’ Zelenskiy says",
-      "url": "https://www.investing.com/news/commodities-news/repairs-to-druzhba-pipeline-not-that-fast-zelenskiy-says-4524916",
-      "published": "2026-02-25 19:02:19",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil up as U.S.-Iran worries offset significantly higher-than-expected stock build",
-      "url": "https://www.investing.com/news/commodities-news/oil-climbs-1-as-usiran-conflict-worries-overshadow-large-stock-build-4523174",
-      "published": "2026-02-25 18:35:40",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "OPEC+ to consider 137,000 bpd oil output increase for April, sources say",
-      "url": "https://www.investing.com/news/commodities-news/opec-to-consider137000-bpd-oil-output-increase-for-april-sources-say-4524111",
-      "published": "2026-02-25 15:24:49",
+      "title": "Explainer-Does Trump’s new ’surcharge’ make EU worse off than under trade deal?",
+      "url": "https://www.investing.com/news/commodities-news/explainerdoes-trumps-new-surcharge-make-eu-worse-off-than-under-trade-deal-4529081",
+      "published": "2026-02-26 17:30:46",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
     "news_score": 0,
-    "rows": 15190
+    "rows": 15191
   }
 }
