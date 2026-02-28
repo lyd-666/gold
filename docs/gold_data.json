@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-27",
-  "updated": "2026-02-27T03:40:25+00:00",
+  "date": "2026-02-28",
+  "updated": "2026-02-28T03:22:53+00:00",
   "traffic_light": "GREEN",
   "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
-    "收盘价 5186.40；MA20 5013.95；MA50 4792.49。",
-    "RSI14 56.4；MACD Hist 3.454（动量参考）。",
-    "ATR14 115.15（波动参考，用于止损距离与仓位）。",
+    "收盘价 5263.82；MA20 5017.82；MA50 4794.04。",
+    "RSI14 59.6；MACD Hist 8.395（动量参考）。",
+    "ATR14 119.84（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5094.27 / R1≈5278.52（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5167.95 / R1≈5359.70（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,9 +260,9 @@
     {
       "Date": "2026-02-27",
       "Open": "5185.39",
-      "High": "5199.56",
+      "High": "5265.14",
       "Low": "5167.45",
-      "Close": "5186.40",
+      "Close": "5263.82",
       "Volume": "0"
     }
   ],
@@ -305,72 +305,72 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices steady near $5,200/oz; set for strong February",
+      "title": "Dominican Republic has over 150 million tons of rare earth deposits, president says",
+      "url": "https://www.investing.com/news/commodities-news/dominican-republic-has-over-150-million-tons-of-rare-earth-deposits-president-says-4532943",
+      "published": "2026-02-27 23:48:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices climb, with spot gold set for a monthly gain of more than 8%",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-near-5200oz-set-for-strong-february-4530381",
-      "published": "2026-02-27 02:29:23",
+      "published": "2026-02-27 21:45:41",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall as US, Iran agree to more talks; Venezuela sales eyed",
+      "title": "Bird flu devastates 7.4 million Pennsylvania chickens in a month",
+      "url": "https://www.investing.com/news/commodities-news/bird-flu-devastates-74-million-pennsylvania-chickens-in-a-month-4532709",
+      "published": "2026-02-27 21:30:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Havana rides a bicycle boom as US chokes off fuel to Cuba",
+      "url": "https://www.investing.com/news/commodities-news/havana-rides-a-bicycle-boom-as-us-chokes-off-fuel-to-cuba-4532589",
+      "published": "2026-02-27 20:43:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US says research funding into new farm practices to surpass $1 billion",
+      "url": "https://www.investing.com/news/commodities-news/us-says-research-funding-into-new-farm-practices-to-surpass-1-billion-4532565",
+      "published": "2026-02-27 20:18:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US oil output fell in December to lowest since June 2025, EIA says",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-output-fell-in-december-to-lowest-since-june-2025-eia-says-4532533",
+      "published": "2026-02-27 19:42:37",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US seeks ownership of oil tanker and 1.8 million barrels of Venezuelan crude",
+      "url": "https://www.investing.com/news/commodities-news/us-seeks-forfeiture-of-oil-tanker-and-18-million-barrels-of-venezuelan-oil-4532133",
+      "published": "2026-02-27 19:07:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil rises as Trump says no final decision on Iran; crude heads for 3% monthly gain",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-us-iran-agree-to-more-talks-venezuela-sales-eyed-4530368",
-      "published": "2026-02-27 02:12:19",
+      "published": "2026-02-27 19:00:51",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices edge lower after US, Iran extend talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-after-us-iran-extend-talks-4530364",
-      "published": "2026-02-27 02:00:56",
+      "title": "Mexico’s Pemex narrows losses in last quarter of 2025",
+      "url": "https://www.investing.com/news/commodities-news/mexicos-pemex-reports-fourthquarter-net-loss-of-862-million-4532195",
+      "published": "2026-02-27 17:48:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil sales under US-Venezuela deal expected to reach $2 billion by end of February, US says",
-      "url": "https://www.investing.com/news/commodities-news/oil-sales-under-usvenezuela-deal-expected-to-reach-2-billion-by-end-of-february-us-says-4530289",
-      "published": "2026-02-27 00:42:23",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusivevenezuela-suspends-19-oil-gas-productionsharing-contracts-signed-under-maduro-government-sources-say-4530261",
-      "published": "2026-02-26 23:49:19",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US regulator says it has power to police prediction market misconduct",
-      "url": "https://www.investing.com/news/commodities-news/us-regulator-says-it-has-power-to-police-prediction-market-misconduct-4525587",
-      "published": "2026-02-26 21:07:37",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices mixed as U.S.-Iran nuclear talks end after ’significant progress’",
-      "url": "https://www.investing.com/news/commodities-news/gold-ticks-up-on-softer-dollar-markets-eye-usiran-nuclear-talks-4526429",
-      "published": "2026-02-26 20:19:42",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Canada says it could have bilateral critical sector deals with US",
-      "url": "https://www.investing.com/news/commodities-news/canada-says-it-could-have-bilateral-critical-sector-deals-with-us-4529400",
-      "published": "2026-02-26 20:18:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices edge up after ’significant progress’ in U.S.-Iran nuclear talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-ahead-of-usiran-nuclear-talks-eia-data-shows-hefty-stock-build-4526463",
-      "published": "2026-02-26 19:12:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Explainer-Does Trump’s new ’surcharge’ make EU worse off than under trade deal?",
-      "url": "https://www.investing.com/news/commodities-news/explainerdoes-trumps-new-surcharge-make-eu-worse-off-than-under-trade-deal-4529081",
-      "published": "2026-02-26 17:30:46",
+      "title": "Nigeria’s economic growth marginally faster in fourth quarter",
+      "url": "https://www.investing.com/news/commodities-news/nigerias-economic-growth-edges-up-to-407-yy-in-fourth-quarter-4532076",
+      "published": "2026-02-27 16:24:38",
       "summary": ""
     }
   ],
