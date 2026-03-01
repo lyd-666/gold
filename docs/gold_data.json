@@ -1,14 +1,14 @@
 {
   "symbol": "GC=F",
-  "date": "2026-02-28",
-  "updated": "2026-02-28T03:22:53+00:00",
+  "date": "2026-03-01",
+  "updated": "2026-03-01T03:59:45+00:00",
   "traffic_light": "GREEN",
   "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
     "收盘价 5263.82；MA20 5017.82；MA50 4794.04。",
     "RSI14 59.6；MACD Hist 8.395（动量参考）。",
     "ATR14 119.84（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
   "base_case": "关键区间：S1≈5167.95 / R1≈5359.70（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Neutral",
+      "signal": "Supportive",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Analysis-Iran missiles brings war to Gulf doorstep; hardens support for US–Israel campaign",
+      "url": "https://www.investing.com/news/commodities-news/analysisiran-missiles-brings-war-to-gulf-doorstep-hardens-support-for-usisrael-campaign-4533436",
+      "published": "2026-03-01 03:18:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Iran’s supreme leader Khamenei killed, Iranian state media confirm",
+      "url": "https://www.investing.com/news/commodities-news/irans-supreme-leader-khamenei-killed-iranian-state-media-confirm-4533456",
+      "published": "2026-03-01 01:48:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Daughter and grandchild of Iran’s Khamenei killed in US-Israeli strikes, state media says",
+      "url": "https://www.investing.com/news/commodities-news/daughter-and-grandchild-of-irans-khamenei-killed-in-usisraeli-strikes-state-media-says-4533453",
+      "published": "2026-03-01 00:42:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil and gas majors and traders suspend shipments via Hormuz, sources say",
+      "url": "https://www.investing.com/news/commodities-news/oil-and-gas-majors-and-traders-suspend-shipments-via-hormuz-as-us-attacks-iran-sources-say-4533427",
+      "published": "2026-02-28 23:48:25",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Israel’s Netanyahu says many signs that Khamenei ’is no longer’",
+      "url": "https://www.investing.com/news/commodities-news/israels-netanyahu-says-there-are-signs-that-iranian-supreme-leader-khamenei-is-no-longer-4533434",
+      "published": "2026-02-28 22:00:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Iran’s supreme leader Khamenei to give speech within minutes after U.S., Israeli strikes on Iran, Al-Alam TV says",
+      "url": "https://www.investing.com/news/commodities-news/irans-supreme-leader-khamenei-to-give-speech-within-minutes-after-us-israeli-strikes-on-iran-alalam-tv-says-4533415",
+      "published": "2026-02-28 15:00:41",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Germany, France and UK tell Iran to stop attacks in region",
+      "url": "https://www.investing.com/news/commodities-news/germany-france-and-uk-tell-iran-to-stop-attacks-in-region-4533408",
+      "published": "2026-02-28 14:06:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "After El Mencho’s killing, his cartel’s power endures deep inside the US",
+      "url": "https://www.investing.com/news/commodities-news/after-el-menchos-killing-his-cartels-power-endures-deep-inside-the-us-4533331",
+      "published": "2026-02-28 11:06:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Factbox-What are Iran’s ballistic missile capabilities?",
+      "url": "https://www.investing.com/news/commodities-news/factboxwhat-are-irans-ballistic-missile-capabilities-4533321",
+      "published": "2026-02-28 09:49:18",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Dominican Republic has over 150 million tons of rare earth deposits, president says",
       "url": "https://www.investing.com/news/commodities-news/dominican-republic-has-over-150-million-tons-of-rare-earth-deposits-president-says-4532943",
       "published": "2026-02-27 23:48:52",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices climb, with spot gold set for a monthly gain of more than 8%",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-near-5200oz-set-for-strong-february-4530381",
-      "published": "2026-02-27 21:45:41",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Bird flu devastates 7.4 million Pennsylvania chickens in a month",
-      "url": "https://www.investing.com/news/commodities-news/bird-flu-devastates-74-million-pennsylvania-chickens-in-a-month-4532709",
-      "published": "2026-02-27 21:30:54",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Havana rides a bicycle boom as US chokes off fuel to Cuba",
-      "url": "https://www.investing.com/news/commodities-news/havana-rides-a-bicycle-boom-as-us-chokes-off-fuel-to-cuba-4532589",
-      "published": "2026-02-27 20:43:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US says research funding into new farm practices to surpass $1 billion",
-      "url": "https://www.investing.com/news/commodities-news/us-says-research-funding-into-new-farm-practices-to-surpass-1-billion-4532565",
-      "published": "2026-02-27 20:18:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US oil output fell in December to lowest since June 2025, EIA says",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-output-fell-in-december-to-lowest-since-june-2025-eia-says-4532533",
-      "published": "2026-02-27 19:42:37",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US seeks ownership of oil tanker and 1.8 million barrels of Venezuelan crude",
-      "url": "https://www.investing.com/news/commodities-news/us-seeks-forfeiture-of-oil-tanker-and-18-million-barrels-of-venezuelan-oil-4532133",
-      "published": "2026-02-27 19:07:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil rises as Trump says no final decision on Iran; crude heads for 3% monthly gain",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-us-iran-agree-to-more-talks-venezuela-sales-eyed-4530368",
-      "published": "2026-02-27 19:00:51",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Mexico’s Pemex narrows losses in last quarter of 2025",
-      "url": "https://www.investing.com/news/commodities-news/mexicos-pemex-reports-fourthquarter-net-loss-of-862-million-4532195",
-      "published": "2026-02-27 17:48:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Nigeria’s economic growth marginally faster in fourth quarter",
-      "url": "https://www.investing.com/news/commodities-news/nigerias-economic-growth-edges-up-to-407-yy-in-fourth-quarter-4532076",
-      "published": "2026-02-27 16:24:38",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 0,
+    "news_score": 1,
     "rows": 15191
   }
 }
