@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-01",
-  "updated": "2026-03-01T03:59:45+00:00",
+  "date": "2026-03-02",
+  "updated": "2026-03-02T03:40:45+00:00",
   "traffic_light": "GREEN",
   "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
-    "收盘价 5263.82；MA20 5017.82；MA50 4794.04。",
-    "RSI14 59.6；MACD Hist 8.395（动量参考）。",
-    "ATR14 119.84（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5363.47；MA20 5052.93；MA50 4814.66。",
+    "RSI14 64.8；MACD Hist 16.461（动量参考）。",
+    "ATR14 122.83（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=5（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5167.95 / R1≈5359.70（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5265.20 / R1≈5461.73（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-19",
-      "Open": "4634.70",
-      "High": "4691.03",
-      "Low": "4582.27",
-      "Close": "4671.02",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-20",
       "Open": "4674.65",
@@ -264,6 +256,14 @@
       "Low": "5167.45",
       "Close": "5263.82",
       "Volume": "0"
+    },
+    {
+      "Date": "2026-03-02",
+      "Open": "5312.56",
+      "High": "5393.72",
+      "Low": "5304.06",
+      "Close": "5363.47",
+      "Volume": "0"
     }
   ],
   "drivers": [
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Analysis-Iran missiles brings war to Gulf doorstep; hardens support for US–Israel campaign",
-      "url": "https://www.investing.com/news/commodities-news/analysisiran-missiles-brings-war-to-gulf-doorstep-hardens-support-for-usisrael-campaign-4533436",
-      "published": "2026-03-01 03:18:29",
+      "title": "Israel strikes Beirut’s southern suburbs after Hezbollah attacks",
+      "url": "https://www.investing.com/news/commodities-news/israeli-military-launches-strikes-against-hezbollah-after-group-attacks-israel-4533591",
+      "published": "2026-03-02 02:54:57",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran’s supreme leader Khamenei killed, Iranian state media confirm",
-      "url": "https://www.investing.com/news/commodities-news/irans-supreme-leader-khamenei-killed-iranian-state-media-confirm-4533456",
-      "published": "2026-03-01 01:48:29",
+      "title": "Oil jumps as Iran conflict escalates, disrupts shipping",
+      "url": "https://www.investing.com/news/commodities-news/oil-jumps-as-usiran-conflict-escalates-disrupts-shipping-4533568",
+      "published": "2026-03-02 01:00:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Daughter and grandchild of Iran’s Khamenei killed in US-Israeli strikes, state media says",
-      "url": "https://www.investing.com/news/commodities-news/daughter-and-grandchild-of-irans-khamenei-killed-in-usisraeli-strikes-state-media-says-4533453",
-      "published": "2026-03-01 00:42:48",
+      "title": "Gold prices jump 2% amid widening US-Israel conflict with Iran",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-jump-2-amid-widening-usisrael-conflict-with-iran-4533578",
+      "published": "2026-03-02 00:09:24",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil and gas majors and traders suspend shipments via Hormuz, sources say",
-      "url": "https://www.investing.com/news/commodities-news/oil-and-gas-majors-and-traders-suspend-shipments-via-hormuz-as-us-attacks-iran-sources-say-4533427",
-      "published": "2026-02-28 23:48:25",
+      "title": "Oil prices surge after US-Israel strikes on Iran, trim early gains",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-surge-13-after-usisrael-strikes-on-iran-4533569",
+      "published": "2026-03-01 23:33:09",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Israel’s Netanyahu says many signs that Khamenei ’is no longer’",
-      "url": "https://www.investing.com/news/commodities-news/israels-netanyahu-says-there-are-signs-that-iranian-supreme-leader-khamenei-is-no-longer-4533434",
-      "published": "2026-02-28 22:00:48",
+      "title": "US gasoline prices to rise after attack on Iran, analysts warn",
+      "url": "https://www.investing.com/news/commodities-news/us-gasoline-prices-to-rise-after-attack-on-iran-analysts-warn-4533562",
+      "published": "2026-03-01 22:00:48",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran’s supreme leader Khamenei to give speech within minutes after U.S., Israeli strikes on Iran, Al-Alam TV says",
-      "url": "https://www.investing.com/news/commodities-news/irans-supreme-leader-khamenei-to-give-speech-within-minutes-after-us-israeli-strikes-on-iran-alalam-tv-says-4533415",
-      "published": "2026-02-28 15:00:41",
+      "title": "Gulf businesses reel as Iran strikes trigger regional shutdowns",
+      "url": "https://www.investing.com/news/commodities-news/gulf-businesses-reel-as-iran-strikes-trigger-regional-shutdowns-4533534",
+      "published": "2026-03-01 20:12:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Germany, France and UK tell Iran to stop attacks in region",
-      "url": "https://www.investing.com/news/commodities-news/germany-france-and-uk-tell-iran-to-stop-attacks-in-region-4533408",
-      "published": "2026-02-28 14:06:30",
+      "title": "Abu Dhabi complex housing embassies damaged as retaliatory strikes widen in Gulf",
+      "url": "https://www.investing.com/news/commodities-news/waves-of-blasts-heard-over-dubai-doha-for-second-day-witnesses-say-4533476",
+      "published": "2026-03-01 16:24:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "After El Mencho’s killing, his cartel’s power endures deep inside the US",
-      "url": "https://www.investing.com/news/commodities-news/after-el-menchos-killing-his-cartels-power-endures-deep-inside-the-us-4533331",
-      "published": "2026-02-28 11:06:26",
+      "title": "Oil jumps 10% on Iran conflict and could spike to $100 a barrel, analysts say",
+      "url": "https://www.investing.com/news/commodities-news/oil-jumps-10-on-iran-conflict-and-could-spike-to-100-a-barrel-analysts-say-4533502",
+      "published": "2026-03-01 15:24:26",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Factbox-What are Iran’s ballistic missile capabilities?",
-      "url": "https://www.investing.com/news/commodities-news/factboxwhat-are-irans-ballistic-missile-capabilities-4533321",
-      "published": "2026-02-28 09:49:18",
+      "title": "OPEC+ agrees modest oil output boost even as US war on Iran disrupts shipments",
+      "url": "https://www.investing.com/news/commodities-news/opec-debates-oil-output-boost-as-us-war-on-iran-disrupts-shipments-4533484",
+      "published": "2026-03-01 14:54:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Dominican Republic has over 150 million tons of rare earth deposits, president says",
-      "url": "https://www.investing.com/news/commodities-news/dominican-republic-has-over-150-million-tons-of-rare-earth-deposits-president-says-4532943",
-      "published": "2026-02-27 23:48:52",
+      "title": "Belgium seizes suspected Russian shadow fleet tanker",
+      "url": "https://www.investing.com/news/commodities-news/belgium-seizes-suspected-russian-shadow-fleet-tanker-4533509",
+      "published": "2026-03-01 13:48:08",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
-    "rows": 15191
+    "news_score": 5,
+    "rows": 15192
   }
 }
