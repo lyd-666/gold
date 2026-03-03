@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-02",
-  "updated": "2026-03-02T03:40:45+00:00",
+  "date": "2026-03-03",
+  "updated": "2026-03-03T03:43:42+00:00",
   "traffic_light": "GREEN",
   "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
   "bullets": [
-    "收盘价 5363.47；MA20 5052.93；MA50 4814.66。",
-    "RSI14 64.8；MACD Hist 16.461（动量参考）。",
-    "ATR14 122.83（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=5（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5366.49；MA20 5071.83；MA50 4834.37。",
+    "RSI14 63.0；MACD Hist 18.382（动量参考）。",
+    "ATR14 121.97（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=7（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5265.20 / R1≈5461.73（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5268.92 / R1≈5464.07（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-20",
-      "Open": "4674.65",
-      "High": "4766.07",
-      "Low": "4659.84",
-      "Close": "4763.63",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-21",
       "Open": "4765.03",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-03-02",
       "Open": "5312.56",
-      "High": "5393.72",
-      "Low": "5304.06",
-      "Close": "5363.47",
+      "High": "5418.77",
+      "Low": "5262.74",
+      "Close": "5322.16",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-03",
+      "Open": "5324.88",
+      "High": "5379.86",
+      "Low": "5324.88",
+      "Close": "5366.49",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Israel strikes Beirut’s southern suburbs after Hezbollah attacks",
-      "url": "https://www.investing.com/news/commodities-news/israeli-military-launches-strikes-against-hezbollah-after-group-attacks-israel-4533591",
-      "published": "2026-03-02 02:54:57",
+      "title": "Oil extends surge on wider Middle East conflict, Strait of Hormuz closure",
+      "url": "https://www.investing.com/news/commodities-news/oil-extends-surge-on-wider-middle-east-conflict-strait-of-hormuz-closure-4536676",
+      "published": "2026-03-03 02:50:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil jumps as Iran conflict escalates, disrupts shipping",
-      "url": "https://www.investing.com/news/commodities-news/oil-jumps-as-usiran-conflict-escalates-disrupts-shipping-4533568",
-      "published": "2026-03-02 01:00:32",
+      "title": "US will take action to mitigate oil price spike for Americans, Rubio says",
+      "url": "https://www.investing.com/news/commodities-news/us-will-take-action-to-mitigate-oil-price-spike-for-americans-rubio-says-4536057",
+      "published": "2026-03-03 02:48:34",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices jump 2% amid widening US-Israel conflict with Iran",
+      "title": "Oil rises as expanding US-Israeli conflict with Iran elevates supply risks",
+      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-expanding-usisraeli-conflict-with-iran-elevates-supply-risks-4536656",
+      "published": "2026-03-03 02:19:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold rises as Middle East conflict widens; stronger dollar limits upside",
+      "url": "https://www.investing.com/news/commodities-news/gold-rises-as-middle-east-conflict-widens-stronger-dollar-limits-upside-4536625",
+      "published": "2026-03-03 01:31:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Iran conflict disrupts global shipping as tankers are stranded, damaged",
+      "url": "https://www.investing.com/news/commodities-news/iran-conflict-disrupts-global-shipping-as-tankers-are-stranded-damaged-4534475",
+      "published": "2026-03-03 01:18:33",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "S&P may cut Berkshire-owned PacifiCorp utility to junk because of wildfires",
+      "url": "https://www.investing.com/news/commodities-news/sp-may-cut-berkshireowned-pacificorp-utility-to-junk-because-of-wildfires-4536615",
+      "published": "2026-03-03 01:12:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Rubio says planned Israeli action against Iran prompted US strikes",
+      "url": "https://www.investing.com/news/commodities-news/us-not-currently-postured-for-ground-forces-in-iran-rubio-says-4535979",
+      "published": "2026-03-03 00:55:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Factbox-How have US presidents tapped the Strategic Petroleum Reserve during war?",
+      "url": "https://www.investing.com/news/commodities-news/factboxhow-have-us-presidents-tapped-the-strategic-petroleum-reserve-during-war-4535690",
+      "published": "2026-03-02 22:00:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices climb amid boost to safe haven demand after U.S.-Iran escalation",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-jump-2-amid-widening-usisrael-conflict-with-iran-4533578",
-      "published": "2026-03-02 00:09:24",
+      "published": "2026-03-02 20:49:47",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices surge after US-Israel strikes on Iran, trim early gains",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-surge-13-after-usisrael-strikes-on-iran-4533569",
-      "published": "2026-03-01 23:33:09",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US gasoline prices to rise after attack on Iran, analysts warn",
-      "url": "https://www.investing.com/news/commodities-news/us-gasoline-prices-to-rise-after-attack-on-iran-analysts-warn-4533562",
-      "published": "2026-03-01 22:00:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gulf businesses reel as Iran strikes trigger regional shutdowns",
-      "url": "https://www.investing.com/news/commodities-news/gulf-businesses-reel-as-iran-strikes-trigger-regional-shutdowns-4533534",
-      "published": "2026-03-01 20:12:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Abu Dhabi complex housing embassies damaged as retaliatory strikes widen in Gulf",
-      "url": "https://www.investing.com/news/commodities-news/waves-of-blasts-heard-over-dubai-doha-for-second-day-witnesses-say-4533476",
-      "published": "2026-03-01 16:24:27",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil jumps 10% on Iran conflict and could spike to $100 a barrel, analysts say",
-      "url": "https://www.investing.com/news/commodities-news/oil-jumps-10-on-iran-conflict-and-could-spike-to-100-a-barrel-analysts-say-4533502",
-      "published": "2026-03-01 15:24:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "OPEC+ agrees modest oil output boost even as US war on Iran disrupts shipments",
-      "url": "https://www.investing.com/news/commodities-news/opec-debates-oil-output-boost-as-us-war-on-iran-disrupts-shipments-4533484",
-      "published": "2026-03-01 14:54:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Belgium seizes suspected Russian shadow fleet tanker",
-      "url": "https://www.investing.com/news/commodities-news/belgium-seizes-suspected-russian-shadow-fleet-tanker-4533509",
-      "published": "2026-03-01 13:48:08",
+      "title": "Oil and gas prices surge as Iran war disrupts Middle Eastern output",
+      "url": "https://www.investing.com/news/commodities-news/oil-jumps-as-usiran-conflict-escalates-disrupts-shipping-4533568",
+      "published": "2026-03-02 20:36:33",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 5,
-    "rows": 15192
+    "news_score": 7,
+    "rows": 15193
   }
 }
