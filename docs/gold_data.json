@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-03",
-  "updated": "2026-03-03T03:43:42+00:00",
-  "traffic_light": "GREEN",
-  "summary": "趋势与动量偏多，计划以回踩承接为主，严格控制波动风险。",
+  "date": "2026-03-05",
+  "updated": "2026-03-05T03:39:35+00:00",
+  "traffic_light": "NEUTRAL",
+  "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5366.49；MA20 5071.83；MA50 4834.37。",
-    "RSI14 63.0；MACD Hist 18.382（动量参考）。",
-    "ATR14 121.97（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=7（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5186.98；MA20 5087.12；MA50 4856.83。",
+    "RSI14 57.0；MACD Hist -6.671（动量参考）。",
+    "ATR14 130.52（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5268.92 / R1≈5464.07（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5082.56 / R1≈5291.39（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,22 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-21",
-      "Open": "4765.03",
-      "High": "4887.78",
-      "Low": "4757.43",
-      "Close": "4832.66",
-      "Volume": "0"
-    },
-    {
-      "Date": "2026-01-22",
-      "Open": "4833.97",
-      "High": "4940.84",
-      "Low": "4774.16",
-      "Close": "4936.16",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-23",
       "Open": "4941.97",
@@ -261,8 +245,24 @@
       "Date": "2026-03-03",
       "Open": "5324.88",
       "High": "5379.86",
-      "Low": "5324.88",
-      "Close": "5366.49",
+      "Low": "4997.98",
+      "Close": "5088.51",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-04",
+      "Open": "5104.06",
+      "High": "5206.14",
+      "Low": "5085.62",
+      "Close": "5141.40",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-05",
+      "Open": "5146.78",
+      "High": "5194.90",
+      "Low": "5145.22",
+      "Close": "5186.98",
       "Volume": "0"
     }
   ],
@@ -274,7 +274,7 @@
     },
     {
       "driver": "Momentum (RSI/MACD)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "RSI 与 MACD 柱体方向。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil extends surge on wider Middle East conflict, Strait of Hormuz closure",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-surge-on-wider-middle-east-conflict-strait-of-hormuz-closure-4536676",
-      "published": "2026-03-03 02:50:33",
+      "title": "Trafigura, Venezuelan mining firm sign deal for up to 1,000 kg of gold, Axios reports",
+      "url": "https://www.investing.com/news/commodities-news/trafigura-venezuelan-mining-firm-sign-deal-for-up-to-1000-kg-of-gold-axios-reports-4542760",
+      "published": "2026-03-05 02:37:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US will take action to mitigate oil price spike for Americans, Rubio says",
-      "url": "https://www.investing.com/news/commodities-news/us-will-take-action-to-mitigate-oil-price-spike-for-americans-rubio-says-4536057",
-      "published": "2026-03-03 02:48:34",
+      "title": "Gold prices rise on Middle East conflict, softer US dollar",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-on-middle-east-conflict-softer-us-dollar-4542749",
+      "published": "2026-03-05 02:15:21",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil rises as expanding US-Israeli conflict with Iran elevates supply risks",
-      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-expanding-usisraeli-conflict-with-iran-elevates-supply-risks-4536656",
-      "published": "2026-03-03 02:19:48",
+      "title": "Oil prices rise as Iran conflict widens",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-iran-conflict-widens-4542739",
+      "published": "2026-03-05 02:01:12",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold rises as Middle East conflict widens; stronger dollar limits upside",
-      "url": "https://www.investing.com/news/commodities-news/gold-rises-as-middle-east-conflict-widens-stronger-dollar-limits-upside-4536625",
-      "published": "2026-03-03 01:31:22",
+      "title": "Australia, Canada sign new deals on critical minerals",
+      "url": "https://www.investing.com/news/commodities-news/australia-canada-sign-new-deals-on-critical-minerals-4542697",
+      "published": "2026-03-05 02:00:54",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran conflict disrupts global shipping as tankers are stranded, damaged",
-      "url": "https://www.investing.com/news/commodities-news/iran-conflict-disrupts-global-shipping-as-tankers-are-stranded-damaged-4534475",
-      "published": "2026-03-03 01:18:33",
+      "title": "Cuba hit by widespread power blackout amid US oil chokehold",
+      "url": "https://www.investing.com/news/commodities-news/cuba-hit-by-widespread-power-blackout-amid-us-oil-chokehold-4542701",
+      "published": "2026-03-05 01:00:50",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "S&P may cut Berkshire-owned PacifiCorp utility to junk because of wildfires",
-      "url": "https://www.investing.com/news/commodities-news/sp-may-cut-berkshireowned-pacificorp-utility-to-junk-because-of-wildfires-4536615",
-      "published": "2026-03-03 01:12:32",
+      "title": "More than 2,000 Canadians request assistance leaving Middle East, official says",
+      "url": "https://www.investing.com/news/commodities-news/more-than-2000-canadians-request-assistance-leaving-middle-east-official-says-4542553",
+      "published": "2026-03-04 22:54:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Rubio says planned Israeli action against Iran prompted US strikes",
-      "url": "https://www.investing.com/news/commodities-news/us-not-currently-postured-for-ground-forces-in-iran-rubio-says-4535979",
-      "published": "2026-03-03 00:55:31",
+      "title": "Israel orders Lebanese to leave swathe of the south ’immediately’",
+      "url": "https://www.investing.com/news/commodities-news/at-least-four-killed-in-israeli-strike-on-building-in-lebanons-baalbek-4539677",
+      "published": "2026-03-04 21:30:35",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Factbox-How have US presidents tapped the Strategic Petroleum Reserve during war?",
-      "url": "https://www.investing.com/news/commodities-news/factboxhow-have-us-presidents-tapped-the-strategic-petroleum-reserve-during-war-4535690",
-      "published": "2026-03-02 22:00:52",
+      "title": "Citi lifts aluminium 0–3 month target to $3,600 per metric ton",
+      "url": "https://www.investing.com/news/commodities-news/citi-lifts-aluminium-03-month-target-to-3600-per-metric-ton-4542111",
+      "published": "2026-03-04 21:07:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices climb amid boost to safe haven demand after U.S.-Iran escalation",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-jump-2-amid-widening-usisrael-conflict-with-iran-4533578",
-      "published": "2026-03-02 20:49:47",
+      "title": "US diesel hits $4 per gallon as fuel costs rise amid escalating Middle East conflict",
+      "url": "https://www.investing.com/news/commodities-news/us-diesel-hits-4-per-gallon-as-fuel-costs-rise-amid-escalating-middle-east-conflict-4542069",
+      "published": "2026-03-04 20:42:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil and gas prices surge as Iran war disrupts Middle Eastern output",
-      "url": "https://www.investing.com/news/commodities-news/oil-jumps-as-usiran-conflict-escalates-disrupts-shipping-4533568",
-      "published": "2026-03-02 20:36:33",
+      "title": "Americas heavy crude prices hit multi-year highs as Iran conflict disrupts oil markets",
+      "url": "https://www.investing.com/news/commodities-news/americas-heavy-crude-prices-hit-multiyear-highs-as-iran-conflict-disrupts-oil-markets-4542060",
+      "published": "2026-03-04 20:37:43",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 7,
-    "rows": 15193
+    "news_score": 4,
+    "rows": 15195
   }
 }
