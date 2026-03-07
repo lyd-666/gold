@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-06",
-  "updated": "2026-03-06T03:38:43+00:00",
+  "date": "2026-03-07",
+  "updated": "2026-03-07T03:28:15+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5132.94；MA20 5090.83；MA50 4867.78。",
-    "RSI14 56.2；MACD Hist -15.461（动量参考）。",
-    "ATR14 137.38（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5153.27；MA20 5091.84；MA50 4868.19。",
+    "RSI14 57.0；MACD Hist -14.163（动量参考）。",
+    "ATR14 139.87（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=6（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5023.03 / R1≈5242.84（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5041.37 / R1≈5265.16（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,9 +260,9 @@
     {
       "Date": "2026-03-06",
       "Open": "5086.57",
-      "High": "5142.69",
-      "Low": "5067.03",
-      "Close": "5132.94",
+      "High": "5174.45",
+      "Low": "5063.94",
+      "Close": "5153.27",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil spill disrupts livelihoods in Mexico’s Veracruz state",
-      "url": "https://www.investing.com/news/commodities-news/oil-spill-disrupts-livelihoods-in-mexicos-veracruz-state-4545941",
-      "published": "2026-03-06 03:25:05",
+      "title": "Iran war sends US crude futures up 12% a barrel",
+      "url": "https://www.investing.com/news/commodities-news/oil-set-for-steepest-weekly-gain-since-russias-2022-invasion-of-ukraine-4546321",
+      "published": "2026-03-07 01:49:13",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices dip after 5-day winning streak; set for weekly surge on Iran conflict",
+      "title": "White House seeks bolder action on energy prices amid Iran conflict",
+      "url": "https://www.investing.com/news/commodities-news/white-house-seeks-bolder-action-on-energy-prices-amid-iran-conflict-4548275",
+      "published": "2026-03-07 01:48:56",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US pump prices surge as Iran war upends global energy supply",
+      "url": "https://www.investing.com/news/commodities-news/us-pump-prices-surge-as-iran-war-upends-global-energy-supply-4548254",
+      "published": "2026-03-07 01:18:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "JPMorgan oil analysis ‘completely flawed,’ says Bessent",
+      "url": "https://www.investing.com/news/commodities-news/jpmorgan-oil-analysis-completely-flawed-says-bessent-4548208",
+      "published": "2026-03-06 23:57:41",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Iran conflict boosts U.S. Gulf oil prices to highest since 2020",
+      "url": "https://www.investing.com/news/commodities-news/iran-conflict-boosts-us-gulf-oil-prices-to-highest-since-2020-4548178",
+      "published": "2026-03-06 23:36:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US Senator Kelly proposes suspending federal gas tax through October 1",
+      "url": "https://www.investing.com/news/commodities-news/us-senator-kelly-proposes-suspending-federal-gas-tax-through-october-1-4548163",
+      "published": "2026-03-06 23:12:33",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Japan, France, Canada work on alternatives to US-led trade bloc for rare earth supplies",
+      "url": "https://www.investing.com/news/commodities-news/japan-france-canada-work-on-alternatives-to-usled-trade-bloc-for-rare-earth-supplies-4548130",
+      "published": "2026-03-06 22:49:43",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Goldman Sachs warns oil may surge above $100/bbl if Hormuz flows don’t recover",
+      "url": "https://www.investing.com/news/commodities-news/goldman-sachs-warns-oil-may-surge-above-100bbl-if-hormuz-flows-dont-recover-4548109",
+      "published": "2026-03-06 22:30:51",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Brent oil posts best week since 2020 on escalating Iran conflict, WTI soars 36%",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-after-5day-winning-streak-set-for-weekly-surge-on-iran-conflict-4545931",
-      "published": "2026-03-06 03:12:54",
+      "published": "2026-03-06 22:20:25",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil falls as US may intervene in futures market, issues waiver for Russian purchases",
-      "url": "https://www.investing.com/news/commodities-news/oil-falls-as-us-may-intervene-in-futures-market-issues-waiver-for-russian-purchases-4545920",
-      "published": "2026-03-06 03:00:40",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Senate Democrats say they are ready to resume permitting reform talks",
-      "url": "https://www.investing.com/news/commodities-news/senate-democrats-say-they-are-ready-to-resume-permitting-reform-talks-4545895",
-      "published": "2026-03-06 02:12:27",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold holds losses as strong dollar outweighs haven demand; set for weekly drop",
-      "url": "https://www.investing.com/news/commodities-news/gold-holds-losses-as-strong-dollar-outweighs-haven-demand-set-for-weekly-drop-4545881",
-      "published": "2026-03-06 01:35:05",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump wants say on Iran’s next leader as war intensifies",
-      "url": "https://www.investing.com/news/commodities-news/iran-launches-wave-of-missiles-at-israel-us-republicans-block-measure-to-halt-us-air-campaign-4542799",
-      "published": "2026-03-06 01:18:26",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Venezuela to ensure security of mining companies, exceed oil production goals, US Interior Secretary says",
-      "url": "https://www.investing.com/news/commodities-news/venezuela-to-ensure-security-of-mining-companies-exceed-oil-productiongoalsburgum-4545237",
-      "published": "2026-03-05 23:24:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US Treasury could unveil measures on oil futures market as energy prices rise",
-      "url": "https://www.investing.com/news/commodities-news/us-treasury-could-unveil-measures-on-oil-futures-market-as-energy-prices-rise-4545755",
-      "published": "2026-03-05 23:07:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil settles up around 5% on supply concerns as Iran conflict widens",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-iran-conflict-widens-4542739",
-      "published": "2026-03-05 22:42:29",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump: want to finish Iran then Cuba ’question of time’",
-      "url": "https://www.investing.com/news/commodities-news/trump-want-to-finish-iran-then-cuba-question-of-time-4545661",
-      "published": "2026-03-05 22:31:15",
+      "title": "US could lift sanctions on more Russian oil, says Bessent",
+      "url": "https://www.investing.com/news/commodities-news/us-could-lift-sanctions-on-more-russian-oil-says-bessent-4548018",
+      "published": "2026-03-06 22:00:52",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
+    "news_score": 6,
     "rows": 15196
   }
 }
