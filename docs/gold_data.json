@@ -1,14 +1,14 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-07",
-  "updated": "2026-03-07T03:28:15+00:00",
+  "date": "2026-03-08",
+  "updated": "2026-03-08T03:40:20+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
     "收盘价 5153.27；MA20 5091.84；MA50 4868.19。",
     "RSI14 57.0；MACD Hist -14.163（动量参考）。",
     "ATR14 139.87（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=6（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=5（仅用于辅助，不作为单独交易依据）。"
   ],
   "base_case": "关键区间：S1≈5041.37 / R1≈5265.16（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Iran war sends US crude futures up 12% a barrel",
-      "url": "https://www.investing.com/news/commodities-news/oil-set-for-steepest-weekly-gain-since-russias-2022-invasion-of-ukraine-4546321",
-      "published": "2026-03-07 01:49:13",
+      "title": "Trump tells Britain he does not need its help to win Iran war",
+      "url": "https://www.investing.com/news/commodities-news/trump-tells-britain-he-does-not-need-its-help-to-win-iran-war-4548545",
+      "published": "2026-03-07 23:00:37",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "White House seeks bolder action on energy prices amid Iran conflict",
-      "url": "https://www.investing.com/news/commodities-news/white-house-seeks-bolder-action-on-energy-prices-amid-iran-conflict-4548275",
-      "published": "2026-03-07 01:48:56",
+      "title": "History shows that oil price shocks tend to reward these currencies",
+      "url": "https://www.investing.com/news/commodities-news/history-shows-that-oil-price-shocks-tend-to-reward-these-currencies-4548537",
+      "published": "2026-03-07 21:30:01",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US pump prices surge as Iran war upends global energy supply",
-      "url": "https://www.investing.com/news/commodities-news/us-pump-prices-surge-as-iran-war-upends-global-energy-supply-4548254",
-      "published": "2026-03-07 01:18:26",
+      "title": "Katyusha rockets target US embassy in Baghdad, security sources say",
+      "url": "https://www.investing.com/news/commodities-news/katyusha-rockets-target-us-embassy-in-baghdad-security-sources-say-4548540",
+      "published": "2026-03-07 20:48:06",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "JPMorgan oil analysis ‘completely flawed,’ says Bessent",
-      "url": "https://www.investing.com/news/commodities-news/jpmorgan-oil-analysis-completely-flawed-says-bessent-4548208",
-      "published": "2026-03-06 23:57:41",
+      "title": "Israel warns Lebanon of ’disastrous repercussions’ as week’s death toll nears 300",
+      "url": "https://www.investing.com/news/commodities-news/israel-carries-out-rare-airborne-raid-in-lebanon-16-killed-in-strikes-4548483",
+      "published": "2026-03-07 20:42:39",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran conflict boosts U.S. Gulf oil prices to highest since 2020",
-      "url": "https://www.investing.com/news/commodities-news/iran-conflict-boosts-us-gulf-oil-prices-to-highest-since-2020-4548178",
-      "published": "2026-03-06 23:36:28",
+      "title": "RBC stays bullish on copper as prices defy rising inventories",
+      "url": "https://www.investing.com/news/commodities-news/rbc-stays-bullish-on-copper-as-prices-defy-rising-inventories-4548532",
+      "published": "2026-03-07 20:30:01",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US Senator Kelly proposes suspending federal gas tax through October 1",
-      "url": "https://www.investing.com/news/commodities-news/us-senator-kelly-proposes-suspending-federal-gas-tax-through-october-1-4548163",
-      "published": "2026-03-06 23:12:33",
+      "title": "Iran war threatens prolonged hit to global energy markets",
+      "url": "https://www.investing.com/news/commodities-news/iran-war-threatens-prolonged-hit-to-global-energy-markets-4548529",
+      "published": "2026-03-07 17:54:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Japan, France, Canada work on alternatives to US-led trade bloc for rare earth supplies",
-      "url": "https://www.investing.com/news/commodities-news/japan-france-canada-work-on-alternatives-to-usled-trade-bloc-for-rare-earth-supplies-4548130",
-      "published": "2026-03-06 22:49:43",
+      "title": "UAE president says country is well and is no easy prey in first public comments since Iran strikes",
+      "url": "https://www.investing.com/news/commodities-news/uae-president-says-country-is-well-and-is-no-easy-prey-in-first-public-comments-since-iran-strikes-4548524",
+      "published": "2026-03-07 16:18:56",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Goldman Sachs warns oil may surge above $100/bbl if Hormuz flows don’t recover",
-      "url": "https://www.investing.com/news/commodities-news/goldman-sachs-warns-oil-may-surge-above-100bbl-if-hormuz-flows-dont-recover-4548109",
-      "published": "2026-03-06 22:30:51",
+      "title": "Trump says Iran will be ’hit very hard’ on Saturday",
+      "url": "https://www.investing.com/news/commodities-news/trump-says-iran-will-be-hit-very-hard-on-saturday-4548494",
+      "published": "2026-03-07 11:48:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Brent oil posts best week since 2020 on escalating Iran conflict, WTI soars 36%",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-after-5day-winning-streak-set-for-weekly-surge-on-iran-conflict-4545931",
-      "published": "2026-03-06 22:20:25",
+      "title": "Goldman warns oil prices could break 2008, 2022 highs on Hormuz disruption",
+      "url": "https://www.investing.com/news/commodities-news/goldman-says-oil-prices-could-break-2008-2022-highs-on-hormuz-disruption-4548474",
+      "published": "2026-03-07 09:42:13",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US could lift sanctions on more Russian oil, says Bessent",
-      "url": "https://www.investing.com/news/commodities-news/us-could-lift-sanctions-on-more-russian-oil-says-bessent-4548018",
-      "published": "2026-03-06 22:00:52",
+      "title": "PBOC extends gold-buying streak to 16 months amid Middle East turmoil",
+      "url": "https://www.investing.com/news/commodities-news/pboc-extends-goldbuying-streak-to-16-months-amid-middle-east-turmoil-4548362",
+      "published": "2026-03-07 06:06:53",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 6,
+    "news_score": 5,
     "rows": 15196
   }
 }
