@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-08",
-  "updated": "2026-03-08T03:40:20+00:00",
+  "date": "2026-03-09",
+  "updated": "2026-03-09T03:44:19+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5153.27；MA20 5091.84；MA50 4868.19。",
-    "RSI14 57.0；MACD Hist -14.163（动量参考）。",
-    "ATR14 139.87（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=5（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5085.80；MA20 5093.21；MA50 4879.27。",
+    "RSI14 59.5；MACD Hist -19.067（动量参考）。",
+    "ATR14 138.73（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=7（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5041.37 / R1≈5265.16（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4974.81 / R1≈5196.79（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-26",
-      "Open": "5008.61",
-      "High": "5110.35",
-      "Low": "4981.83",
-      "Close": "5010.97",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-27",
       "Open": "5014.03",
@@ -264,12 +256,20 @@
       "Low": "5063.94",
       "Close": "5153.27",
       "Volume": "0"
+    },
+    {
+      "Date": "2026-03-09",
+      "Open": "5130.46",
+      "High": "5135.41",
+      "Low": "5017.11",
+      "Close": "5085.80",
+      "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Trump tells Britain he does not need its help to win Iran war",
-      "url": "https://www.investing.com/news/commodities-news/trump-tells-britain-he-does-not-need-its-help-to-win-iran-war-4548545",
-      "published": "2026-03-07 23:00:37",
+      "title": "Iran conflict boosts US Gulf oil prices to highest since 2020",
+      "url": "https://www.investing.com/news/commodities-news/iran-conflict-boosts-us-gulf-oil-prices-to-highest-since-2020-4548672",
+      "published": "2026-03-09 01:49:07",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices surge 20% as expanding US-Israeli war with Iran cuts supplies from Mideast",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-jump-on-supply-fears-amid-expanding-usisraeli-war-with-iran-4548644",
+      "published": "2026-03-09 01:30:24",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil surges 20% as Iran war fuels supply fears",
+      "url": "https://www.investing.com/news/commodities-news/instant-view-oil-surges-20-as-iran-war-fuels-supply-fears-4548664",
+      "published": "2026-03-09 01:24:23",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices fall as Iran war escalation sparks rally in oil, dollar",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-as-iran-war-escalation-sparks-rally-in-oil-dollar-4548657",
+      "published": "2026-03-09 00:08:13",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices jump to $111/barrel as Iran war sparks heightened supply fears",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-to-111barrel-as-iran-war-sparks-heightened-supply-fears-4548649",
+      "published": "2026-03-08 23:23:25",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Lebanese man flees hometown, months after repairing home damaged in last war",
+      "url": "https://www.investing.com/news/commodities-news/lebanese-man-flees-hometown-months-after-repairing-home-damaged-in-last-war-4548575",
+      "published": "2026-03-08 20:00:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US considers idea of special operation to seize Iran’s uranium, Bloomberg News reports",
+      "url": "https://www.investing.com/news/commodities-news/us-considers-idea-of-special-operation-to-seize-irans-uranium-bloomberg-news-reports-4548624",
+      "published": "2026-03-08 17:12:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US energy chief defends waiver on Russian oil sanctions, blames fear for higher gas prices",
+      "url": "https://www.investing.com/news/commodities-news/us-energy-chief-defends-waiver-on-russian-oil-sanctions-blames-fear-for-higher-gas-prices-4548616",
+      "published": "2026-03-08 15:48:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
       "title": "History shows that oil price shocks tend to reward these currencies",
       "url": "https://www.investing.com/news/commodities-news/history-shows-that-oil-price-shocks-tend-to-reward-these-currencies-4548537",
-      "published": "2026-03-07 21:30:01",
+      "published": "2026-03-08 10:51:17",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Katyusha rockets target US embassy in Baghdad, security sources say",
-      "url": "https://www.investing.com/news/commodities-news/katyusha-rockets-target-us-embassy-in-baghdad-security-sources-say-4548540",
-      "published": "2026-03-07 20:48:06",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Israel warns Lebanon of ’disastrous repercussions’ as week’s death toll nears 300",
-      "url": "https://www.investing.com/news/commodities-news/israel-carries-out-rare-airborne-raid-in-lebanon-16-killed-in-strikes-4548483",
-      "published": "2026-03-07 20:42:39",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "RBC stays bullish on copper as prices defy rising inventories",
-      "url": "https://www.investing.com/news/commodities-news/rbc-stays-bullish-on-copper-as-prices-defy-rising-inventories-4548532",
-      "published": "2026-03-07 20:30:01",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran war threatens prolonged hit to global energy markets",
-      "url": "https://www.investing.com/news/commodities-news/iran-war-threatens-prolonged-hit-to-global-energy-markets-4548529",
-      "published": "2026-03-07 17:54:27",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "UAE president says country is well and is no easy prey in first public comments since Iran strikes",
-      "url": "https://www.investing.com/news/commodities-news/uae-president-says-country-is-well-and-is-no-easy-prey-in-first-public-comments-since-iran-strikes-4548524",
-      "published": "2026-03-07 16:18:56",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump says Iran will be ’hit very hard’ on Saturday",
-      "url": "https://www.investing.com/news/commodities-news/trump-says-iran-will-be-hit-very-hard-on-saturday-4548494",
-      "published": "2026-03-07 11:48:45",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Goldman warns oil prices could break 2008, 2022 highs on Hormuz disruption",
-      "url": "https://www.investing.com/news/commodities-news/goldman-says-oil-prices-could-break-2008-2022-highs-on-hormuz-disruption-4548474",
-      "published": "2026-03-07 09:42:13",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "PBOC extends gold-buying streak to 16 months amid Middle East turmoil",
-      "url": "https://www.investing.com/news/commodities-news/pboc-extends-goldbuying-streak-to-16-months-amid-middle-east-turmoil-4548362",
-      "published": "2026-03-07 06:06:53",
+      "title": "Panel picking Iran’s supreme leader has reached consensus, member says",
+      "url": "https://www.investing.com/news/commodities-news/majority-consensus-reached-on-irans-next-supreme-leader-mehr-news-reports-4548564",
+      "published": "2026-03-08 09:36:33",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 5,
-    "rows": 15196
+    "news_score": 7,
+    "rows": 15197
   }
 }
