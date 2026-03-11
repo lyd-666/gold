@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-10",
-  "updated": "2026-03-10T03:36:19+00:00",
+  "date": "2026-03-11",
+  "updated": "2026-03-11T03:36:25+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5163.85；MA20 5102.53；MA50 4896.87。",
-    "RSI14 59.5；MACD Hist -15.235（动量参考）。",
-    "ATR14 131.94（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5209.08；MA20 5110.16；MA50 4914.84。",
+    "RSI14 60.6；MACD Hist -10.856（动量参考）。",
+    "ATR14 133.84（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5058.30 / R1≈5269.40（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5102.01 / R1≈5316.15（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-28",
-      "Open": "5180.45",
-      "High": "5418.87",
-      "Low": "5157.49",
-      "Close": "5415.17",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-29",
       "Open": "5425.04",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-03-10",
       "Open": "5153.01",
-      "High": "5186.29",
+      "High": "5238.45",
       "Low": "5125.38",
-      "Close": "5163.85",
+      "Close": "5191.93",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-11",
+      "Open": "5189.42",
+      "High": "5222.91",
+      "Low": "5187.20",
+      "Close": "5209.08",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices rise but remain rangebound with focus on Iran war de-escalation",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-but-remain-rangebound-with-focus-on-iran-war-deescalation-4550987",
-      "published": "2026-03-10 02:16:57",
+      "title": "New refinery planned on US border, says Trump",
+      "url": "https://www.investing.com/news/commodities-news/trump-announces-opening-of-oil-refinery-in-texas-4553260",
+      "published": "2026-03-11 02:42:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil falls over 6% as Trump predicts Middle East de-escalation",
-      "url": "https://www.investing.com/news/commodities-news/oil-falls-over-6-as-trump-predicts-middle-east-deescalation-4550950",
-      "published": "2026-03-10 01:13:13",
+      "title": "IEA proposes largest ever oil release from strategic reserves, WSJ reports",
+      "url": "https://www.investing.com/news/commodities-news/iea-proposes-largest-ever-oil-release-from-strategic-reserves-wsj-reports-4553387",
+      "published": "2026-03-11 01:54:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil jumps to 2022 high on Iran war, falls after close as Russia sanctions in doubt",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-jump-on-supply-fears-amid-expanding-usisraeli-war-with-iran-4548644",
-      "published": "2026-03-10 01:01:04",
+      "title": "Oil prices choppy as WSJ reports IEA eyes biggest oil release ever",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-up-nearly-3-as-middle-east-crisis-constrains-supply-4553338",
+      "published": "2026-03-11 01:36:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Brent crude futures fall more than 7%",
-      "url": "https://www.investing.com/news/commodities-news/brent-crude-futures-fall-more-than-7-4550920",
-      "published": "2026-03-10 00:54:27",
+      "title": "Oil prices fall on report of IEA planning largest ever oil reserve release",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-on-report-of-iea-planning-largest-ever-oil-reserve-release-4553393",
+      "published": "2026-03-11 01:00:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices slide over 10% as Trump talks Iran war end, supply relief",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-slide-as-trump-talks-iran-war-end-supply-relief-4550944",
-      "published": "2026-03-10 00:52:13",
+      "title": "Gold prices rise as markets parse mixed signals on Iran; US CPI awaited",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-as-markets-parse-mixed-signals-on-iran-us-cpi-awaited-4553386",
+      "published": "2026-03-11 00:38:49",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Analysis-Iran bets on endurance, energy disruption to outlast US, Israel",
-      "url": "https://www.investing.com/news/commodities-news/analysisiran-bets-on-endurance-energy-disruption-to-outlast-us-israel-4550911",
-      "published": "2026-03-10 00:48:29",
+      "title": "Oil prices fall as WSJ says IEA proposes largest oil stock release ever",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-wsj-says-iea-proposes-largest-oil-stock-release-ever-4553385",
+      "published": "2026-03-11 00:36:34",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Venezuela legislature approves mining law in initial vote",
-      "url": "https://www.investing.com/news/commodities-news/venezuela-acting-government-sends-mining-reform-bill-to-legislature-4550816",
-      "published": "2026-03-10 00:00:30",
+      "title": "IEA proposes largest ever emergency oil reserve release amid Iran turmoil- WSJ",
+      "url": "https://www.investing.com/news/commodities-news/iea-proposes-largest-ever-emergency-oil-reserve-release-amid-iran-turmoil-wsj-4553380",
+      "published": "2026-03-11 00:30:39",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Americans expect gasoline prices to keep rising after Iran strikes, Reuters/Ipsos poll finds",
-      "url": "https://www.investing.com/news/commodities-news/americans-expect-gasoline-prices-to-keep-rising-after-iran-strikes-reutersipsos-poll-finds-4550862",
-      "published": "2026-03-09 23:55:43",
+      "title": "Diesel markets, upended by Middle East conflict, threaten global economic slowdown",
+      "url": "https://www.investing.com/news/commodities-news/diesel-markets-upended-by-middle-east-conflict-threaten-global-economic-slowdown-4553344",
+      "published": "2026-03-10 23:42:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump says he discussed Ukraine and Iran conflicts with Putin",
-      "url": "https://www.investing.com/news/commodities-news/trump-says-he-discussed-ukraine-and-iran-conflicts-with-putin-4550851",
-      "published": "2026-03-09 23:08:12",
+      "title": "Higher oil prices will not spur more US production, oilfield services company Patterson-UTI says",
+      "url": "https://www.investing.com/news/commodities-news/higher-oil-prices-will-not-spur-more-us-production-oilfield-services-company-pattersonuti-says-4553273",
+      "published": "2026-03-10 22:24:37",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Trump says US is waiving certain oil-related sanctions to ensure supply",
-      "url": "https://www.investing.com/news/commodities-news/trump-says-us-is-waiving-certain-oilrelated-sanctions-to-ensure-supply-4550831",
-      "published": "2026-03-09 22:42:38",
+      "title": "Iran arrests dozens, including foreign national tied to US and Israel, state media reports",
+      "url": "https://www.investing.com/news/commodities-news/iran-arrests-dozens-including-foreign-national-tied-to-us-and-israel-state-media-reports-4553252",
+      "published": "2026-03-10 22:13:19",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 4,
-    "rows": 15198
+    "news_score": 1,
+    "rows": 15199
   }
 }
