@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-11",
-  "updated": "2026-03-11T03:36:25+00:00",
+  "date": "2026-03-12",
+  "updated": "2026-03-12T03:42:14+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5209.08；MA20 5110.16；MA50 4914.84。",
-    "RSI14 60.6；MACD Hist -10.856（动量参考）。",
-    "ATR14 133.84（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5151.20；MA20 5120.27；MA50 4930.95。",
+    "RSI14 52.9；MACD Hist -14.134（动量参考）。",
+    "ATR14 132.09（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5102.01 / R1≈5316.15（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5045.53 / R1≈5256.87（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-29",
-      "Open": "5425.04",
-      "High": "5595.44",
-      "Low": "5109.32",
-      "Close": "5378.77",
-      "Volume": "0"
-    },
     {
       "Date": "2026-01-30",
       "Open": "5378.73",
@@ -261,8 +253,16 @@
       "Date": "2026-03-11",
       "Open": "5189.42",
       "High": "5222.91",
-      "Low": "5187.20",
-      "Close": "5209.08",
+      "Low": "5151.52",
+      "Close": "5181.99",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-12",
+      "Open": "5138.89",
+      "High": "5174.59",
+      "Low": "5126.28",
+      "Close": "5151.20",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "New refinery planned on US border, says Trump",
-      "url": "https://www.investing.com/news/commodities-news/trump-announces-opening-of-oil-refinery-in-texas-4553260",
-      "published": "2026-03-11 02:42:32",
+      "title": "Chile’s Kast sworn in as president in biggest right-wing shift in decades",
+      "url": "https://www.investing.com/news/commodities-news/chiles-kast-sworn-in-as-president-in-biggest-rightwing-shift-in-decades-4556009",
+      "published": "2026-03-12 02:00:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "IEA proposes largest ever oil release from strategic reserves, WSJ reports",
+      "title": "Oil climbs as tankers are attacked in Iraqi waters amid Middle East war",
+      "url": "https://www.investing.com/news/commodities-news/oil-climbs-as-tankers-are-attacked-in-iraqi-waters-amid-middle-east-war-4555999",
+      "published": "2026-03-12 01:36:46",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Venezuela’s Rodriguez promotes deputy to head oil ministry",
+      "url": "https://www.investing.com/news/commodities-news/venezuelas-rodriguez-promotes-deputy-to-head-oil-ministry-4555936",
+      "published": "2026-03-12 01:00:39",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices dip below $5,200/oz as Iran war boosts oil, dollar",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-dip-below-5200oz-as-iran-war-boosts-oil-dollar-4555979",
+      "published": "2026-03-12 00:58:57",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "IEA announces record oil stockpile release over Iran war supply disruptions",
       "url": "https://www.investing.com/news/commodities-news/iea-proposes-largest-ever-oil-release-from-strategic-reserves-wsj-reports-4553387",
-      "published": "2026-03-11 01:54:32",
+      "published": "2026-03-12 00:01:11",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices choppy as WSJ reports IEA eyes biggest oil release ever",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-up-nearly-3-as-middle-east-crisis-constrains-supply-4553338",
-      "published": "2026-03-11 01:36:30",
+      "title": "US to release 172 million barrels of oil from strategic petroleum reserve",
+      "url": "https://www.investing.com/news/commodities-news/us-to-release-172-million-barrels-of-oil-from-strategic-petroleum-reserve-4555917",
+      "published": "2026-03-12 00:00:39",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall on report of IEA planning largest ever oil reserve release",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-on-report-of-iea-planning-largest-ever-oil-reserve-release-4553393",
-      "published": "2026-03-11 01:00:29",
+      "title": "Oil prices rise past $100/bbl on Iraq tanker attacks, Oman port disruption",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-over-6-on-reports-of-tankers-being-attacked-near-iraq-4555904",
+      "published": "2026-03-11 23:40:57",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices rise as markets parse mixed signals on Iran; US CPI awaited",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-as-markets-parse-mixed-signals-on-iran-us-cpi-awaited-4553386",
-      "published": "2026-03-11 00:38:49",
+      "title": "Iranian oil flows through Strait of Hormuz even as Gulf neighbors’ exports shut",
+      "url": "https://www.investing.com/news/commodities-news/iranian-oil-flows-through-strait-of-hormuz-even-as-gulf-neighbors-exports-shut-4555814",
+      "published": "2026-03-11 22:24:48",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall as WSJ says IEA proposes largest oil stock release ever",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-wsj-says-iea-proposes-largest-oil-stock-release-ever-4553385",
-      "published": "2026-03-11 00:36:34",
+      "title": "Factbox-How have US presidents tapped strategic petroleum reserves during war?",
+      "url": "https://www.investing.com/news/commodities-news/factboxhow-have-us-presidents-tapped-strategic-petroleum-reserves-during-war-4555770",
+      "published": "2026-03-11 21:54:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "IEA proposes largest ever emergency oil reserve release amid Iran turmoil- WSJ",
-      "url": "https://www.investing.com/news/commodities-news/iea-proposes-largest-ever-emergency-oil-reserve-release-amid-iran-turmoil-wsj-4553380",
-      "published": "2026-03-11 00:30:39",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Diesel markets, upended by Middle East conflict, threaten global economic slowdown",
-      "url": "https://www.investing.com/news/commodities-news/diesel-markets-upended-by-middle-east-conflict-threaten-global-economic-slowdown-4553344",
-      "published": "2026-03-10 23:42:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Higher oil prices will not spur more US production, oilfield services company Patterson-UTI says",
-      "url": "https://www.investing.com/news/commodities-news/higher-oil-prices-will-not-spur-more-us-production-oilfield-services-company-pattersonuti-says-4553273",
-      "published": "2026-03-10 22:24:37",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran arrests dozens, including foreign national tied to US and Israel, state media reports",
-      "url": "https://www.investing.com/news/commodities-news/iran-arrests-dozens-including-foreign-national-tied-to-us-and-israel-state-media-reports-4553252",
-      "published": "2026-03-10 22:13:19",
+      "title": "Canada oil producers say little can be done to boost oil production in the short term",
+      "url": "https://www.investing.com/news/commodities-news/canada-looksfor-ways-to-increase-oil-production-to-curb-price-spikes-from-iran-war-4555278",
+      "published": "2026-03-11 21:36:49",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
-    "rows": 15199
+    "news_score": 4,
+    "rows": 15200
   }
 }
