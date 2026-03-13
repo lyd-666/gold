@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-12",
-  "updated": "2026-03-12T03:42:14+00:00",
+  "date": "2026-03-13",
+  "updated": "2026-03-13T03:39:40+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5151.20；MA20 5120.27；MA50 4930.95。",
-    "RSI14 52.9；MACD Hist -14.134（动量参考）。",
-    "ATR14 132.09（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5109.34；MA20 5120.45；MA50 4945.05。",
+    "RSI14 43.4；MACD Hist -20.443（动量参考）。",
+    "ATR14 131.39（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5045.53 / R1≈5256.87（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈5004.23 / R1≈5214.45（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-01-30",
-      "Open": "5378.73",
-      "High": "5451.02",
-      "Low": "4689.94",
-      "Close": "4847.87",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-02",
       "Open": "4786.18",
@@ -260,21 +252,29 @@
     {
       "Date": "2026-03-12",
       "Open": "5138.89",
-      "High": "5174.59",
-      "Low": "5126.28",
-      "Close": "5151.20",
+      "High": "5191.65",
+      "Low": "5055.77",
+      "Close": "5078.39",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-13",
+      "Open": "5096.10",
+      "High": "5128.27",
+      "Low": "5089.17",
+      "Close": "5109.34",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Bullish",
+      "signal": "Mixed",
       "note": "价格相对均线位置与多空排列。"
     },
     {
       "driver": "Momentum (RSI/MACD)",
-      "signal": "Mixed",
+      "signal": "Bearish",
       "note": "RSI 与 MACD 柱体方向。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Chile’s Kast sworn in as president in biggest right-wing shift in decades",
-      "url": "https://www.investing.com/news/commodities-news/chiles-kast-sworn-in-as-president-in-biggest-rightwing-shift-in-decades-4556009",
-      "published": "2026-03-12 02:00:45",
+      "title": "US issues 30-day sanctions waiver for purchase of Russian oil at sea",
+      "url": "https://www.investing.com/news/commodities-news/us-allows-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558772",
+      "published": "2026-03-13 02:12:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil climbs as tankers are attacked in Iraqi waters amid Middle East war",
-      "url": "https://www.investing.com/news/commodities-news/oil-climbs-as-tankers-are-attacked-in-iraqi-waters-amid-middle-east-war-4555999",
-      "published": "2026-03-12 01:36:46",
+      "title": "Oil drops after US issues license for countries to buy Russian oil stranded at sea for 30 days",
+      "url": "https://www.investing.com/news/commodities-news/oil-drops-after-us-issues-license-for-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558820",
+      "published": "2026-03-13 01:36:23",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Venezuela’s Rodriguez promotes deputy to head oil ministry",
-      "url": "https://www.investing.com/news/commodities-news/venezuelas-rodriguez-promotes-deputy-to-head-oil-ministry-4555936",
-      "published": "2026-03-12 01:00:39",
+      "title": "Oil prices fall after US allows some Russian oil purchases to offset Iran impact",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-after-us-allows-some-russian-oil-purchases-to-offset-iran-impact-4558813",
+      "published": "2026-03-13 01:27:13",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices dip below $5,200/oz as Iran war boosts oil, dollar",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-dip-below-5200oz-as-iran-war-boosts-oil-dollar-4555979",
-      "published": "2026-03-12 00:58:57",
+      "title": "US allows countries to buy Russian oil already at sea as Iran war hits supplies",
+      "url": "https://www.investing.com/news/commodities-news/us-allows-countries-to-buy-russian-oil-already-at-sea-as-iran-war-hits-supplies-4558791",
+      "published": "2026-03-13 00:45:06",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "IEA announces record oil stockpile release over Iran war supply disruptions",
-      "url": "https://www.investing.com/news/commodities-news/iea-proposes-largest-ever-oil-release-from-strategic-reserves-wsj-reports-4553387",
-      "published": "2026-03-12 00:01:11",
+      "title": "US carrying out rescue effort after losing aircraft in Iraq, US military says",
+      "url": "https://www.investing.com/news/commodities-news/us-carrying-out-rescue-effort-after-losing-aircraft-in-iraq-us-military-says-4558582",
+      "published": "2026-03-12 22:00:58",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US to release 172 million barrels of oil from strategic petroleum reserve",
-      "url": "https://www.investing.com/news/commodities-news/us-to-release-172-million-barrels-of-oil-from-strategic-petroleum-reserve-4555917",
-      "published": "2026-03-12 00:00:39",
+      "title": "Chile, US eye collaboration on rare earths and other critical minerals",
+      "url": "https://www.investing.com/news/commodities-news/chile-and-us-eye-collaboration-on-critical-minerals-and-rare-earths-4557931",
+      "published": "2026-03-12 21:07:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices rise past $100/bbl on Iraq tanker attacks, Oman port disruption",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-over-6-on-reports-of-tankers-being-attacked-near-iraq-4555904",
-      "published": "2026-03-11 23:40:57",
+      "title": "Ships must coordinate with Iran’s navy to pass through Strait of Hormuz, foreign ministry says",
+      "url": "https://www.investing.com/news/commodities-news/ships-must-coordinate-with-irans-navy-to-pass-through-strait-of-hormuz-foreign-ministry-says-4558413",
+      "published": "2026-03-12 21:02:01",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iranian oil flows through Strait of Hormuz even as Gulf neighbors’ exports shut",
-      "url": "https://www.investing.com/news/commodities-news/iranian-oil-flows-through-strait-of-hormuz-even-as-gulf-neighbors-exports-shut-4555814",
-      "published": "2026-03-11 22:24:48",
+      "title": "CME Group CEO warns against US intervention in oil futures markets",
+      "url": "https://www.investing.com/news/commodities-news/cme-group-ceo-warns-against-us-intervention-in-oil-futures-markets-93CH-4558308",
+      "published": "2026-03-12 20:38:12",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Factbox-How have US presidents tapped strategic petroleum reserves during war?",
-      "url": "https://www.investing.com/news/commodities-news/factboxhow-have-us-presidents-tapped-strategic-petroleum-reserves-during-war-4555770",
-      "published": "2026-03-11 21:54:29",
+      "title": "Trump administration considers loosening US shipping rules to combat fuel price spike",
+      "url": "https://www.investing.com/news/commodities-news/trump-administration-tells-oil-industry-to-prepare-for-jones-act-waiver-on-domestic-shipping-sources-say-4557617",
+      "published": "2026-03-12 20:30:48",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Canada oil producers say little can be done to boost oil production in the short term",
-      "url": "https://www.investing.com/news/commodities-news/canada-looksfor-ways-to-increase-oil-production-to-curb-price-spikes-from-iran-war-4555278",
-      "published": "2026-03-11 21:36:49",
+      "title": "Bessent: escorting tankers through Hormuz was always part of the plan",
+      "url": "https://www.investing.com/news/commodities-news/bessent-escorting-tankers-through-homuz-was-always-part-of-the-plan-93CH-4558003",
+      "published": "2026-03-12 19:26:28",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 4,
-    "rows": 15200
+    "news_score": 2,
+    "rows": 15201
   }
 }
