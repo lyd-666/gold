@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-13",
-  "updated": "2026-03-13T03:39:40+00:00",
+  "date": "2026-03-14",
+  "updated": "2026-03-14T03:38:04+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5109.34；MA20 5120.45；MA50 4945.05。",
-    "RSI14 43.4；MACD Hist -20.443（动量参考）。",
-    "ATR14 131.39（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5019.83；MA20 5115.97；MA50 4943.26。",
+    "RSI14 38.8；MACD Hist -26.155（动量参考）。",
+    "ATR14 136.28（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈5004.23 / R1≈5214.45（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4910.80 / R1≈5128.86（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -261,8 +261,8 @@
       "Date": "2026-03-13",
       "Open": "5096.10",
       "High": "5128.27",
-      "Low": "5089.17",
-      "Close": "5109.34",
+      "Low": "5009.83",
+      "Close": "5019.83",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "US issues 30-day sanctions waiver for purchase of Russian oil at sea",
-      "url": "https://www.investing.com/news/commodities-news/us-allows-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558772",
-      "published": "2026-03-13 02:12:33",
+      "title": "Iran’s new supreme leader wounded, likely disfigured, Hegseth says",
+      "url": "https://www.investing.com/news/commodities-news/irans-new-supreme-leader-wounded-likely-disfigured-hegseth-says-4560238",
+      "published": "2026-03-14 02:36:27",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil drops after US issues license for countries to buy Russian oil stranded at sea for 30 days",
-      "url": "https://www.investing.com/news/commodities-news/oil-drops-after-us-issues-license-for-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558820",
-      "published": "2026-03-13 01:36:23",
+      "title": "Exclusive-With Iran war exit elusive, Trump aides vie to affect outcome",
+      "url": "https://www.investing.com/news/commodities-news/exclusivewith-iran-war-exit-elusive-trump-aides-vie-to-affect-outcome-4558916",
+      "published": "2026-03-14 00:48:40",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall after US allows some Russian oil purchases to offset Iran impact",
+      "title": "Tighter checks disrupt Brazilian soybean exports to China",
+      "url": "https://www.investing.com/news/commodities-news/tighter-checks-disrupt-brazilian-soybean-exports-to-china-4559295",
+      "published": "2026-03-13 22:48:46",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US expands Venezuela sanctions waivers in move to boost fertilizer exports and electricity investment",
+      "url": "https://www.investing.com/news/commodities-news/us-expands-venezuela-sanctions-waivers-amid-rising-prices-4560907",
+      "published": "2026-03-13 22:12:37",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices surge to two-week winning streak as Iran supply fears grip markets",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-after-us-allows-some-russian-oil-purchases-to-offset-iran-impact-4558813",
-      "published": "2026-03-13 01:27:13",
+      "published": "2026-03-13 21:20:37",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US allows countries to buy Russian oil already at sea as Iran war hits supplies",
-      "url": "https://www.investing.com/news/commodities-news/us-allows-countries-to-buy-russian-oil-already-at-sea-as-iran-war-hits-supplies-4558791",
-      "published": "2026-03-13 00:45:06",
+      "title": "Crude futures turn positive on continued Hormuz closure",
+      "url": "https://www.investing.com/news/commodities-news/oil-drops-after-us-issues-license-for-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558820",
+      "published": "2026-03-13 20:36:36",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US carrying out rescue effort after losing aircraft in Iraq, US military says",
-      "url": "https://www.investing.com/news/commodities-news/us-carrying-out-rescue-effort-after-losing-aircraft-in-iraq-us-military-says-4558582",
-      "published": "2026-03-12 22:00:58",
+      "title": "Gold set for a two-week losing run as spiking oil prices spur inflation concerns",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-but-head-for-second-weekly-loss-as-iran-war-spurs-inflation-fears-4558930",
+      "published": "2026-03-13 18:41:22",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Chile, US eye collaboration on rare earths and other critical minerals",
-      "url": "https://www.investing.com/news/commodities-news/chile-and-us-eye-collaboration-on-critical-minerals-and-rare-earths-4557931",
-      "published": "2026-03-12 21:07:30",
+      "title": "Iran war deprives US farmers of affordable fertilizer as spring planting looms",
+      "url": "https://www.investing.com/news/commodities-news/iran-war-deprives-us-farmers-of-affordable-fertilizer-as-spring-planting-looms-4560728",
+      "published": "2026-03-13 18:26:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Ships must coordinate with Iran’s navy to pass through Strait of Hormuz, foreign ministry says",
-      "url": "https://www.investing.com/news/commodities-news/ships-must-coordinate-with-irans-navy-to-pass-through-strait-of-hormuz-foreign-ministry-says-4558413",
-      "published": "2026-03-12 21:02:01",
+      "title": "Pentagon elevates investigation into Iran school strike",
+      "url": "https://www.investing.com/news/commodities-news/pentagon-elevates-investigation-into-iran-school-strike-4560719",
+      "published": "2026-03-13 18:18:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "CME Group CEO warns against US intervention in oil futures markets",
-      "url": "https://www.investing.com/news/commodities-news/cme-group-ceo-warns-against-us-intervention-in-oil-futures-markets-93CH-4558308",
-      "published": "2026-03-12 20:38:12",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump administration considers loosening US shipping rules to combat fuel price spike",
-      "url": "https://www.investing.com/news/commodities-news/trump-administration-tells-oil-industry-to-prepare-for-jones-act-waiver-on-domestic-shipping-sources-say-4557617",
-      "published": "2026-03-12 20:30:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Bessent: escorting tankers through Hormuz was always part of the plan",
-      "url": "https://www.investing.com/news/commodities-news/bessent-escorting-tankers-through-homuz-was-always-part-of-the-plan-93CH-4558003",
-      "published": "2026-03-12 19:26:28",
+      "title": "California hit by much higher oil prices as Iran war stresses refiners",
+      "url": "https://www.investing.com/news/commodities-news/california-hit-by-much-higher-oil-prices-as-iran-war-stresses-refiners-4560629",
+      "published": "2026-03-13 17:06:53",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
+    "news_score": 4,
     "rows": 15201
   }
 }
