@@ -1,14 +1,14 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-14",
-  "updated": "2026-03-14T03:38:04+00:00",
+  "date": "2026-03-15",
+  "updated": "2026-03-15T04:08:34+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
     "收盘价 5019.83；MA20 5115.97；MA50 4943.26。",
     "RSI14 38.8；MACD Hist -26.155（动量参考）。",
     "ATR14 136.28（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
+    "新闻情绪粗分 score=3（仅用于辅助，不作为单独交易依据）。"
   ],
   "base_case": "关键区间：S1≈4910.80 / R1≈5128.86（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
@@ -305,6 +305,62 @@
   "news": [
     {
       "source": "Commodities & Futures News",
+      "title": "Jakarta: Subsidy bill looms over Prabowo’s growth goals amid oil spike",
+      "url": "https://www.investing.com/news/commodities-news/jakarta-subsidy-bill-looms-over-prabowos-growth-goals-amid-oil-spike-4561526",
+      "published": "2026-03-15 02:58:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "SLB warns of $0.09 EPS hit as Hormuz blockade shuts down Middle East flows",
+      "url": "https://www.investing.com/news/commodities-news/slb-warns-of-009-eps-hit-as-hormuz-blockade-shuts-down-middle-east-flows-4561523",
+      "published": "2026-03-15 02:22:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump threatens more strikes on Iran’s Kharg Island, pushes allies on Strait of Hormuz",
+      "url": "https://www.investing.com/news/commodities-news/trump-calls-for-allies-to-help-secure-strait-of-hormuz-as-iran-vows-to-step-up-retaliation-4561515",
+      "published": "2026-03-15 00:42:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US, China economic chiefs meet in Paris to clear path to Trump-Xi summit",
+      "url": "https://www.investing.com/news/commodities-news/us-china-economic-chiefs-meet-in-paris-to-clear-path-to-trumpxi-summit-4561514",
+      "published": "2026-03-15 00:07:15",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump calls for allied warships after Iran threat to retaliate for US attack",
+      "url": "https://www.investing.com/news/commodities-news/trump-threatens-to-strike-irans-kharg-island-oil-network-if-shipping-lanes-remain-blocked-4561301",
+      "published": "2026-03-14 22:18:40",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Hamas calls on Iran not to target neighboring countries but affirms its right to self-defence",
+      "url": "https://www.investing.com/news/commodities-news/hamas-calls-on-iran-not-to-target-neighboring-countries-but-affirms-its-right-to-selfdefence-4561500",
+      "published": "2026-03-14 17:42:45",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Kharg Island, struck by US, is key hub for Iran oil exports",
+      "url": "https://www.investing.com/news/commodities-news/kharg-island-struck-by-us-is-key-hub-for-iran-oil-exports-4561363",
+      "published": "2026-03-14 05:30:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "U.S. moves to stabilize energy markets with the release of 86 million oil barrels",
+      "url": "https://www.investing.com/news/commodities-news/us-moves-to-stabilize-energy-markets-with-the-release-of-86-million-oil-barrels-4561337",
+      "published": "2026-03-14 05:00:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
       "title": "Iran’s new supreme leader wounded, likely disfigured, Hegseth says",
       "url": "https://www.investing.com/news/commodities-news/irans-new-supreme-leader-wounded-likely-disfigured-hegseth-says-4560238",
       "published": "2026-03-14 02:36:27",
@@ -316,67 +372,11 @@
       "url": "https://www.investing.com/news/commodities-news/exclusivewith-iran-war-exit-elusive-trump-aides-vie-to-affect-outcome-4558916",
       "published": "2026-03-14 00:48:40",
       "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Tighter checks disrupt Brazilian soybean exports to China",
-      "url": "https://www.investing.com/news/commodities-news/tighter-checks-disrupt-brazilian-soybean-exports-to-china-4559295",
-      "published": "2026-03-13 22:48:46",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US expands Venezuela sanctions waivers in move to boost fertilizer exports and electricity investment",
-      "url": "https://www.investing.com/news/commodities-news/us-expands-venezuela-sanctions-waivers-amid-rising-prices-4560907",
-      "published": "2026-03-13 22:12:37",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices surge to two-week winning streak as Iran supply fears grip markets",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-after-us-allows-some-russian-oil-purchases-to-offset-iran-impact-4558813",
-      "published": "2026-03-13 21:20:37",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Crude futures turn positive on continued Hormuz closure",
-      "url": "https://www.investing.com/news/commodities-news/oil-drops-after-us-issues-license-for-countries-to-buy-russian-oil-stranded-at-sea-for-30-days-4558820",
-      "published": "2026-03-13 20:36:36",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold set for a two-week losing run as spiking oil prices spur inflation concerns",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-but-head-for-second-weekly-loss-as-iran-war-spurs-inflation-fears-4558930",
-      "published": "2026-03-13 18:41:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran war deprives US farmers of affordable fertilizer as spring planting looms",
-      "url": "https://www.investing.com/news/commodities-news/iran-war-deprives-us-farmers-of-affordable-fertilizer-as-spring-planting-looms-4560728",
-      "published": "2026-03-13 18:26:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Pentagon elevates investigation into Iran school strike",
-      "url": "https://www.investing.com/news/commodities-news/pentagon-elevates-investigation-into-iran-school-strike-4560719",
-      "published": "2026-03-13 18:18:31",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "California hit by much higher oil prices as Iran war stresses refiners",
-      "url": "https://www.investing.com/news/commodities-news/california-hit-by-much-higher-oil-prices-as-iran-war-stresses-refiners-4560629",
-      "published": "2026-03-13 17:06:53",
-      "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 4,
+    "news_score": 3,
     "rows": 15201
   }
 }
