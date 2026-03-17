@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-16",
-  "updated": "2026-03-16T04:15:24+00:00",
+  "date": "2026-03-17",
+  "updated": "2026-03-17T03:44:48+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5024.84；MA20 5117.59；MA50 4954.78。",
-    "RSI14 43.0；MACD Hist -29.766（动量参考）。",
-    "ATR14 129.66（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 5028.72；MA20 5124.44；MA50 4965.17。",
+    "RSI14 42.0；MACD Hist -31.349（动量参考）。",
+    "ATR14 126.08（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4921.11 / R1≈5128.57（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4927.86 / R1≈5129.58（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-03",
-      "Open": "4668.22",
-      "High": "4993.62",
-      "Low": "4667.96",
-      "Close": "4947.22",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-04",
       "Open": "4946.66",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-03-16",
       "Open": "5024.88",
-      "High": "5030.48",
+      "High": "5037.62",
       "Low": "4968.83",
-      "Close": "5024.84",
+      "Close": "5010.69",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-17",
+      "Open": "5002.52",
+      "High": "5033.36",
+      "Low": "4995.26",
+      "Close": "5028.72",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Trump demands other countries help secure vital Strait of Hormuz as Iran vows defiance",
-      "url": "https://www.investing.com/news/commodities-news/trump-warns-of-more-strikes-on-irans-kharg-island-pressures-allies-to-secure-oil-chokepoint-4561541",
-      "published": "2026-03-16 03:37:00",
+      "title": "Drones, rockets fired at US embassy in Baghdad, security sources say",
+      "url": "https://www.investing.com/news/commodities-news/drones-rockets-fired-at-us-embassy-in-baghdad-security-sources-say-4564429",
+      "published": "2026-03-17 02:36:26",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Factbox-Reactions to Trump’s call for help to secure Strait of Hormuz",
-      "url": "https://www.investing.com/news/commodities-news/factboxreactions-to-trumps-call-for-help-to-secure-strait-of-hormuz-4561626",
-      "published": "2026-03-16 02:55:07",
+      "title": "Oil gains over 2% as market weighs Iran war supply risks",
+      "url": "https://www.investing.com/news/commodities-news/oil-gains-over-2-as-market-weighs-iran-war-supply-risks-4564406",
+      "published": "2026-03-17 01:18:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices fall below $5,000/oz as inflation, Fed uncertainty builds",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-below-5000oz-as-inflation-fed-uncertainty-builds-4561616",
-      "published": "2026-03-16 01:41:14",
+      "title": "Oil prices jump 2%, Brent stays above $100/barrel as Iran supply fears persist",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-2-brent-stays-above-100barrel-as-iran-supply-fears-persis-4564393",
+      "published": "2026-03-17 00:59:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil slips as Trump presses other countries to help secure Strait of Hormuz",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-gains-as-middle-east-conflict-threatens-export-facilities-4561602",
-      "published": "2026-03-16 01:18:39",
+      "title": "Analysis-Gulf states press US to neutralise Iran for good as Hormuz crisis deepens",
+      "url": "https://www.investing.com/news/commodities-news/gulf-states-press-us-to-neutralise-iran-for-good-as-hormuz-crisis-deepens-4564117",
+      "published": "2026-03-17 00:13:09",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US, China seek to wrap Paris talks on managed trade, agriculture deals for Xi-Trump summit",
+      "title": "Gold prices steady above $5,000/oz with Iran war, central banks in focus",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-above-5000oz-with-iran-war-central-banks-in-focus-4564351",
+      "published": "2026-03-17 00:09:02",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Disputes with China won’t be to blame if Trump delays summit with Xi, Bessent says",
       "url": "https://www.investing.com/news/commodities-news/us-china-seek-to-wrap-paris-talks-on-managed-trade-agriculture-deals-for-xitrump-summit-4561613",
-      "published": "2026-03-16 01:06:27",
+      "published": "2026-03-16 23:24:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices rise as Iran supply fears persist; Trump talks Hormuz intervention",
+      "title": "US average diesel prices cross $5 a gallon as Middle East War tests global economy",
+      "url": "https://www.investing.com/news/commodities-news/us-average-diesel-prices-cross-5-a-gallon-as-middle-east-war-tests-global-economy-4564291",
+      "published": "2026-03-16 23:00:53",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices slide 3% as some ships transit Strait of Hormuz",
+      "url": "https://www.investing.com/news/commodities-news/oil-extends-gains-as-middle-east-conflict-threatens-export-facilities-4561602",
+      "published": "2026-03-16 21:25:34",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices fall after more than 40% surge on Iran conflict",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-as-iran-war-keeps-supply-fears-in-play-4561604",
-      "published": "2026-03-15 23:59:40",
+      "published": "2026-03-16 20:59:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Exclusive-US, China discuss farm goods, managed trade in ’remarkably stable’ Paris talks-sources",
-      "url": "https://www.investing.com/news/commodities-news/exclusiveus-china-discuss-farm-goods-managed-trade-in-remarkably-stable-paris-talkssources-4561590",
-      "published": "2026-03-15 22:36:45",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Israeli foreign minister denies country facing interceptor shortages",
-      "url": "https://www.investing.com/news/commodities-news/israeli-foreign-minister-denies-country-facing-interceptor-shortages-4561573",
-      "published": "2026-03-15 17:12:58",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Analysis-Iran holds the key to reopening global energy markets",
-      "url": "https://www.investing.com/news/commodities-news/analysisiran-holds-the-key-to-reopening-global-energy-markets-4561557",
-      "published": "2026-03-15 13:00:53",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil poised for further gains as Middle East conflict threatens export facilities",
-      "url": "https://www.investing.com/news/commodities-news/oil-poised-for-further-gains-as-middle-east-conflict-threatens-export-facilities-4561543",
-      "published": "2026-03-15 09:18:28",
+      "title": "Israel says Lebanese displaced won’t return until its own citizens are safe",
+      "url": "https://www.investing.com/news/commodities-news/israel-says-lebanese-displaced-wont-return-until-its-own-citizens-are-safe-4563612",
+      "published": "2026-03-16 19:31:39",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15202
+    "news_score": 4,
+    "rows": 15203
   }
 }
