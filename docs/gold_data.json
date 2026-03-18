@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-17",
-  "updated": "2026-03-17T03:44:48+00:00",
+  "date": "2026-03-18",
+  "updated": "2026-03-18T03:59:44+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 5028.72；MA20 5124.44；MA50 4965.17。",
-    "RSI14 42.0；MACD Hist -31.349（动量参考）。",
-    "ATR14 126.08（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4991.68；MA20 5123.87；MA50 4975.36。",
+    "RSI14 38.4；MACD Hist -33.971（动量参考）。",
+    "ATR14 124.99（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=3（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4927.86 / R1≈5129.58（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4891.69 / R1≈5091.67（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-04",
-      "Open": "4946.66",
-      "High": "5091.82",
-      "Low": "4855.90",
-      "Close": "4965.00",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-05",
       "Open": "4969.50",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-03-17",
       "Open": "5002.52",
-      "High": "5033.36",
-      "Low": "4995.26",
-      "Close": "5028.72",
+      "High": "5043.51",
+      "Low": "4975.40",
+      "Close": "5003.05",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-18",
+      "Open": "5000.16",
+      "High": "5015.97",
+      "Low": "4987.26",
+      "Close": "4991.68",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Drones, rockets fired at US embassy in Baghdad, security sources say",
-      "url": "https://www.investing.com/news/commodities-news/drones-rockets-fired-at-us-embassy-in-baghdad-security-sources-say-4564429",
-      "published": "2026-03-17 02:36:26",
+      "title": "Oil prices to remain above $100/bbl amid little Iran de-escalation: OCBC",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-to-remain-above-100bbl-amid-little-iran-deescalation-ocbc-4567385",
+      "published": "2026-03-18 02:40:45",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil gains over 2% as market weighs Iran war supply risks",
-      "url": "https://www.investing.com/news/commodities-news/oil-gains-over-2-as-market-weighs-iran-war-supply-risks-4564406",
-      "published": "2026-03-17 01:18:30",
+      "title": "Oil prices dip on signs of US inventory build; Iran fears persist",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-on-signs-of-us-inventory-build-iran-fears-persist-4567374",
+      "published": "2026-03-18 02:11:07",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices jump 2%, Brent stays above $100/barrel as Iran supply fears persist",
+      "title": "Oil prices drop as U.S. crude inventories show an increase",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-drop-as-us-crude-inventories-show-an-increase-4567334",
+      "published": "2026-03-18 01:18:39",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Drone attack targets US embassy in Baghdad, explosion heard",
+      "url": "https://www.investing.com/news/commodities-news/drone-attack-targets-us-embassy-in-baghdad-explosion-heard-4567318",
+      "published": "2026-03-18 00:54:25",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices steady near $5,000/oz with Iran war, Fed meeting in focus",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-near-5000oz-with-iran-war-fed-meeting-in-focus-4567285",
+      "published": "2026-03-18 00:22:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Brazilian truckers weigh strike as diesel prices jump amid Middle East conflict",
+      "url": "https://www.investing.com/news/commodities-news/brazilian-truckers-weigh-strike-as-diesel-prices-jump-amid-middle-east-conflict-4567227",
+      "published": "2026-03-17 23:36:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "UAE could join any US-led effort to secure Strait of Hormuz, says senior official",
+      "url": "https://www.investing.com/news/commodities-news/uae-could-join-any-usled-effort-to-secure-strait-of-hormuz-says-senior-official-4566575",
+      "published": "2026-03-17 20:00:31",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold flat as traders eye slew of central bank decisions for comments on Iran war",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-with-iran-war-central-banks-in-focus-4565887",
+      "published": "2026-03-17 19:42:18",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil resumes climb after previous session’s respite as Iran supply fears persist",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-2-brent-stays-above-100barrel-as-iran-supply-fears-persis-4564393",
-      "published": "2026-03-17 00:59:33",
+      "published": "2026-03-17 19:15:39",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Analysis-Gulf states press US to neutralise Iran for good as Hormuz crisis deepens",
-      "url": "https://www.investing.com/news/commodities-news/gulf-states-press-us-to-neutralise-iran-for-good-as-hormuz-crisis-deepens-4564117",
-      "published": "2026-03-17 00:13:09",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices steady above $5,000/oz with Iran war, central banks in focus",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-above-5000oz-with-iran-war-central-banks-in-focus-4564351",
-      "published": "2026-03-17 00:09:02",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Disputes with China won’t be to blame if Trump delays summit with Xi, Bessent says",
-      "url": "https://www.investing.com/news/commodities-news/us-china-seek-to-wrap-paris-talks-on-managed-trade-agriculture-deals-for-xitrump-summit-4561613",
-      "published": "2026-03-16 23:24:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US average diesel prices cross $5 a gallon as Middle East War tests global economy",
-      "url": "https://www.investing.com/news/commodities-news/us-average-diesel-prices-cross-5-a-gallon-as-middle-east-war-tests-global-economy-4564291",
-      "published": "2026-03-16 23:00:53",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices slide 3% as some ships transit Strait of Hormuz",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-gains-as-middle-east-conflict-threatens-export-facilities-4561602",
-      "published": "2026-03-16 21:25:34",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices fall after more than 40% surge on Iran conflict",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-jump-as-iran-war-keeps-supply-fears-in-play-4561604",
-      "published": "2026-03-16 20:59:45",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Israel says Lebanese displaced won’t return until its own citizens are safe",
-      "url": "https://www.investing.com/news/commodities-news/israel-says-lebanese-displaced-wont-return-until-its-own-citizens-are-safe-4563612",
-      "published": "2026-03-16 19:31:39",
+      "title": "Trump says NATO’s refusal to help on Iran is \"very foolish mistake\"",
+      "url": "https://www.investing.com/news/commodities-news/nato-countries-dont-want-to-get-involved-in-iran-operation-trump-says-4566175",
+      "published": "2026-03-17 18:13:12",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 4,
-    "rows": 15203
+    "news_score": 3,
+    "rows": 15204
   }
 }
