@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-19",
-  "updated": "2026-03-19T03:58:43+00:00",
+  "date": "2026-03-20",
+  "updated": "2026-03-20T03:40:54+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4852.78；MA20 5108.95；MA50 4979.75。",
-    "RSI14 27.8；MACD Hist -47.780（动量参考）。",
-    "ATR14 133.61（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4732.04；MA20 5080.81；MA50 4980.28。",
+    "RSI14 23.4；MACD Hist -62.979（动量参考）。",
+    "ATR14 152.76（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=6（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4745.89 / R1≈4959.67（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4609.83 / R1≈4854.25（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-06",
-      "Open": "4793.99",
-      "High": "4971.36",
-      "Low": "4656.28",
-      "Close": "4952.97",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-09",
       "Open": "4989.84",
@@ -261,8 +253,16 @@
       "Date": "2026-03-19",
       "Open": "4834.68",
       "High": "4867.09",
-      "Low": "4828.45",
-      "Close": "4852.78",
+      "Low": "4504.84",
+      "Close": "4655.29",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-20",
+      "Open": "4636.58",
+      "High": "4735.66",
+      "Low": "4635.09",
+      "Close": "4732.04",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices rise but still pinned below $4,900/oz amid inflation, Iran uncertainty",
+      "title": "Trump calls for Japan, NATO to ’step up’ on Iran as oil prices bite",
+      "url": "https://www.investing.com/news/commodities-news/trump-may-push-japan-for-help-with-iran-war-in-white-house-meeting-4569744",
+      "published": "2026-03-20 03:24:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil falls as US and allies look to boost supply, unchoke Strait of Hormuz",
+      "url": "https://www.investing.com/news/commodities-news/oil-falls-as-us-and-allies-look-to-boost-supply-unchoke-strait-of-hormuz-4572221",
+      "published": "2026-03-20 01:36:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Saudi Arabia sees oil at $180/bbl if Iran war lasts beyond April- WSJ",
+      "url": "https://www.investing.com/news/commodities-news/saudi-arabia-sees-oil-at-180bbl-if-iran-war-lasts-beyond-april-wsj-4572213",
+      "published": "2026-03-20 01:21:43",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices steady, head for deep weekly loss as Iran war dents rate cut bets",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-head-for-deep-weekly-loss-as-iran-war-dents-rate-cut-bets-4572206",
+      "published": "2026-03-20 00:58:00",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices fall 2% as US considers lifting some Iran sanctions",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-2-as-us-considers-lifting-some-iran-sanctions-4572160",
+      "published": "2026-03-20 00:28:03",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold slides on bets for higher interest rates for longer amid raging Iran war",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-but-still-pinned-below-4900oz-amid-inflation-iran-uncertainty-4569720",
-      "published": "2026-03-19 02:21:16",
+      "published": "2026-03-19 21:35:50",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Fed, BoC strike hawkish tones as top central banks convene in war’s shadow",
-      "url": "https://www.investing.com/news/commodities-news/fed-boc-strike-hawkish-tones-as-top-central-banks-convene-in-wars-shadow-4569618",
-      "published": "2026-03-19 02:12:28",
+      "title": "Prices for oil, fuel cargoes smash record highs as Iran war chokes Middle East supply",
+      "url": "https://www.investing.com/news/commodities-news/prices-for-oil-fuel-cargoes-smash-record-highs-as-iran-war-chokes-middle-east-supply-4571914",
+      "published": "2026-03-19 21:30:53",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil rises 3% after Iran strikes Middle East energy facilities",
-      "url": "https://www.investing.com/news/commodities-news/oil-rises-3-after-iran-strikes-middle-east-energy-facilities-4569714",
-      "published": "2026-03-19 02:00:32",
+      "title": "Saudi Arabia has the right to take military action against Iran, foreign minister says",
+      "url": "https://www.investing.com/news/commodities-news/saudi-arabia-has-the-right-to-take-military-action-against-iran-foreign-minister-says-4571794",
+      "published": "2026-03-19 21:00:39",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil extends gains to rise 5.6% after Iran attacks Gulf energy facilities",
-      "url": "https://www.investing.com/news/commodities-news/oil-extends-gains-to-rise-56-after-iran-attacks-gulf-energy-facilities-4569709",
-      "published": "2026-03-19 01:43:26",
+      "title": "US, Japan to focus rare earths cooperation on select group of minerals at first",
+      "url": "https://www.investing.com/news/commodities-news/us-japan-to-focus-rare-earths-cooperation-on-select-group-of-minerals-at-first-4571702",
+      "published": "2026-03-19 20:25:28",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US lawmakers urge Rubio to seek tough standards in any Saudi nuclear power pact",
-      "url": "https://www.investing.com/news/commodities-news/us-lawmakers-urge-rubio-to-seek-tough-standards-in-any-saudi-nuclear-power-pact-4569056",
-      "published": "2026-03-18 23:54:35",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-US weighs military reinforcements as Iran war enters possible new phase",
-      "url": "https://www.investing.com/news/commodities-news/exclusiveus-weighs-military-reinforcements-as-iran-war-enters-possible-new-phase-4569622",
-      "published": "2026-03-18 23:48:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices jump over 3%, WTI touches $100/barrel on Iran escalation",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-surge-wti-nears-100barrel-on-iran-escalation-4569614",
-      "published": "2026-03-18 23:38:17",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Story on challenges to Trump decision on climate regulations withdrawn",
-      "url": "https://www.investing.com/news/commodities-news/us-states-cities-challenge-trump-decision-to-revoke-basis-of-us-climate-regulations-4568933",
-      "published": "2026-03-18 22:54:09",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US oil exports seen rising as WTI discount to Brent hits widest in 11 years",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-exports-seen-rising-as-wti-discount-to-brent-hits-widest-in-11-years-4569510",
-      "published": "2026-03-18 21:55:17",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold prices hit over a one-month low after Fed holds rates steady as expected",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-near-5000oz-with-iran-war-fed-meeting-in-focus-4567285",
-      "published": "2026-03-18 21:23:09",
+      "title": "US pump prices jump 30% since Middle East war began, headed toward $4 a gallon",
+      "url": "https://www.investing.com/news/commodities-news/us-pump-prices-jump-30-since-middle-east-war-began-headed-toward-4-a-gallon-4571571",
+      "published": "2026-03-19 20:18:47",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15205
+    "news_score": 6,
+    "rows": 15206
   }
 }
