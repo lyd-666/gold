@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-20",
-  "updated": "2026-03-20T03:40:54+00:00",
+  "date": "2026-03-21",
+  "updated": "2026-03-21T03:32:45+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4732.04；MA20 5080.81；MA50 4980.28。",
-    "RSI14 23.4；MACD Hist -62.979（动量参考）。",
-    "ATR14 152.76（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=6（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4493.95；MA20 5068.90；MA50 4975.52。",
+    "RSI14 15.3；MACD Hist -78.173（动量参考）。",
+    "ATR14 163.92（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4609.83 / R1≈4854.25（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4362.81 / R1≈4625.09（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -261,8 +261,8 @@
       "Date": "2026-03-20",
       "Open": "4636.58",
       "High": "4735.66",
-      "Low": "4635.09",
-      "Close": "4732.04",
+      "Low": "4478.84",
+      "Close": "4493.95",
       "Volume": "0"
     }
   ],
@@ -279,7 +279,7 @@
     },
     {
       "driver": "Volatility (ATR)",
-      "signal": "Normal",
+      "signal": "High",
       "note": "ATR 越高，越需要降杠杆与扩大止损。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Trump calls for Japan, NATO to ’step up’ on Iran as oil prices bite",
-      "url": "https://www.investing.com/news/commodities-news/trump-may-push-japan-for-help-with-iran-war-in-white-house-meeting-4569744",
-      "published": "2026-03-20 03:24:52",
+      "title": "Exclusive-Iraq declares force majeure on foreign-operated oilfields over Hormuz disruption, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusiveiraq-declares-force-majeure-on-foreignoperated-oilfields-over-hormuz-disruption-sources-say-4573570",
+      "published": "2026-03-20 23:19:13",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil falls as US and allies look to boost supply, unchoke Strait of Hormuz",
-      "url": "https://www.investing.com/news/commodities-news/oil-falls-as-us-and-allies-look-to-boost-supply-unchoke-strait-of-hormuz-4572221",
-      "published": "2026-03-20 01:36:30",
+      "title": "US authorizes temporary delivery, sale of oil originating from Iran",
+      "url": "https://www.investing.com/news/commodities-news/us-authorizes-temporary-delivery-sale-of-oil-originating-from-iran-4573935",
+      "published": "2026-03-20 23:18:55",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Saudi Arabia sees oil at $180/bbl if Iran war lasts beyond April- WSJ",
-      "url": "https://www.investing.com/news/commodities-news/saudi-arabia-sees-oil-at-180bbl-if-iran-war-lasts-beyond-april-wsj-4572213",
-      "published": "2026-03-20 01:21:43",
+      "title": "Wall Street view: JPMorgan trims S&P 500 estimate on Middle East supply risks",
+      "url": "https://www.investing.com/news/commodities-news/wall-street-view-jpmorgan-trims-sp-500-estimate-on-middle-east-supply-risks-4573915",
+      "published": "2026-03-20 22:56:48",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices steady, head for deep weekly loss as Iran war dents rate cut bets",
+      "title": "Panama Canal at top capacity as Iran war triggers more LNG vessel traffic, chief says",
+      "url": "https://www.investing.com/news/commodities-news/panama-canal-operating-at-top-capacity-as-iran-war-triggers-more-lng-vessel-traffic-chief-says-4573797",
+      "published": "2026-03-20 22:48:26",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Georgia pauses gas tax for 60 days as Iran war fuels price surge",
+      "url": "https://www.investing.com/news/commodities-news/georgia-pauses-gas-tax-for-60-days-as-iran-war-fuels-price-surge-4573585",
+      "published": "2026-03-20 22:07:04",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold slumps to worst week in over forty years as Iran war dents rate cut bets",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-steady-head-for-deep-weekly-loss-as-iran-war-dents-rate-cut-bets-4572206",
-      "published": "2026-03-20 00:58:00",
+      "published": "2026-03-20 21:07:52",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices fall 2% as US considers lifting some Iran sanctions",
+      "title": "Oil jumps to highest settlement since July 2022 as more Mideast supply disrupted",
+      "url": "https://www.investing.com/news/commodities-news/oil-falls-as-us-and-allies-look-to-boost-supply-unchoke-strait-of-hormuz-4572221",
+      "published": "2026-03-20 19:49:37",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Cubans queue for water in Havana amid fuel and power crisis",
+      "url": "https://www.investing.com/news/commodities-news/cubans-queue-for-water-in-havana-amid-fuel-and-power-crisis-4573512",
+      "published": "2026-03-20 19:12:44",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil near session high after U.S. said to potentially deploy ground troops in Iran",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-2-as-us-considers-lifting-some-iran-sanctions-4572160",
-      "published": "2026-03-20 00:28:03",
+      "published": "2026-03-20 19:04:20",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold slides on bets for higher interest rates for longer amid raging Iran war",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-but-still-pinned-below-4900oz-amid-inflation-iran-uncertainty-4569720",
-      "published": "2026-03-19 21:35:50",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Prices for oil, fuel cargoes smash record highs as Iran war chokes Middle East supply",
-      "url": "https://www.investing.com/news/commodities-news/prices-for-oil-fuel-cargoes-smash-record-highs-as-iran-war-chokes-middle-east-supply-4571914",
-      "published": "2026-03-19 21:30:53",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Saudi Arabia has the right to take military action against Iran, foreign minister says",
-      "url": "https://www.investing.com/news/commodities-news/saudi-arabia-has-the-right-to-take-military-action-against-iran-foreign-minister-says-4571794",
-      "published": "2026-03-19 21:00:39",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US, Japan to focus rare earths cooperation on select group of minerals at first",
-      "url": "https://www.investing.com/news/commodities-news/us-japan-to-focus-rare-earths-cooperation-on-select-group-of-minerals-at-first-4571702",
-      "published": "2026-03-19 20:25:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US pump prices jump 30% since Middle East war began, headed toward $4 a gallon",
-      "url": "https://www.investing.com/news/commodities-news/us-pump-prices-jump-30-since-middle-east-war-began-headed-toward-4-a-gallon-4571571",
-      "published": "2026-03-19 20:18:47",
+      "title": "Mexico’s coastal communities fear more crude contamination as spill source unclear",
+      "url": "https://www.investing.com/news/commodities-news/mexicos-coastal-communities-fear-more-crude-contamination-as-spill-source-unclear-4573450",
+      "published": "2026-03-20 18:06:52",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 6,
+    "news_score": 4,
     "rows": 15206
   }
 }
