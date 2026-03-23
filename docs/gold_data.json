@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-22",
-  "updated": "2026-03-22T03:56:46+00:00",
+  "date": "2026-03-23",
+  "updated": "2026-03-23T04:03:01+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4493.95；MA20 5068.90；MA50 4975.52。",
-    "RSI14 15.3；MACD Hist -78.173（动量参考）。",
-    "ATR14 163.92（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=3（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4359.65；MA20 5025.51；MA50 4970.74。",
+    "RSI14 16.7；MACD Hist -93.914（动量参考）。",
+    "ATR14 150.22（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4362.81 / R1≈4625.09（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4239.47 / R1≈4479.83（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-09",
-      "Open": "4989.84",
-      "High": "5085.73",
-      "Low": "4952.97",
-      "Close": "5058.52",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-10",
       "Open": "5059.99",
@@ -264,6 +256,14 @@
       "Low": "4478.84",
       "Close": "4493.95",
       "Volume": "0"
+    },
+    {
+      "Date": "2026-03-23",
+      "Open": "4498.43",
+      "High": "4510.74",
+      "Low": "4320.68",
+      "Close": "4359.65",
+      "Volume": "0"
     }
   ],
   "drivers": [
@@ -279,7 +279,7 @@
     },
     {
       "driver": "Volatility (ATR)",
-      "signal": "High",
+      "signal": "Normal",
       "note": "ATR 越高，越需要降杠杆与扩大止损。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Trump threatens Iran with power plant strikes over Hormuz oil blockade",
+      "title": "Oil steadies as investors weigh up US, Iran threats to facilities, eased sanctions",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-after-us-iran-threaten-to-hit-energy-targets-in-the-middle-east-4574151",
+      "published": "2026-03-23 02:42:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices slide as Iran crisis keeps inflation, rate fears in play",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-slide-as-iran-crisis-keeps-inflation-rate-fears-in-play-4574171",
+      "published": "2026-03-23 01:45:27",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices volatile, pinned above $110/bbl after Trump’s 48-hr deadline on Iran",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-volatile-pinned-above-110bbl-after-trumps-48hr-deadline-on-iran-4574162",
+      "published": "2026-03-22 23:50:23",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Iran threatens to retaliate against Gulf energy and water after Trump ultimatum",
+      "url": "https://www.investing.com/news/commodities-news/trump-and-iran-trade-threats-over-energy-targets-as-war-escalates-4574105",
+      "published": "2026-03-22 23:42:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Cuba restores power to Havana after second grid collapse in a week",
+      "url": "https://www.investing.com/news/commodities-news/cuba-begins-recovery-efforts-after-second-grid-collapse-in-a-week-4574115",
+      "published": "2026-03-22 21:12:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Exclusive-Patriot missile involved in Bahrain blast likely US-operated, analysis finds",
+      "url": "https://www.investing.com/news/commodities-news/exclusivepatriot-missile-involved-in-bahrain-blast-likely-usoperated-analysis-finds-4574094",
+      "published": "2026-03-22 19:48:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Israel strikes main bridge in south Lebanon, orders destruction of homes near border",
+      "url": "https://www.investing.com/news/commodities-news/israel-orders-destruction-of-bridges-in-lebanon-and-homes-near-israeli-border-4574112",
+      "published": "2026-03-22 17:24:27",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Treasury’s Bessent says US has ’plenty’ of funds for Iran war",
+      "url": "https://www.investing.com/news/commodities-news/treasurys-bessent-says-us-has-plenty-of-funds-foriran-war-4574137",
+      "published": "2026-03-22 15:18:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices to rise further on Monday as Mideast war escalates",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-to-rise-further-on-monday-as-mideast-war-escalates-4574133",
+      "published": "2026-03-22 14:30:34",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Trump, Iran threaten power, energy targets as war escalates",
       "url": "https://www.investing.com/news/commodities-news/trump-threatens-iran-with-power-plant-strikes-over-hormuz-blockade-4574080",
-      "published": "2026-03-22 02:06:23",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran attacks near Israeli nuclear site, fires long-range missiles for first time",
-      "url": "https://www.investing.com/news/commodities-news/israel-attacks-tehran-beirut-as-us-sends-marines-to-middle-east-4574025",
-      "published": "2026-03-21 23:42:25",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Bahrain cites Patriot interception in March 9 Iranian drone incident",
-      "url": "https://www.investing.com/news/commodities-news/exclusivebahrain-cites-patriot-interception-in-march-9-iranian-drone-incident-4574064",
-      "published": "2026-03-21 16:00:52",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran war’s energy impact forces world to pay up, cut consumption",
-      "url": "https://www.investing.com/news/commodities-news/iran-wars-energy-impact-forces-world-to-pay-up-cut-consumption-4574037",
-      "published": "2026-03-21 09:06:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Iran fires missiles toward US-UK base in Indian ocean, Iran’s Mehr says",
-      "url": "https://www.investing.com/news/commodities-news/iran-fires-missiles-toward-usuk-base-in-indian-ocean-irans-mehr-says-4574030",
-      "published": "2026-03-21 07:06:07",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Venezuelan oil tycoon Ruperti held by police, lawyers say",
-      "url": "https://www.investing.com/news/commodities-news/venezuelan-oil-tycoon-ruperti-held-by-police-law-firm-says-4573353",
-      "published": "2026-03-21 03:30:07",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Iraq declares force majeure on foreign-operated oilfields over Hormuz disruption, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusiveiraq-declares-force-majeure-on-foreignoperated-oilfields-over-hormuz-disruption-sources-say-4573570",
-      "published": "2026-03-20 23:19:13",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US authorizes temporary delivery, sale of oil originating from Iran",
-      "url": "https://www.investing.com/news/commodities-news/us-authorizes-temporary-delivery-sale-of-oil-originating-from-iran-4573935",
-      "published": "2026-03-20 23:18:55",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Wall Street view: JPMorgan trims S&P 500 estimate on Middle East supply risks",
-      "url": "https://www.investing.com/news/commodities-news/wall-street-view-jpmorgan-trims-sp-500-estimate-on-middle-east-supply-risks-4573915",
-      "published": "2026-03-20 22:56:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Panama Canal at top capacity as Iran war triggers more LNG vessel traffic, chief says",
-      "url": "https://www.investing.com/news/commodities-news/panama-canal-operating-at-top-capacity-as-iran-war-triggers-more-lng-vessel-traffic-chief-says-4573797",
-      "published": "2026-03-20 22:48:26",
+      "published": "2026-03-22 11:24:51",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 3,
-    "rows": 15206
+    "news_score": 4,
+    "rows": 15207
   }
 }
