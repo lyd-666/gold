@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-23",
-  "updated": "2026-03-23T04:03:01+00:00",
+  "date": "2026-03-24",
+  "updated": "2026-03-24T03:44:52+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4359.65；MA20 5025.51；MA50 4970.74。",
-    "RSI14 16.7；MACD Hist -93.914（动量参考）。",
-    "ATR14 150.22（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=4（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4341.11；MA20 4988.23；MA50 4966.99。",
+    "RSI14 12.3；MACD Hist -97.855（动量参考）。",
+    "ATR14 167.38（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4239.47 / R1≈4479.83（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4207.20 / R1≈4475.02（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-10",
-      "Open": "5059.99",
-      "High": "5078.40",
-      "Low": "4990.33",
-      "Close": "5025.48",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-11",
       "Open": "5027.43",
@@ -260,9 +252,17 @@
     {
       "Date": "2026-03-23",
       "Open": "4498.43",
-      "High": "4510.74",
-      "Low": "4320.68",
-      "Close": "4359.65",
+      "High": "4511.43",
+      "Low": "4100.71",
+      "Close": "4416.89",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-24",
+      "Open": "4426.76",
+      "High": "4448.20",
+      "Low": "4308.11",
+      "Close": "4341.11",
       "Volume": "0"
     }
   ],
@@ -279,12 +279,12 @@
     },
     {
       "driver": "Volatility (ATR)",
-      "signal": "Normal",
+      "signal": "High",
       "note": "ATR 越高，越需要降杠杆与扩大止损。"
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Supportive",
+      "signal": "Neutral",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Oil steadies as investors weigh up US, Iran threats to facilities, eased sanctions",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-after-us-iran-threaten-to-hit-energy-targets-in-the-middle-east-4574151",
-      "published": "2026-03-23 02:42:30",
+      "title": "Australia, EU seal long-awaited trade deal amid global trade tensions",
+      "url": "https://www.investing.com/news/commodities-news/australia-eu-seal-longawaited-trade-deal-amid-global-trade-tensions-4576534",
+      "published": "2026-03-24 02:12:23",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices slide as Iran crisis keeps inflation, rate fears in play",
+      "title": "Gold prices fall for 10th straight session as Iran denies US talks",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-for-10th-straight-session-as-iran-denies-us-talks-4576547",
+      "published": "2026-03-24 00:51:01",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil rises as markets assess supply risks after Iran denies US talks",
+      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-markets-assess-supply-risks-after-iran-denies-us-talks-4576546",
+      "published": "2026-03-24 00:48:52",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US crude oil futures rise over $1 in early Asia trade",
+      "url": "https://www.investing.com/news/commodities-news/us-crude-oil-futures-rise-over-1-in-early-asia-trade-4576429",
+      "published": "2026-03-23 23:54:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "About 300 protesters chant, rally outside energy conference",
+      "url": "https://www.investing.com/news/commodities-news/about-300-protesters-chant-rally-outside-energy-conference-4576508",
+      "published": "2026-03-23 23:42:45",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices jump 4% after Iran denies talks with US",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-over-1-after-iran-denies-talks-with-us-4576502",
+      "published": "2026-03-23 23:26:11",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices have not climbed enough to cause demand destruction, US energy secretary says",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-have-not-climbed-enough-to-cause-demand-destruction-us-energy-secretary-chris-wright-says-4575566",
+      "published": "2026-03-23 21:36:22",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices off session lows after Trump touts ’productive’ Iran talks",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-slide-as-iran-crisis-keeps-inflation-rate-fears-in-play-4574171",
-      "published": "2026-03-23 01:45:27",
+      "published": "2026-03-23 20:00:22",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices volatile, pinned above $110/bbl after Trump’s 48-hr deadline on Iran",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-volatile-pinned-above-110bbl-after-trumps-48hr-deadline-on-iran-4574162",
-      "published": "2026-03-22 23:50:23",
+      "title": "Oil prices plunge 11% on US-Iran talks to resolve hostilities in the Middle East",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-after-us-iran-threaten-to-hit-energy-targets-in-the-middle-east-4574151",
+      "published": "2026-03-23 19:24:30",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Iran threatens to retaliate against Gulf energy and water after Trump ultimatum",
-      "url": "https://www.investing.com/news/commodities-news/trump-and-iran-trade-threats-over-energy-targets-as-war-escalates-4574105",
-      "published": "2026-03-22 23:42:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Cuba restores power to Havana after second grid collapse in a week",
-      "url": "https://www.investing.com/news/commodities-news/cuba-begins-recovery-efforts-after-second-grid-collapse-in-a-week-4574115",
-      "published": "2026-03-22 21:12:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Exclusive-Patriot missile involved in Bahrain blast likely US-operated, analysis finds",
-      "url": "https://www.investing.com/news/commodities-news/exclusivepatriot-missile-involved-in-bahrain-blast-likely-usoperated-analysis-finds-4574094",
-      "published": "2026-03-22 19:48:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Israel strikes main bridge in south Lebanon, orders destruction of homes near border",
-      "url": "https://www.investing.com/news/commodities-news/israel-orders-destruction-of-bridges-in-lebanon-and-homes-near-israeli-border-4574112",
-      "published": "2026-03-22 17:24:27",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Treasury’s Bessent says US has ’plenty’ of funds for Iran war",
-      "url": "https://www.investing.com/news/commodities-news/treasurys-bessent-says-us-has-plenty-of-funds-foriran-war-4574137",
-      "published": "2026-03-22 15:18:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices to rise further on Monday as Mideast war escalates",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-to-rise-further-on-monday-as-mideast-war-escalates-4574133",
-      "published": "2026-03-22 14:30:34",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump, Iran threaten power, energy targets as war escalates",
-      "url": "https://www.investing.com/news/commodities-news/trump-threatens-iran-with-power-plant-strikes-over-hormuz-blockade-4574080",
-      "published": "2026-03-22 11:24:51",
+      "title": "Chevron CEO says oil market underpricing Hormuz closure impact",
+      "url": "https://www.investing.com/news/commodities-news/chevron-ceo-says-oil-market-underpricing-hormuz-closure-impact-4575888",
+      "published": "2026-03-23 18:56:16",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 4,
-    "rows": 15207
+    "news_score": 0,
+    "rows": 15208
   }
 }
