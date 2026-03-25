@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-24",
-  "updated": "2026-03-24T03:44:52+00:00",
+  "date": "2026-03-25",
+  "updated": "2026-03-25T03:56:07+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4341.11；MA20 4988.23；MA50 4966.99。",
-    "RSI14 12.3；MACD Hist -97.855（动量参考）。",
-    "ATR14 167.38（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=0（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4573.43；MA20 4965.15；MA50 4968.51。",
+    "RSI14 26.5；MACD Hist -77.599（动量参考）。",
+    "ATR14 169.09（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4207.20 / R1≈4475.02（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4438.16 / R1≈4708.70（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-11",
-      "Open": "5027.43",
-      "High": "5118.05",
-      "Low": "5022.23",
-      "Close": "5084.65",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-12",
       "Open": "5089.14",
@@ -260,16 +252,24 @@
     {
       "Date": "2026-03-24",
       "Open": "4426.76",
-      "High": "4448.20",
+      "High": "4484.22",
       "Low": "4308.11",
-      "Close": "4341.11",
+      "Close": "4471.20",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-25",
+      "Open": "4484.67",
+      "High": "4601.78",
+      "Low": "4472.71",
+      "Close": "4573.43",
       "Volume": "0"
     }
   ],
   "drivers": [
     {
       "driver": "Trend (MA20/MA50)",
-      "signal": "Mixed",
+      "signal": "Bearish",
       "note": "价格相对均线位置与多空排列。"
     },
     {
@@ -284,7 +284,7 @@
     },
     {
       "driver": "Macro/News (headline heuristic)",
-      "signal": "Neutral",
+      "signal": "Supportive",
       "note": "基于关键词的粗略文本规则。"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Australia, EU seal long-awaited trade deal amid global trade tensions",
-      "url": "https://www.investing.com/news/commodities-news/australia-eu-seal-longawaited-trade-deal-amid-global-trade-tensions-4576534",
-      "published": "2026-03-24 02:12:23",
+      "title": "Gold rises on softer dollar, lower oil after US proposal to Iran",
+      "url": "https://www.investing.com/news/commodities-news/gold-rises-on-softer-dollar-lower-oil-after-us-proposal-to-iran-4578988",
+      "published": "2026-03-25 03:10:50",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices fall for 10th straight session as Iran denies US talks",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-for-10th-straight-session-as-iran-denies-us-talks-4576547",
-      "published": "2026-03-24 00:51:01",
+      "title": "Pakistan leans on US and Iran ties to emerge as potential peacebroker",
+      "url": "https://www.investing.com/news/commodities-news/analysispakistan-leans-on-us-and-iran-ties-to-emerge-as-potential-peacebroker-4578160",
+      "published": "2026-03-25 03:00:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil rises as markets assess supply risks after Iran denies US talks",
-      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-markets-assess-supply-risks-after-iran-denies-us-talks-4576546",
-      "published": "2026-03-24 00:48:52",
+      "title": "Oil prices tumble over 6% on report of US peace proposal to Iran",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-tumble-over-6-on-report-of-us-peace-proposal-to-iran-4578983",
+      "published": "2026-03-25 02:16:02",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "US crude oil futures rise over $1 in early Asia trade",
-      "url": "https://www.investing.com/news/commodities-news/us-crude-oil-futures-rise-over-1-in-early-asia-trade-4576429",
-      "published": "2026-03-23 23:54:28",
+      "title": "Oil prices drop on prospect of Middle East ceasefire easing supply disruption",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-on-prospect-of-middle-east-ceasefire-easing-supply-disruption-4578909",
+      "published": "2026-03-25 01:42:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
       "title": "About 300 protesters chant, rally outside energy conference",
-      "url": "https://www.investing.com/news/commodities-news/about-300-protesters-chant-rally-outside-energy-conference-4576508",
-      "published": "2026-03-23 23:42:45",
+      "url": "https://www.investing.com/news/commodities-news/about-300-protesters-chant-rally-outside-energy-conference-4578953",
+      "published": "2026-03-25 01:00:29",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices jump 4% after Iran denies talks with US",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-over-1-after-iran-denies-talks-with-us-4576502",
-      "published": "2026-03-23 23:26:11",
+      "title": "Gulf warnings and fears of miscalculation preceded Trump’s pause in Iran showdown",
+      "url": "https://www.investing.com/news/commodities-news/analysisgulf-warnings-and-fears-of-miscalculation-preceded-trumps-pause-in-iran-showdown-4578276",
+      "published": "2026-03-25 00:06:44",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices have not climbed enough to cause demand destruction, US energy secretary says",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-have-not-climbed-enough-to-cause-demand-destruction-us-energy-secretary-chris-wright-says-4575566",
-      "published": "2026-03-23 21:36:22",
+      "title": "Trump to ease smog rules on summer gasoline to bring down prices, sources say",
+      "url": "https://www.investing.com/news/commodities-news/trump-to-ease-smog-rules-on-summer-gasoline-to-bring-down-prices-sources-say-4578922",
+      "published": "2026-03-24 23:48:35",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices off session lows after Trump touts ’productive’ Iran talks",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-slide-as-iran-crisis-keeps-inflation-rate-fears-in-play-4574171",
-      "published": "2026-03-23 20:00:22",
+      "title": "Oil pares gains after reports of US plan aimed at ending the Middle East war",
+      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-markets-assess-supply-risks-after-iran-denies-us-talks-4576546",
+      "published": "2026-03-24 23:06:42",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices plunge 11% on US-Iran talks to resolve hostilities in the Middle East",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-after-us-iran-threaten-to-hit-energy-targets-in-the-middle-east-4574151",
-      "published": "2026-03-23 19:24:30",
+      "title": "US shale firms unlikely to drill at $100 a barrel unless high prices last longer, executives say",
+      "url": "https://www.investing.com/news/commodities-news/us-shale-firms-unlikely-to-drill-at-100-a-barrel-unless-high-prices-last-longer-executives-say-4578885",
+      "published": "2026-03-24 22:54:32",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Chevron CEO says oil market underpricing Hormuz closure impact",
-      "url": "https://www.investing.com/news/commodities-news/chevron-ceo-says-oil-market-underpricing-hormuz-closure-impact-4575888",
-      "published": "2026-03-23 18:56:16",
+      "title": "Gold moves sharply higher on potential U.S.-Iran ceasefire hopes",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-for-10th-straight-session-as-iran-denies-us-talks-4576547",
+      "published": "2026-03-24 21:09:13",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 0,
-    "rows": 15208
+    "news_score": 2,
+    "rows": 15209
   }
 }
