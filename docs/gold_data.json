@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-25",
-  "updated": "2026-03-25T03:56:07+00:00",
+  "date": "2026-03-26",
+  "updated": "2026-03-26T04:08:24+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4573.43；MA20 4965.15；MA50 4968.51。",
-    "RSI14 26.5；MACD Hist -77.599（动量参考）。",
-    "ATR14 169.09（波动参考，用于止损距离与仓位）。",
+    "收盘价 4513.34；MA20 4928.68；MA50 4965.30。",
+    "RSI14 16.5；MACD Hist -71.505（动量参考）。",
+    "ATR14 165.05（波动参考，用于止损距离与仓位）。",
     "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4438.16 / R1≈4708.70（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4381.30 / R1≈4645.38（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-12",
-      "Open": "5089.14",
-      "High": "5099.83",
-      "Low": "4878.83",
-      "Close": "4921.96",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-13",
       "Open": "4929.11",
@@ -262,7 +254,15 @@
       "Open": "4484.67",
       "High": "4601.78",
       "Low": "4472.71",
-      "Close": "4573.43",
+      "Close": "4515.91",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-26",
+      "Open": "4517.71",
+      "High": "4543.67",
+      "Low": "4489.70",
+      "Close": "4513.34",
       "Volume": "0"
     }
   ],
@@ -279,7 +279,7 @@
     },
     {
       "driver": "Volatility (ATR)",
-      "signal": "High",
+      "signal": "Normal",
       "note": "ATR 越高，越需要降杠杆与扩大止损。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold rises on softer dollar, lower oil after US proposal to Iran",
+      "title": "Gold steadies amid mixed signals on US-Iran de-escalation efforts",
+      "url": "https://www.investing.com/news/commodities-news/gold-steadies-amid-mixed-signals-on-usiran-deescalation-efforts-4581361",
+      "published": "2026-03-26 03:05:54",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices tick higher as Iran reviews US proposal to end war",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-higher-as-iran-reviews-us-proposal-to-end-war-4581327",
+      "published": "2026-03-26 00:36:48",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "US oil prices rise as investors assess Middle East de-escalation",
+      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-rise-as-investors-assess-middle-east-deescalation-4581240",
+      "published": "2026-03-25 22:48:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "UK authorises military to board Russian shadow fleet tankers",
+      "url": "https://www.investing.com/news/commodities-news/uk-authorises-military-to-board-russian-shadow-fleet-tankers-4581238",
+      "published": "2026-03-25 22:42:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold rises on de-escalation hopes despite Iran’s tough rhetoric against the U.S.",
       "url": "https://www.investing.com/news/commodities-news/gold-rises-on-softer-dollar-lower-oil-after-us-proposal-to-iran-4578988",
-      "published": "2026-03-25 03:10:50",
+      "published": "2026-03-25 20:56:50",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Pakistan leans on US and Iran ties to emerge as potential peacebroker",
-      "url": "https://www.investing.com/news/commodities-news/analysispakistan-leans-on-us-and-iran-ties-to-emerge-as-potential-peacebroker-4578160",
-      "published": "2026-03-25 03:00:33",
+      "title": "Trump to hit Iran harder if Tehran does not accept defeat, White House says",
+      "url": "https://www.investing.com/news/commodities-news/trump-to-hit-iran-harder-if-tehran-does-not-accept-defeat-white-house-says-4580639",
+      "published": "2026-03-25 19:43:22",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices tumble over 6% on report of US peace proposal to Iran",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-tumble-over-6-on-report-of-us-peace-proposal-to-iran-4578983",
-      "published": "2026-03-25 02:16:02",
+      "title": "Residents and wildlife along Mexico’s coast bear the brunt of Pemex oil spill",
+      "url": "https://www.investing.com/news/commodities-news/residents-and-wildlife-along-mexicos-coast-bear-the-brunt-of-pemex-oil-spill-4580714",
+      "published": "2026-03-25 19:43:08",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices drop on prospect of Middle East ceasefire easing supply disruption",
+      "title": "Oil prices drop 2% as Iran considers US proposal to end war",
       "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-on-prospect-of-middle-east-ceasefire-easing-supply-disruption-4578909",
-      "published": "2026-03-25 01:42:29",
+      "published": "2026-03-25 19:30:51",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "About 300 protesters chant, rally outside energy conference",
-      "url": "https://www.investing.com/news/commodities-news/about-300-protesters-chant-rally-outside-energy-conference-4578953",
-      "published": "2026-03-25 01:00:29",
+      "title": "US suspends anti-smog fuel rules in bid to ease pump prices",
+      "url": "https://www.investing.com/news/commodities-news/us-suspends-antismog-fuel-rules-in-bid-to-ease-pump-prices-4580576",
+      "published": "2026-03-25 19:00:49",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gulf warnings and fears of miscalculation preceded Trump’s pause in Iran showdown",
-      "url": "https://www.investing.com/news/commodities-news/analysisgulf-warnings-and-fears-of-miscalculation-preceded-trumps-pause-in-iran-showdown-4578276",
-      "published": "2026-03-25 00:06:44",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump to ease smog rules on summer gasoline to bring down prices, sources say",
-      "url": "https://www.investing.com/news/commodities-news/trump-to-ease-smog-rules-on-summer-gasoline-to-bring-down-prices-sources-say-4578922",
-      "published": "2026-03-24 23:48:35",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil pares gains after reports of US plan aimed at ending the Middle East war",
-      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-markets-assess-supply-risks-after-iran-denies-us-talks-4576546",
-      "published": "2026-03-24 23:06:42",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US shale firms unlikely to drill at $100 a barrel unless high prices last longer, executives say",
-      "url": "https://www.investing.com/news/commodities-news/us-shale-firms-unlikely-to-drill-at-100-a-barrel-unless-high-prices-last-longer-executives-say-4578885",
-      "published": "2026-03-24 22:54:32",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold moves sharply higher on potential U.S.-Iran ceasefire hopes",
-      "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-for-10th-straight-session-as-iran-denies-us-talks-4576547",
-      "published": "2026-03-24 21:09:13",
+      "title": "US tracking closely how to get oil tankers through Strait of Hormuz, White House says",
+      "url": "https://www.investing.com/news/commodities-news/us-tracking-closely-how-to-get-oil-tankers-through-strait-of-hormuz-white-house-says-4580658",
+      "published": "2026-03-25 18:32:34",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
     "news_score": 2,
-    "rows": 15209
+    "rows": 15210
   }
 }
