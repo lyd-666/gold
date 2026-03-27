@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-26",
-  "updated": "2026-03-26T04:08:24+00:00",
+  "date": "2026-03-27",
+  "updated": "2026-03-27T04:08:36+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4513.34；MA20 4928.68；MA50 4965.30。",
-    "RSI14 16.5；MACD Hist -71.505（动量参考）。",
-    "ATR14 165.05（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4434.22；MA20 4880.88；MA50 4959.82。",
+    "RSI14 18.4；MACD Hist -70.658（动量参考）。",
+    "ATR14 170.14（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4381.30 / R1≈4645.38（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4298.11 / R1≈4570.33（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -25,14 +25,6 @@
     "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
   ],
   "last30": [
-    {
-      "Date": "2026-02-13",
-      "Open": "4929.11",
-      "High": "5045.84",
-      "Low": "4888.30",
-      "Close": "5032.91",
-      "Volume": "0"
-    },
     {
       "Date": "2026-02-16",
       "Open": "5035.36",
@@ -261,8 +253,16 @@
       "Date": "2026-03-26",
       "Open": "4517.71",
       "High": "4543.67",
-      "Low": "4489.70",
-      "Close": "4513.34",
+      "Low": "4351.42",
+      "Close": "4387.03",
+      "Volume": "0"
+    },
+    {
+      "Date": "2026-03-27",
+      "Open": "4411.41",
+      "High": "4445.56",
+      "Low": "4376.46",
+      "Close": "4434.22",
       "Volume": "0"
     }
   ],
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Gold steadies amid mixed signals on US-Iran de-escalation efforts",
+      "title": "Rubio holds call with Iraqi Kurdish leader, State Department says",
+      "url": "https://www.investing.com/news/commodities-news/rubio-holds-call-with-iraqi-kurdish-leader-state-department-says-4584085",
+      "published": "2026-03-27 03:18:30",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold prices rise as Trump signals progress in Iran talks; set for weekly loss",
+      "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-as-trump-signals-progress-in-iran-talks-set-for-weekly-loss-4584081",
+      "published": "2026-03-27 02:51:39",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Explainer-With top figures dead, who is now running Iran?",
+      "url": "https://www.investing.com/news/commodities-news/explainerwith-top-figures-dead-who-is-now-running-iran-4584079",
+      "published": "2026-03-27 02:36:55",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices fall as Trump pauses attacks on Iranian energy plants",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-trump-pauses-attacks-on-iranian-energy-plants-4584061",
+      "published": "2026-03-27 01:19:01",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil prices tick down, set for weekly losses on Middle East de-escalation hopes",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-down-set-for-weekly-losses-on-middle-east-deescalation-hopes-4584055",
+      "published": "2026-03-27 00:52:47",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Mexican navy says petroleum tanker, natural seabed likely caused Gulf coast spill",
+      "url": "https://www.investing.com/news/commodities-news/mexican-navy-says-petroleum-tanker-natural-seabed-likely-caused-gulf-coast-spill-4584052",
+      "published": "2026-03-27 00:48:28",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Explainer-Drones and mines: taking Kharg Island would pose risks for US troops",
+      "url": "https://www.investing.com/news/commodities-news/explainerdrones-and-mines-taking-kharg-island-would-pose-risks-for-us-troops-4584038",
+      "published": "2026-03-27 00:13:32",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Fuel prices spike in Chile, posing early political test for Kast",
+      "url": "https://www.investing.com/news/commodities-news/fuel-prices-spike-in-chile-posing-early-political-test-for-kast-4582755",
+      "published": "2026-03-26 21:43:10",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Factbox-Analysts hike oil price outlooks as Iran conflict continues",
+      "url": "https://www.investing.com/news/commodities-news/factboxanalysts-hike-oil-price-outlooks-as-iran-conflict-continues-4583831",
+      "published": "2026-03-26 21:30:44",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Gold falls on mixed messaging regarding Iran; Trump asserts peace talks ongoing",
       "url": "https://www.investing.com/news/commodities-news/gold-steadies-amid-mixed-signals-on-usiran-deescalation-efforts-4581361",
-      "published": "2026-03-26 03:05:54",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices tick higher as Iran reviews US proposal to end war",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-higher-as-iran-reviews-us-proposal-to-end-war-4581327",
-      "published": "2026-03-26 00:36:48",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US oil prices rise as investors assess Middle East de-escalation",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-rise-as-investors-assess-middle-east-deescalation-4581240",
-      "published": "2026-03-25 22:48:28",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "UK authorises military to board Russian shadow fleet tankers",
-      "url": "https://www.investing.com/news/commodities-news/uk-authorises-military-to-board-russian-shadow-fleet-tankers-4581238",
-      "published": "2026-03-25 22:42:30",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Gold rises on de-escalation hopes despite Iran’s tough rhetoric against the U.S.",
-      "url": "https://www.investing.com/news/commodities-news/gold-rises-on-softer-dollar-lower-oil-after-us-proposal-to-iran-4578988",
-      "published": "2026-03-25 20:56:50",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Trump to hit Iran harder if Tehran does not accept defeat, White House says",
-      "url": "https://www.investing.com/news/commodities-news/trump-to-hit-iran-harder-if-tehran-does-not-accept-defeat-white-house-says-4580639",
-      "published": "2026-03-25 19:43:22",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Residents and wildlife along Mexico’s coast bear the brunt of Pemex oil spill",
-      "url": "https://www.investing.com/news/commodities-news/residents-and-wildlife-along-mexicos-coast-bear-the-brunt-of-pemex-oil-spill-4580714",
-      "published": "2026-03-25 19:43:08",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices drop 2% as Iran considers US proposal to end war",
-      "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-on-prospect-of-middle-east-ceasefire-easing-supply-disruption-4578909",
-      "published": "2026-03-25 19:30:51",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US suspends anti-smog fuel rules in bid to ease pump prices",
-      "url": "https://www.investing.com/news/commodities-news/us-suspends-antismog-fuel-rules-in-bid-to-ease-pump-prices-4580576",
-      "published": "2026-03-25 19:00:49",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "US tracking closely how to get oil tankers through Strait of Hormuz, White House says",
-      "url": "https://www.investing.com/news/commodities-news/us-tracking-closely-how-to-get-oil-tankers-through-strait-of-hormuz-white-house-says-4580658",
-      "published": "2026-03-25 18:32:34",
+      "published": "2026-03-26 21:29:47",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 2,
-    "rows": 15210
+    "news_score": 1,
+    "rows": 15211
   }
 }
