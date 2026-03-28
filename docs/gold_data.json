@@ -1,16 +1,16 @@
 {
   "symbol": "GC=F",
-  "date": "2026-03-27",
-  "updated": "2026-03-27T04:08:36+00:00",
+  "date": "2026-03-28",
+  "updated": "2026-03-28T03:55:12+00:00",
   "traffic_light": "NEUTRAL",
   "summary": "多空信号分歧，优先等待关键位确认，控制仓位与回撤。",
   "bullets": [
-    "收盘价 4434.22；MA20 4880.88；MA50 4959.82。",
-    "RSI14 18.4；MACD Hist -70.658（动量参考）。",
-    "ATR14 170.14（波动参考，用于止损距离与仓位）。",
-    "新闻情绪粗分 score=1（仅用于辅助，不作为单独交易依据）。"
+    "收盘价 4494.04；MA20 4883.88；MA50 4961.01。",
+    "RSI14 22.6；MACD Hist -66.840（动量参考）。",
+    "ATR14 177.89（波动参考，用于止损距离与仓位）。",
+    "新闻情绪粗分 score=5（仅用于辅助，不作为单独交易依据）。"
   ],
-  "base_case": "关键区间：S1≈4298.11 / R1≈4570.33（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
+  "base_case": "关键区间：S1≈4351.73 / R1≈4636.35（基于 ATR14）。\n若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。\n入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。",
   "alt_case": "若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。\n等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。",
   "watchlist": [
     "美元指数 DXY（强美元通常压制黄金）。",
@@ -260,9 +260,9 @@
     {
       "Date": "2026-03-27",
       "Open": "4411.41",
-      "High": "4445.56",
+      "High": "4553.99",
       "Low": "4376.46",
-      "Close": "4434.22",
+      "Close": "4494.04",
       "Volume": "0"
     }
   ],
@@ -279,7 +279,7 @@
     },
     {
       "driver": "Volatility (ATR)",
-      "signal": "Normal",
+      "signal": "High",
       "note": "ATR 越高，越需要降杠杆与扩大止损。"
     },
     {
@@ -305,78 +305,78 @@
   "news": [
     {
       "source": "Commodities & Futures News",
-      "title": "Rubio holds call with Iraqi Kurdish leader, State Department says",
-      "url": "https://www.investing.com/news/commodities-news/rubio-holds-call-with-iraqi-kurdish-leader-state-department-says-4584085",
-      "published": "2026-03-27 03:18:30",
+      "title": "Factbox-Which key Iranian figures have been killed in US-Israeli strikes?",
+      "url": "https://www.investing.com/news/commodities-news/factboxwhich-key-iranian-figures-have-been-killed-in-usisraeli-strikes-4586358",
+      "published": "2026-03-28 03:24:35",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold prices rise as Trump signals progress in Iran talks; set for weekly loss",
+      "title": "Gold rallies, heads for weekly gain as investors turn to safe haven assets",
       "url": "https://www.investing.com/news/commodities-news/gold-prices-rise-as-trump-signals-progress-in-iran-talks-set-for-weekly-loss-4584081",
-      "published": "2026-03-27 02:51:39",
+      "published": "2026-03-27 21:11:48",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Explainer-With top figures dead, who is now running Iran?",
-      "url": "https://www.investing.com/news/commodities-news/explainerwith-top-figures-dead-who-is-now-running-iran-4584079",
-      "published": "2026-03-27 02:36:55",
-      "summary": ""
-    },
-    {
-      "source": "Commodities & Futures News",
-      "title": "Oil prices fall as Trump pauses attacks on Iranian energy plants",
+      "title": "Oil prices gain as traders doubt prospects of ceasefire in Iran war",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-trump-pauses-attacks-on-iranian-energy-plants-4584061",
-      "published": "2026-03-27 01:19:01",
+      "published": "2026-03-27 19:30:31",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Oil prices tick down, set for weekly losses on Middle East de-escalation hopes",
+      "title": "Refiners say new US biofuel quotas may worsen Iran war price spike",
+      "url": "https://www.investing.com/news/commodities-news/refiners-say-new-us-biofuel-quotas-may-worsen-iran-war-price-spike-4585808",
+      "published": "2026-03-27 19:24:29",
+      "summary": ""
+    },
+    {
+      "source": "Commodities & Futures News",
+      "title": "Oil erases weekly loss, Brent above $110 as steel, energy targets struck in Iran",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-down-set-for-weekly-losses-on-middle-east-deescalation-hopes-4584055",
-      "published": "2026-03-27 00:52:47",
+      "published": "2026-03-27 19:10:58",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Mexican navy says petroleum tanker, natural seabed likely caused Gulf coast spill",
-      "url": "https://www.investing.com/news/commodities-news/mexican-navy-says-petroleum-tanker-natural-seabed-likely-caused-gulf-coast-spill-4584052",
-      "published": "2026-03-27 00:48:28",
+      "title": "Canada eyes Mercosur pact by autumn",
+      "url": "https://www.investing.com/news/commodities-news/canada-eyes-mercosur-pact-by-autumn-4585738",
+      "published": "2026-03-27 18:18:33",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Explainer-Drones and mines: taking Kharg Island would pose risks for US troops",
-      "url": "https://www.investing.com/news/commodities-news/explainerdrones-and-mines-taking-kharg-island-would-pose-risks-for-us-troops-4584038",
-      "published": "2026-03-27 00:13:32",
+      "title": "WTO reform talks face U.S.-India wall in Cameroon, diplomats say",
+      "url": "https://www.investing.com/news/commodities-news/wto-reform-talks-face-usindia-wall-in-cameroon-diplomats-say-4584772",
+      "published": "2026-03-27 16:06:58",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Fuel prices spike in Chile, posing early political test for Kast",
-      "url": "https://www.investing.com/news/commodities-news/fuel-prices-spike-in-chile-posing-early-political-test-for-kast-4582755",
-      "published": "2026-03-26 21:43:10",
+      "title": "Mercosur and Canada near free-trade agreement with April talks",
+      "url": "https://www.investing.com/news/commodities-news/mercosur-and-canada-near-freetrade-agreement-with-april-talks-4584487",
+      "published": "2026-03-27 16:00:34",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Factbox-Analysts hike oil price outlooks as Iran conflict continues",
-      "url": "https://www.investing.com/news/commodities-news/factboxanalysts-hike-oil-price-outlooks-as-iran-conflict-continues-4583831",
-      "published": "2026-03-26 21:30:44",
+      "title": "G7 foreign ministers demand an end to attacks on civilians in Iran war",
+      "url": "https://www.investing.com/news/commodities-news/g7-foreign-ministers-demand-an-end-to-attacks-on-civilians-in-iran-war-4585464",
+      "published": "2026-03-27 15:00:57",
       "summary": ""
     },
     {
       "source": "Commodities & Futures News",
-      "title": "Gold falls on mixed messaging regarding Iran; Trump asserts peace talks ongoing",
-      "url": "https://www.investing.com/news/commodities-news/gold-steadies-amid-mixed-signals-on-usiran-deescalation-efforts-4581361",
-      "published": "2026-03-26 21:29:47",
+      "title": "Analysis-Gulf states tell US ending the war is not enough, Iran’s capabilities must be degraded",
+      "url": "https://www.investing.com/news/commodities-news/analysisgulf-states-tell-us-ending-the-war-is-not-enough-irans-capabilities-must-be-degraded-4585316",
+      "published": "2026-03-27 14:06:44",
       "summary": ""
     }
   ],
   "debug": {
     "price_source": "stooq(xauusd)",
-    "news_score": 1,
+    "news_score": 5,
     "rows": 15211
   }
 }
