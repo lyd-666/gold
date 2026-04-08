@@ -1,552 +1,413 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Gold Pre-market Plan</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gold Data Viewer</title>
   <style>
-    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; margin: 24px; color:#111; }
-    .meta { color:#555; font-size:14px; margin-bottom: 10px; }
-    h1 { margin: 0 0 8px; }
-    h2 { margin-top: 22px; border-bottom:1px solid #eee; padding-bottom:8px; }
-    .tl { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:700; }
-    .GREEN { background:#e8f7ee; color:#137333; }
-    .RED { background:#fce8e6; color:#a50e0e; }
-    .NEUTRAL { background:#f1f3f4; color:#3c4043; }
-    .card { border:1px solid #eee; border-radius:12px; padding:14px; margin:10px 0; }
-    table { border-collapse: collapse; width:100%; }
-    th,td { border-bottom:1px solid #eee; text-align:left; padding:8px; font-size:14px; vertical-align:top; }
-    th { background:#fafafa; }
-    .small { font-size:12px; color:#666; }
-    ul { margin: 8px 0 0 18px; }
-    code { background:#f6f8fa; padding:2px 6px; border-radius:6px; }
-    a { color:#0969da; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .mono { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 20px; color:#222; }
+    h1 { margin-top: 0; }
+    .muted { color:#666; font-size: 14px; }
+    table { border-collapse: collapse; width: 100%; max-width: 1200px; margin-top: 8px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f7f7f7; font-weight: 600; }
+    pre.small { margin:0; white-space: pre-wrap; word-break: break-word; font-size: 13px; background:#fafafa; padding:8px; border-radius:4px; }
+    .kv { display: grid; grid-template-columns: 200px 1fr; gap: 6px 12px; align-items: start; max-width: 1200px; }
+    .kv-row { display: contents; }
+    .key { font-weight: 600; color:#333; padding:8px 0; }
+    .val { color:#111; padding:8px 0; }
+    .null { color:#a00; font-weight:600; }
   </style>
 </head>
-
 <body>
-  <!-- 用于确认你替换的模板已生效：如果页面上能看到这一行，就说明 Actions 用到了新模板 -->
-  <div class="small mono">TEMPLATE_VERSION: v3-fieldnames</div>
-
-  <h1>Gold Pre-market Plan</h1>
-
-  <div class="meta">
-    <div>SYMBOL: <b class="mono"> symbol </b></div>
-    <div>DATE: <b class="mono"> date </b></div>
-    <div>UPDATED: <b class="mono"> updated </b></div>
+  <h1>Gold Data Viewer</h1>
+  <div id="content">
+    <div class="kv"><div class="kv-row"><div class="key">symbol</div><div class="val"><pre class="small">GC=F</pre></div></div>
+<div class="kv-row"><div class="key">date</div><div class="val"><pre class="small">2026-03-25</pre></div></div>
+<div class="kv-row"><div class="key">updated</div><div class="val"><pre class="small">2026-03-25T03:56:07+00:00</pre></div></div>
+<div class="kv-row"><div class="key">traffic_light</div><div class="val"><pre class="small">NEUTRAL</pre></div></div>
+<div class="kv-row"><div class="key">summary</div><div class="val"><pre class="small">多空信号分歧，优先等待关键位确认，控制仓位与回撤。</pre></div></div>
+<div class="kv-row"><div class="key">bullets</div><div class="val"><pre class="small">[
+  "收盘价 4573.43；MA20 4965.15；MA50 4968.51。",
+  "RSI14 26.5；MACD Hist -77.599（动量参考）。",
+  "ATR14 169.09（波动参考，用于止损距离与仓位）。",
+  "新闻情绪粗分 score=2（仅用于辅助，不作为单独交易依据）。"
+]</pre></div></div>
+<div class="kv-row"><div class="key">base_case</div><div class="val"><pre class="small">关键区间：S1≈4438.16 / R1≈4708.70（基于 ATR14）。
+若价格回踩不破关键支撑并出现回升结构，可考虑分批入场；若突破关键阻力并站稳，可考虑顺势跟随。
+入场前确认：1）结构；2）波动配合；3）避免在新闻高波动时段盲目追单。</pre></div></div>
+<div class="kv-row"><div class="key">alt_case</div><div class="val"><pre class="small">若出现与预期相反的快速单边（例如宏观新闻引发美元与利率大幅变动），优先停止加仓。
+等待反向信号完成后再重新评估，必要时以更小仓位或期权对冲参与。</pre></div></div>
+<div class="kv-row"><div class="key">watchlist</div><div class="val"><pre class="small">[
+  "美元指数 DXY（强美元通常压制黄金）。",
+  "美债收益率（尤其是实际利率方向）。",
+  "美联储相关讲话与通胀数据发布窗口。",
+  "地缘政治与避险情绪突发事件。"
+]</pre></div></div>
+<div class="kv-row"><div class="key">rules</div><div class="val"><pre class="small">[
+  "单笔风险上限：账户净值的 0.25%–1%，依据 ATR 调整仓位。",
+  "止损距离建议：≥ 1.0×ATR，并在结构失效时执行。",
+  "不在重大数据公布前后 5–15 分钟内追价开仓（视波动而定）。",
+  "达到 1R 后可考虑移动止损或分批止盈，保持执行一致性。"
+]</pre></div></div>
+<div class="kv-row"><div class="key">last30</div><div class="val"><pre class="small">[
+  {
+    "Date": "2026-02-12",
+    "Open": "5089.14",
+    "High": "5099.83",
+    "Low": "4878.83",
+    "Close": "4921.96",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-13",
+    "Open": "4929.11",
+    "High": "5045.84",
+    "Low": "4888.30",
+    "Close": "5032.91",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-16",
+    "Open": "5035.36",
+    "High": "5035.36",
+    "Low": "4966.64",
+    "Close": "4992.47",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-17",
+    "Open": "4992.41",
+    "High": "4999.94",
+    "Low": "4847.86",
+    "Close": "4877.52",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-18",
+    "Open": "4876.64",
+    "High": "5010.85",
+    "Low": "4854.78",
+    "Close": "4977.44",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-19",
+    "Open": "4977.77",
+    "High": "5022.18",
+    "Low": "4960.90",
+    "Close": "4996.32",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-20",
+    "Open": "4998.74",
+    "High": "5097.80",
+    "Low": "4981.97",
+    "Close": "5097.44",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-23",
+    "Open": "5109.80",
+    "High": "5237.31",
+    "Low": "5097.44",
+    "Close": "5227.60",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-24",
+    "Open": "5227.07",
+    "High": "5249.49",
+    "Low": "5095.09",
+    "Close": "5143.94",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-25",
+    "Open": "5142.36",
+    "High": "5217.61",
+    "Low": "5122.20",
+    "Close": "5165.02",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-26",
+    "Open": "5160.06",
+    "High": "5205.38",
+    "Low": "5131.43",
+    "Close": "5185.26",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-02-27",
+    "Open": "5185.39",
+    "High": "5265.14",
+    "Low": "5167.45",
+    "Close": "5263.82",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-02",
+    "Open": "5312.56",
+    "High": "5418.77",
+    "Low": "5262.74",
+    "Close": "5322.16",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-03",
+    "Open": "5324.88",
+    "High": "5379.86",
+    "Low": "4997.98",
+    "Close": "5088.51",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-04",
+    "Open": "5104.06",
+    "High": "5206.14",
+    "Low": "5085.62",
+    "Close": "5141.40",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-05",
+    "Open": "5146.78",
+    "High": "5194.90",
+    "Low": "5052.23",
+    "Close": "5081.15",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-06",
+    "Open": "5086.57",
+    "High": "5174.45",
+    "Low": "5063.94",
+    "Close": "5153.27",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-09",
+    "Open": "5130.46",
+    "High": "5149.68",
+    "Low": "5017.11",
+    "Close": "5133.97",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-10",
+    "Open": "5153.01",
+    "High": "5238.45",
+    "Low": "5125.38",
+    "Close": "5191.93",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-11",
+    "Open": "5189.42",
+    "High": "5222.91",
+    "Low": "5151.52",
+    "Close": "5181.99",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-12",
+    "Open": "5138.89",
+    "High": "5191.65",
+    "Low": "5055.77",
+    "Close": "5078.39",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-13",
+    "Open": "5096.10",
+    "High": "5128.27",
+    "Low": "5009.83",
+    "Close": "5019.83",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-16",
+    "Open": "5024.88",
+    "High": "5037.62",
+    "Low": "4968.83",
+    "Close": "5010.69",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-17",
+    "Open": "5002.52",
+    "High": "5043.51",
+    "Low": "4975.40",
+    "Close": "5003.05",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-18",
+    "Open": "5000.16",
+    "High": "5016.17",
+    "Low": "4807.71",
+    "Close": "4836.86",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-19",
+    "Open": "4834.68",
+    "High": "4867.09",
+    "Low": "4504.84",
+    "Close": "4655.29",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-20",
+    "Open": "4636.58",
+    "High": "4735.66",
+    "Low": "4478.84",
+    "Close": "4493.95",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-23",
+    "Open": "4498.43",
+    "High": "4511.43",
+    "Low": "4100.71",
+    "Close": "4416.89",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-24",
+    "Open": "4426.76",
+    "High": "4484.22",
+    "Low": "4308.11",
+    "Close": "4471.20",
+    "Volume": "0"
+  },
+  {
+    "Date": "2026-03-25",
+    "Open": "4484.67",
+    "High": "4601.78",
+    "Low": "4472.71",
+    "Close": "4573.43",
+    "Volume": "0"
+  }
+]</pre></div></div>
+<div class="kv-row"><div class="key">drivers</div><div class="val"><pre class="small">[
+  {
+    "driver": "Trend (MA20/MA50)",
+    "signal": "Bearish",
+    "note": "价格相对均线位置与多空排列。"
+  },
+  {
+    "driver": "Momentum (RSI/MACD)",
+    "signal": "Bearish",
+    "note": "RSI 与 MACD 柱体方向。"
+  },
+  {
+    "driver": "Volatility (ATR)",
+    "signal": "High",
+    "note": "ATR 越高，越需要降杠杆与扩大止损。"
+  },
+  {
+    "driver": "Macro/News (headline heuristic)",
+    "signal": "Supportive",
+    "note": "基于关键词的粗略文本规则。"
+  }
+]</pre></div></div>
+<div class="kv-row"><div class="key">risks</div><div class="val"><pre class="small">[
+  {
+    "risk": "宏观数据/央行讲话引发跳空或剧烈波动",
+    "hedge": "降低仓位；使用期权；避免事件窗口追单。"
+  },
+  {
+    "risk": "强美元与收益率上行压制黄金",
+    "hedge": "观察 DXY/美债；信号转弱则收缩多头敞口。"
+  },
+  {
+    "risk": "假突破导致来回扫损",
+    "hedge": "等待收盘确认；用 ATR 校准止损；减少频繁交易。"
+  }
+]</pre></div></div>
+<div class="kv-row"><div class="key">news</div><div class="val"><pre class="small">[
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Gold rises on softer dollar, lower oil after US proposal to Iran",
+    "url": "https://www.investing.com/news/commodities-news/gold-rises-on-softer-dollar-lower-oil-after-us-proposal-to-iran-4578988",
+    "published": "2026-03-25 03:10:50",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Pakistan leans on US and Iran ties to emerge as potential peacebroker",
+    "url": "https://www.investing.com/news/commodities-news/analysispakistan-leans-on-us-and-iran-ties-to-emerge-as-potential-peacebroker-4578160",
+    "published": "2026-03-25 03:00:33",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Oil prices tumble over 6% on report of US peace proposal to Iran",
+    "url": "https://www.investing.com/news/commodities-news/oil-prices-tumble-over-6-on-report-of-us-peace-proposal-to-iran-4578983",
+    "published": "2026-03-25 02:16:02",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Oil prices drop on prospect of Middle East ceasefire easing supply disruption",
+    "url": "https://www.investing.com/news/commodities-news/us-oil-prices-fall-on-prospect-of-middle-east-ceasefire-easing-supply-disruption-4578909",
+    "published": "2026-03-25 01:42:29",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "About 300 protesters chant, rally outside energy conference",
+    "url": "https://www.investing.com/news/commodities-news/about-300-protesters-chant-rally-outside-energy-conference-4578953",
+    "published": "2026-03-25 01:00:29",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Gulf warnings and fears of miscalculation preceded Trump’s pause in Iran showdown",
+    "url": "https://www.investing.com/news/commodities-news/analysisgulf-warnings-and-fears-of-miscalculation-preceded-trumps-pause-in-iran-showdown-4578276",
+    "published": "2026-03-25 00:06:44",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Trump to ease smog rules on summer gasoline to bring down prices, sources say",
+    "url": "https://www.investing.com/news/commodities-news/trump-to-ease-smog-rules-on-summer-gasoline-to-bring-down-prices-sources-say-4578922",
+    "published": "2026-03-24 23:48:35",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Oil pares gains after reports of US plan aimed at ending the Middle East war",
+    "url": "https://www.investing.com/news/commodities-news/oil-rises-as-markets-assess-supply-risks-after-iran-denies-us-talks-4576546",
+    "published": "2026-03-24 23:06:42",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "US shale firms unlikely to drill at $100 a barrel unless high prices last longer, executives say",
+    "url": "https://www.investing.com/news/commodities-news/us-shale-firms-unlikely-to-drill-at-100-a-barrel-unless-high-prices-last-longer-executives-say-4578885",
+    "published": "2026-03-24 22:54:32",
+    "summary": ""
+  },
+  {
+    "source": "Commodities &amp; Futures News",
+    "title": "Gold moves sharply higher on potential U.S.-Iran ceasefire hopes",
+    "url": "https://www.investing.com/news/commodities-news/gold-prices-fall-for-10th-straight-session-as-iran-denies-us-talks-4576547",
+    "published": "2026-03-24 21:09:13",
+    "summary": ""
+  }
+]</pre></div></div>
+<div class="kv-row"><div class="key">debug</div><div class="val"><pre class="small">{
+  "price_source": "stooq(xauusd)",
+  "news_score": 2,
+  "rows": 15209
+}</pre></div></div></div>
   </div>
-
-  <h2>总体状态（红绿灯）
-    <span class="tl  traffic_light "> traffic_light </span>
-  </h2>
-
-  <div class="card">
-    <b>核心判断：</b> summary 
-    <div class="small" style="margin-top:6px;">
-      依据：趋势（MA20/MA50）、动量（RSI/MACD）、波动（ATR）与新闻情绪（粗略）。
-    </div>
-  </div>
-
-  <h2>关键结论摘要</h2>
-  <div class="card">
-    <ul>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
-        <li> b </li>
-      
-    </ul>
-  </div>
-
-  <div class="grid">
-    <div>
-      <h2>盘前计划 Base Case</h2>
-      <div class="card" style="white-space:pre-line;"> base_case </div>
-    </div>
-    <div>
-      <h2>Alternate Case</h2>
-      <div class="card" style="white-space:pre-line;"> alt_case </div>
-    </div>
-  </div>
-
-  <h2>Watchlist</h2>
-  <div class="card">
-    <ul>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-        <li> w </li>
-      
-    </ul>
-  </div>
-
-  <h2>Execution Rules</h2>
-  <div class="card">
-    <ul>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-        <li> r </li>
-      
-    </ul>
-  </div>
-
-  <h2>最新行情（最近30天）</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-      <tr>
-        <td class="mono"> row["Date"] </td>
-        <td> row["Open"] </td>
-        <td> row["High"] </td>
-        <td> row["Low"] </td>
-        <td><b> row["Close"] </b></td>
-        <td> row["Volume"] </td>
-      </tr>
-      
-    </tbody>
-  </table>
-
-  <h2>关键驱动因素</h2>
-  <table>
-    <thead><tr><th>Driver</th><th>Signal</th><th>Note</th></tr></thead>
-    <tbody>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-      <tr>
-        <td> d["driver"] </td>
-        <td><b> d["signal"] </b></td>
-        <td> d["note"] </td>
-      </tr>
-      
-    </tbody>
-  </table>
-
-  <h2>风险与应对</h2>
-  <table>
-    <thead><tr><th>Risk</th><th>Mitigation / Hedge</th></tr></thead>
-    <tbody>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-      <tr>
-        <td> x["risk"] </td>
-        <td> x["hedge"] </td>
-      </tr>
-      
-    </tbody>
-  </table>
-
-  <h2>新闻（近24–72小时）</h2>
-  <div class="card">
-    
-      <ul>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-        <li style="margin-bottom:10px;">
-          
-            <a href=" n.get('url') " target="_blank" rel="noreferrer"> n.get("title") </a>
-          
-          <span class="small">（ n.get("source")  ·  n.get("published") ）</span>
-          
-        </li>
-        
-      </ul>
-    
-  </div>
-
-  <h2>数据来源与声明</h2>
-  <div class="card">
-    行情数据：<code>yfinance</code>（Yahoo Finance）或兜底源（如 Stooq）。新闻：RSS 或 NewsAPI。<br/>
-    本页面为研究用途，不构成投资建议。请自行评估风险。
-  </div>
-
-  <h2>Debug</h2>
-  <div class="card small">
-    <div>gold_data.json: <code>gold_data.json</code></div>
-    
-      <div>price_source: <code> debug.get("price_source") </code></div>
-      <div>news_score: <code> debug.get("news_score") </code></div>
-      <div>rows: <code> debug.get("rows") </code></div>
-    
-  </div>
+  <footer style="margin-top:20px;color:#666;font-size:13px;">
+    自动生成：docs/gold_data.json → docs/index.html
+  </footer>
 </body>
 </html>
